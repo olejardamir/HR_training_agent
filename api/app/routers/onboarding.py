@@ -74,6 +74,7 @@ def select_access(request: SelectAccessRequest, db: Session = Depends(get_db)):
                       "selection_blocked", "selection", None, "BLOCKED",
                       "FORBIDDEN_SYSTEM_SELECTED",
                       {"system": validation.get("system")})
+            db.commit()
             raise HTTPException(status_code=403, detail={
                 "ok": False, "error_code": "FORBIDDEN_SYSTEM_SELECTED",
                 "message": f"System '{validation.get('system')}' is forbidden",
@@ -86,6 +87,7 @@ def select_access(request: SelectAccessRequest, db: Session = Depends(get_db)):
                       "selection_blocked", "selection", None, "BLOCKED",
                       "UNKNOWN_SYSTEM_SELECTED",
                       {"system": validation.get("system")})
+            db.commit()
             return JSONResponse(status_code=403, content={
                 "ok": False, "status": "BLOCKED",
                 "error_code": "UNKNOWN_SYSTEM_SELECTED",

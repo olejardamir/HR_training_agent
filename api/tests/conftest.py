@@ -1,9 +1,11 @@
+import os
+os.environ["DATABASE_URL"] = "sqlite:///./test_hr.db"
+
 import pytest
 from fastapi.testclient import TestClient
-from app.main import app
-from app.database import engine
-from app.models import Base
+from app.database import engine, Base
 from app.seed import reset_and_seed
+from app.main import app
 
 
 @pytest.fixture(scope="module", autouse=True)

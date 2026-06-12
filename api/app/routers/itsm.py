@@ -27,6 +27,7 @@ def create_ticket_endpoint(request: CreateTicketRequest,
                   "system", "itsm-mock",
                   "ticket_blocked", "ticket", None,
                   "BLOCKED", result.get("error_code"))
+        db.commit()
         return JSONResponse(status_code=409, content=TicketResponse(
             ok=False, status="BLOCKED",
             error_code=result.get("error_code", "MANAGER_APPROVAL_REQUIRED"),

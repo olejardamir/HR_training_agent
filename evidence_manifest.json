@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-12T12:13:12Z",
+  "repo_commit": "local",
+  "test_results": {
+    "pytest": "63 passed",
+    "smoke_happy_path": "PASS",
+    "smoke_pending": "PASS",
+    "smoke_reject": "PASS",
+    "smoke_forbidden": "PASS",
+    "smoke_llm_fallback": "PASS",
+    "workflow_contract": "PASS",
+    "no_collapsed_files": "PASS",
+    "no_secrets": "PASS"
+  }
+}

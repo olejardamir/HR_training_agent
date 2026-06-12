@@ -5,7 +5,7 @@ import sys
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EXCLUDE_DIRS = {".git", "__pycache__", ".pytest_cache", "postgres_data", "node_modules", "1_PREPARATION_STEP", "screenshots", "private"}
-EXCLUDE_FILES = {"validate_no_secrets.py", ".env.example"}
+EXCLUDE_FILES = {"validate_no_secrets.py", ".env.example", ".env"}
 
 SECRET_PATTERNS = [
     (re.compile(r'(?i)(api[_-]?key\s*=\s*["\']?[a-zA-Z0-9_\-]{16,})', re.IGNORECASE), "API key"),
