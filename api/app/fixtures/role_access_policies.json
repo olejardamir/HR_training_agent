@@ -3,16 +3,36 @@
     "role": "Account Executive",
     "level": "L2",
     "required_systems": ["Slack", "HR Platform"],
-    "recommended_systems": ["Salesforce", "Gong", "Outreach", "Sales Slack Channels"],
-    "forbidden_systems": ["Payroll Admin", "Production Database Admin"],
+    "recommended_systems": ["Salesforce", "Gong", "Sales Slack Channels"],
+    "optional_systems": ["Outreach"],
+    "forbidden_systems": ["Payroll Admin", "Production Database Admin", "Security Admin", "Finance Admin"],
     "policy_version": "v1"
   },
   {
     "role": "Software Engineer",
     "level": "L2",
-    "required_systems": ["Slack", "HR Platform", "GitHub"],
-    "recommended_systems": ["AWS Console (read-only)", "Datadog Viewer"],
-    "forbidden_systems": ["Production Database Admin", "Payroll Admin"],
+    "required_systems": ["Slack", "GitHub", "Jira"],
+    "recommended_systems": ["AWS Console", "Datadog"],
+    "optional_systems": ["PagerDuty"],
+    "forbidden_systems": ["Payroll Admin", "Production Database Admin", "Security Admin", "Finance Admin"],
+    "policy_version": "v1"
+  },
+  {
+    "role": "HR Coordinator",
+    "level": "L1",
+    "required_systems": ["Slack", "HR Platform"],
+    "recommended_systems": ["Workday Read Only"],
+    "optional_systems": [],
+    "forbidden_systems": ["Payroll Admin", "Production Database Admin", "Security Admin", "Finance Admin"],
+    "policy_version": "v1"
+  },
+  {
+    "role": "Manager",
+    "level": "L3",
+    "required_systems": ["Slack", "HR Platform"],
+    "recommended_systems": ["Salesforce Reports", "Workday"],
+    "optional_systems": [],
+    "forbidden_systems": ["Payroll Admin", "Production Database Admin", "Security Admin", "Finance Admin"],
     "policy_version": "v1"
   }
 ]

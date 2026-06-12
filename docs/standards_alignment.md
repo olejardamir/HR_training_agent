@@ -1,31 +1,25 @@
-# Standards & Frameworks Alignment
+# Standards Alignment
 
-This prototype aligns with the following external standards and frameworks **as design references**, not as certifications.
+## Framework Alignment (Directional, Not Certified)
 
-## AI Governance
+| Framework | Relevance | Implementation Status |
+|---|---|---|
+| NIST AI RMF | Govern, Map, Measure, Manage | Gaps documented in `archive_boundary.md` |
+| OWASP LLM Top 10 | LLM01 (Prompt Injection), LLM02 (Insecure Output) | Q&A endpoint blocks forbidden questions; LLM boundary is communication-only |
+| ISO/IEC 42001 | AI management system direction | Not implemented; noted as production path |
+| SOC 2 | Security, Availability, Confidentiality | Audit trail covers all state changes; no real data stored |
+| SCIM / OIDC / SAML | Identity provisioning | Mocked; real integration deferred |
+| RBAC / ABAC | Access control model | Role-level policy engine implements RBAC; manager approval adds ABAC-style check |
+| ITIL-style ITSM | Ticket lifecycle | ITSM mock covers create, readback, idempotency, blocked states |
 
-- **NIST AI Risk Management Framework (AI RMF)** – Govern, map, measure, manage risks around AI‑assisted decisions. Our agent bounds LLM usage to communication, keeping high‑risk decisions deterministic and auditable.
-- **ISO/IEC 42001:2023** – Provides direction for AI management systems. We apply structured governance: human oversight (manager approval), risk ownership (policy engine), and continuous improvement (audit trail).
+## Privacy Principles
+- PII allowlist controls audit metadata (see `logic/pii.py`)
+- No real employee data in repository
+- No secrets or tokens stored
 
-## LLM Security
-
-- **OWASP Top 10 for LLM Applications** – We mitigate prompt injection by treating all user input as untrusted; the LLM cannot change workflow state, approval status, or policy. Sensitive data is minimized in prompts.
-
-## Enterprise Controls
-
-- **SOC 2 Trust Services Criteria** – The prototype demonstrates security (access control, approval gate), processing integrity (idempotent tickets), and auditability (correlation ID + event log).
-- **SCIM 2.0** – Production path for user provisioning; mocked in prototype.
-- **OAuth 2.0 / OpenID Connect / SAML 2.0** – Identity and authorization framework for production.
-- **RBAC / ABAC** – Role‑level access policy with attributes (role, level, department).
-
-## Privacy
-
-- **GDPR‑style principles** – Data minimization (only necessary employee fields), purpose limitation (onboarding only), auditability, and no unnecessary PII in logs or prompts.
-
-## Service Management
-
-- **ITIL‑style ITSM** – Access request → manager approval → ticket creation workflow aligns with ITIL change/request management.
-
-## How We Use These Standards
-
-We reference them to show awareness of enterprise expectations. The prototype does **not** claim compliance; it is designed to be extended to meet those standards in production.
+## Production Path
+- Replace mock services with real API adapters
+- Add OAuth2/OIDC for authentication
+- Add formal RBAC/ABAC with real identity provider
+- Replace LLM fallback with governed model endpoint
+- Add SCIM provisioning for real HRIS/LMS

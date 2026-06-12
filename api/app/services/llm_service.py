@@ -1,95 +1,73 @@
-import os
-import json
-from typing import Dict, Any
+import httpx
+from ..config import settings
+
+
+def _build_employee_summary(context: dict) -> str:
+    name = context.get("employee_name", "the new employee")
+    role = context.get("role", "Unknown")
+    level = context.get("level", "Unknown")
+    training = context.get("training_summary", "No training data")
+    recommended = context.get("recommended_systems_list", "None")
+    optional = context.get("optional_systems_list", "None")
+    manager = context.get("manager_name", "your manager")
+    return (
+        f"Hello {name}! Welcome as {role} (Level {level}). "
+        f"Training summary: {training}. "
+        f"Recommended systems: {recommended}. "
+        f"Optional systems: {optional}. "
+        f"Your manager is {manager}."
+    )
+
+
+def _build_manager_request(context: dict) -> str:
+    name = context.get("employee_name", "an employee")
+    role = context.get("role", "Unknown")
+    level = context.get("level", "Unknown")
+    systems = context.get("selected_systems_list", "No systems selected")
+    cid = context.get("correlation_id", "unknown")
+    rid = context.get("request_id", "unknown")
+    return (
+        f"Approval request for {name} ({role} L{level}). "
+        f"Requested systems: {systems}. "
+        f"Correlation ID: {cid}, Request ID: {rid}."
+    )
+
 
 FALLBACK_TEMPLATES = {
-    "employee_onboarding_summary": """
-Hello {employee_name},
-
-Welcome to the team! Based on your role as {role} (level {level}), here is your onboarding summary:
-
-- **Required tasks**: Please complete your HR profile, Slack setup, and T1 training.
-- **Training status**: {training_summary}
-- **Recommended access**: {recommended_systems_list}
-- **Optional access**: {optional_systems_list}
-
-Please review the recommended access and select the systems you need via the employee portal.
-
-Your manager, {manager_name}, will be asked to approve your access requests.
-
-We're glad to have you on board!
-""",
-    "manager_approval_request": """
-Hello {manager_name},
-
-{employee_name} ({role}, Level {level}) has requested access to the following systems:
-
-{selected_systems_list}
-
-Please review this request and **approve** or **reject** it using the approval dashboard.
-
-Correlation ID: {correlation_id}
-Request ID: {request_id}
-
-Thank you.
-"""
+    "employee_onboarding_summary": _build_employee_summary,
+    "manager_approval_request": _build_manager_request,
+    "recommendation_explanation": lambda ctx: (
+        f"Recommendations based on role-level policy and peer patterns."
+    ),
+    "status_update": lambda ctx: (
+        f"Onboarding status: {ctx.get('status', 'in progress')}."
+    ),
+    "onboarding_question_answer": lambda ctx: (
+        ctx.get("answer", "Please contact your HR representative.")
+    ),
 }
 
-def get_fallback_message(message_type: str, context: Dict[str, Any]) -> str:
-    template = FALLBACK_TEMPLATES.get(message_type)
-    if not template:
-        return f"Message type '{message_type}' not supported."
-    try:
-        return template.format(**context)
-    except KeyError as e:
-        return f"Missing context key: {e}."
 
-async def generate_with_ollama(prompt: str, model: str, base_url: str) -> str | None:
-    try:
-        import httpx
-        async with httpx.AsyncClient(timeout=30.0) as client:
-            response = await client.post(
-                f"{base_url}/api/generate",
-                json={
-                    "model": model,
-                    "prompt": prompt,
-                    "stream": False,
-                    "options": {"temperature": 0.2}
-                }
-            )
-            if response.status_code == 200:
-                data = response.json()
-                return data.get("response", "").strip()
-    except Exception:
-        pass
-    return None
+async def generate_message(message_type: str, context: dict,
+                           fallback_enabled: bool = True) -> tuple:
+    if settings.llm_provider == "ollama" and not fallback_enabled:
+        try:
+            async with httpx.AsyncClient(timeout=settings.llm_timeout_seconds) as client:
+                resp = await client.post(
+                    f"{settings.ollama_base_url}/api/generate",
+                    json={
+                        "model": settings.ollama_model,
+                        "prompt": f"Generate a {message_type} message: {context}",
+                        "stream": False,
+                    },
+                )
+                if resp.status_code == 200:
+                    data = resp.json()
+                    return data.get("response", ""), "ollama"
+        except Exception:
+            pass
 
-async def generate_message(
-    message_type: str,
-    context: Dict[str, Any],
-    provider: str = None,
-    model: str = None,
-    base_url: str = None,
-    fallback_enabled: bool = True
-) -> str:
-    provider = provider or os.getenv("LLM_PROVIDER", "fallback")
-    model = model or os.getenv("OLLAMA_MODEL", "gemma2:2b")
-    base_url = base_url or os.getenv("OLLAMA_BASE_URL", "http://ollama:11434")
-    fallback_env = os.getenv("LLM_FALLBACK_ENABLED", "true")
-    fallback_enabled = fallback_enabled or fallback_env.lower() == "true"
-
-    prompt = f"""You are an HR onboarding assistant. Generate a {message_type.replace('_', ' ')} using the following information. Keep it professional and concise.
-
-Context: {json.dumps(context, indent=2)}
-
-Output only the message, no extra text."""
-
-    if provider == "ollama":
-        llm_output = await generate_with_ollama(prompt, model, base_url)
-        if llm_output:
-            return llm_output.strip()
-
-    if fallback_enabled:
-        return get_fallback_message(message_type, context)
-
-    return f"[Message generation failed] Unable to generate {message_type}."
+    template_fn = FALLBACK_TEMPLATES.get(message_type)
+    if template_fn:
+        return template_fn(context), "fallback"
+    return f"[{message_type}] No template available.", "fallback"

@@ -1,0 +1,5 @@
+[
+  {"manager_id": "mgr_101", "name": "Alice Manager", "email": "alice@example.test", "is_active": true, "has_contact": true},
+  {"manager_id": "mgr_102", "name": "Bob Manager", "email": "bob@example.test", "is_active": true, "has_contact": true},
+  {"manager_id": "mgr_wrong", "name": "Wrong Manager", "email": "wrong@example.test", "is_active": true, "has_contact": true}
+]

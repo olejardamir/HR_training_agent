@@ -1,0 +1,20 @@
+[
+  {
+    "employee_id": "emp_001",
+    "profile_complete": true,
+    "setup_status": "pending_setup",
+    "assigned_licenses": ["Salesforce_Sales", "Salesforce_Service"]
+  },
+  {
+    "employee_id": "emp_002",
+    "profile_complete": false,
+    "setup_status": "not_started",
+    "assigned_licenses": []
+  },
+  {
+    "employee_id": "emp_003",
+    "profile_complete": false,
+    "setup_status": "not_started",
+    "assigned_licenses": []
+  }
+]

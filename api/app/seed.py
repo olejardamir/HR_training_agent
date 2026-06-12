@@ -1,6 +1,13 @@
 import json
+import uuid
 from .database import engine, SessionLocal
-from .models import Base, Employee, TrainingStatusTable, RoleAccessPolicy, PeerAccessPattern, DepartmentStandard, EmploymentStatus
+from .models import (
+    Base, Employee, Manager, TrainingStatusTable, SalesforceProfile,
+    RoleAccessPolicy, PeerAccessPattern, DepartmentStandard,
+    OnboardingSession, SelectedAccessRequest, ManagerApproval,
+    ITSMTicket, SlackMessage, AuditEvent, EmploymentStatus
+)
+
 
 def reset_and_seed():
     Base.metadata.drop_all(bind=engine)
@@ -20,15 +27,32 @@ def reset_and_seed():
                 department=emp["department"],
                 manager_id=emp.get("manager_id"),
                 start_date=emp["start_date"],
-                employment_status=EmploymentStatus(emp["employment_status"])
+                employment_status=EmploymentStatus(emp["employment_status"]),
+                profile_status=emp.get("profile_status", "active"),
             ))
+
+        with open("app/fixtures/managers.json") as f:
+            managers = json.load(f)
+        for mgr in managers:
+            db.add(Manager(**mgr))
 
         with open("app/fixtures/training_status.json") as f:
             trainings = json.load(f)
         for t in trainings:
             db.add(TrainingStatusTable(
                 employee_id=t["employee_id"],
-                modules=t["modules"]
+                module_id=t["module_id"],
+                status=t["status"],
+            ))
+
+        with open("app/fixtures/salesforce_profiles.json") as f:
+            sf_profiles = json.load(f)
+        for sf in sf_profiles:
+            db.add(SalesforceProfile(
+                employee_id=sf["employee_id"],
+                profile_complete=sf.get("profile_complete", False),
+                setup_status=sf.get("setup_status", "not_started"),
+                assigned_licenses=sf.get("assigned_licenses", []),
             ))
 
         with open("app/fixtures/role_access_policies.json") as f:
@@ -39,8 +63,9 @@ def reset_and_seed():
                 level=p["level"],
                 required_systems=p["required_systems"],
                 recommended_systems=p["recommended_systems"],
+                optional_systems=p.get("optional_systems", []),
                 forbidden_systems=p["forbidden_systems"],
-                policy_version=p.get("policy_version", "v1")
+                policy_version=p.get("policy_version", "v1"),
             ))
 
         with open("app/fixtures/peer_access_patterns.json") as f:
@@ -50,7 +75,7 @@ def reset_and_seed():
                 role=peer["role"],
                 level=peer["level"],
                 peer_count=peer["peer_count"],
-                common_access=peer["common_access"]
+                common_access=peer["common_access"],
             ))
 
         with open("app/fixtures/department_standards.json") as f:
@@ -58,13 +83,10 @@ def reset_and_seed():
         for ds in dept_standards:
             db.add(DepartmentStandard(
                 department=ds["department"],
-                standard_systems=ds["standard_systems"]
+                standard_systems=ds["standard_systems"],
             ))
 
         db.commit()
         print("Database seeded successfully.")
     finally:
         db.close()
-
-if __name__ == "__main__":
-    reset_and_seed()

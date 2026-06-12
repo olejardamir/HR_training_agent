@@ -14,7 +14,7 @@ def setup_database():
     yield
     Base.metadata.drop_all(bind=engine)
 
-def test_recommendations_for_emp_001():
+def test_access_recommendations_emp001_returns_recommendations():
     response = client.get("/mock/access/recommendations/emp_001")
     assert response.status_code == 200
     data = response.json()
@@ -35,17 +35,17 @@ def test_recommendations_for_emp_001():
     assert any(b["system"] == "Payroll Admin" for b in blocked)
     assert any(b["system"] == "Production Database Admin" for b in blocked)
 
-def test_unknown_employee_returns_404():
+def test_access_recommendations_unknown_employee_returns_404():
     response = client.get("/mock/access/recommendations/emp_999")
     assert response.status_code == 404
     assert response.json()["detail"]["error_code"] == "EMPLOYEE_NOT_FOUND"
 
-def test_unknown_role_level_returns_404():
+def test_access_recommendations_unsupported_role_level_returns_404():
     response = client.get("/mock/access/recommendations/emp_004")
     assert response.status_code == 404
     assert response.json()["detail"]["error_code"] == "POLICY_NOT_FOUND"
 
-def test_department_standard_reason_code():
+def test_access_recommendations_department_standard_includes_reason_code():
     response = client.get("/mock/access/recommendations/emp_001")
     data = response.json()
     recommended = [r for r in data["recommendations"] if r["recommendation_type"] == "recommended"]

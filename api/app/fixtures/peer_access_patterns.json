@@ -6,8 +6,32 @@
     "common_access": [
       {"system": "Salesforce", "frequency": 8},
       {"system": "Gong", "frequency": 7},
-      {"system": "Outreach", "frequency": 6},
-      {"system": "Sales Slack Channels", "frequency": 8}
+      {"system": "Sales Slack Channels", "frequency": 6},
+      {"system": "Outreach", "frequency": 5},
+      {"system": "Slack", "frequency": 8},
+      {"system": "HR Platform", "frequency": 4}
+    ]
+  },
+  {
+    "role": "Software Engineer",
+    "level": "L2",
+    "peer_count": 12,
+    "common_access": [
+      {"system": "GitHub", "frequency": 12},
+      {"system": "Jira", "frequency": 11},
+      {"system": "AWS Console", "frequency": 10},
+      {"system": "Datadog", "frequency": 8},
+      {"system": "Slack", "frequency": 12}
+    ]
+  },
+  {
+    "role": "HR Coordinator",
+    "level": "L1",
+    "peer_count": 3,
+    "common_access": [
+      {"system": "HR Platform", "frequency": 3},
+      {"system": "Slack", "frequency": 3},
+      {"system": "Workday Read Only", "frequency": 2}
     ]
   }
 ]

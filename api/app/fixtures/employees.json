@@ -8,39 +8,43 @@
     "department": "Sales",
     "manager_id": "mgr_101",
     "start_date": "2026-07-01",
-    "employment_status": "new_hire"
+    "employment_status": "new_hire",
+    "profile_status": "active"
   },
   {
     "employee_id": "emp_002",
     "name": "John Doe",
     "email": "john.doe@example.test",
-    "role": "Account Executive",
+    "role": "Software Engineer",
     "level": "L2",
-    "department": "Sales",
-    "manager_id": "mgr_101",
+    "department": "Engineering",
+    "manager_id": "mgr_102",
     "start_date": "2026-07-15",
-    "employment_status": "new_hire"
+    "employment_status": "new_hire",
+    "profile_status": "active"
   },
   {
     "employee_id": "emp_003",
     "name": "No Manager",
     "email": "no.manager@example.test",
-    "role": "Intern",
-    "level": "I1",
-    "department": "Sales",
+    "role": "HR Coordinator",
+    "level": "L1",
+    "department": "HR",
     "manager_id": null,
     "start_date": "2026-07-20",
-    "employment_status": "new_hire"
+    "employment_status": "new_hire",
+    "profile_status": "active"
   },
   {
     "employee_id": "emp_004",
     "name": "Unknown Role",
     "email": "unknown.role@example.test",
-    "role": "NonExistentRole",
-    "level": "X9",
-    "department": "Unknown",
-    "manager_id": "mgr_999",
+    "role": "Obsolete Role",
+    "level": "L9",
+    "department": "Operations",
+    "manager_id": "mgr_101",
     "start_date": "2026-07-25",
-    "employment_status": "new_hire"
+    "employment_status": "new_hire",
+    "profile_status": "active"
   }
 ]

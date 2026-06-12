@@ -1,0 +1,14 @@
+[
+  {"scenario_id": "SCN-HAPPY-001", "employee_id": "emp_001", "description": "Account Executive L2, valid manager, valid policy, happy path."},
+  {"scenario_id": "SCN-PENDING-002", "employee_id": "emp_001", "description": "Auto approval disabled; pre-approval ticket blocked; final no-ticket path."},
+  {"scenario_id": "SCN-REJECT-003", "employee_id": "emp_002", "description": "Manager rejects; ticket blocked."},
+  {"scenario_id": "SCN-EXPIRE-004", "employee_id": "emp_002", "description": "Approval expires; ticket blocked."},
+  {"scenario_id": "SCN-NO-MANAGER-005", "employee_id": "emp_003", "description": "Missing manager; approval and ticket blocked."},
+  {"scenario_id": "SCN-UNKNOWN-006", "employee_id": "emp_unknown", "description": "Unknown employee; workflow stops."},
+  {"scenario_id": "SCN-UNSUPPORTED-007", "employee_id": "emp_004", "description": "Unsupported role-level; recommendation blocked."},
+  {"scenario_id": "SCN-FORBIDDEN-008", "employee_id": "emp_001", "description": "Forbidden selected system; selection blocked."},
+  {"scenario_id": "SCN-DUPLICATE-009", "employee_id": "emp_001", "description": "Repeated approved ticket request; no duplicate ticket."},
+  {"scenario_id": "SCN-LLM-DOWN-010", "employee_id": "emp_001", "description": "Ollama unavailable; deterministic fallback used."},
+  {"scenario_id": "SCN-SLACK-FAIL-011", "employee_id": "emp_001", "description": "Slack mock failure; workflow state not corrupted."},
+  {"scenario_id": "SCN-AUDIT-012", "employee_id": "emp_001", "description": "Audit chain retrieval by correlation ID."}
+]

@@ -33,7 +33,7 @@ Then in another terminal:
 # Check health
 curl http://localhost:8000/health
 
-# Import n8n workflow (open http://localhost:5678, import from file n8n/hr_onboarding_complete_workflow.json)
+# Import n8n workflow (open http://localhost:5678, import from file n8n/hr_onboarding_workflow.json)
 
 # Run demo happy path
 curl -X POST http://localhost:5678/webhook/hr-onboarding \
@@ -99,13 +99,26 @@ Critical tests:
 hr-onboarding-agent/
 ├── docker-compose.yml
 ├── .env.example
+├── evidence_manifest.json        # generated after full verification
 ├── README.md
 ├── docs/
-│   ├── solution_design.md
+│   ├── solution_design_1_2_pages.md
 │   ├── demo_walkthrough.md
-│   └── standards_alignment.md
+│   ├── standards_alignment.md
+│   ├── traceability_matrix.md
+│   └── evidence_manifest_example.md
+├── scripts/
+│   ├── validate_no_collapsed_files.py
+│   ├── validate_no_secrets.py
+│   ├── validate_workflow_contract.py
+│   ├── generate_evidence_manifest.py
+│   ├── smoke_happy_path.sh
+│   ├── smoke_pending_path.sh
+│   ├── smoke_reject_path.sh
+│   ├── smoke_forbidden_path.sh
+│   └── smoke_llm_fallback.sh
 ├── n8n/
-│   └── hr_onboarding_complete_workflow.json
+│   └── hr_onboarding_workflow.json
 ├── api/
 │   ├── app/
 │   │   ├── main.py
@@ -113,22 +126,32 @@ hr-onboarding-agent/
 │   │   ├── database.py
 │   │   ├── seed.py
 │   │   ├── schemas.py
+│   │   ├── fixtures/
+│   │   │   ├── employees.json
+│   │   │   ├── training_status.json
+│   │   │   ├── role_access_policies.json
+│   │   │   ├── peer_access_patterns.json
+│   │   │   ├── department_standards.json
+│   │   │   └── salesforce_profiles.json
 │   │   ├── logic/
 │   │   │   └── access_recommender.py
-│   │   ├── services/
-│   │   │   ├── approval_service.py
-│   │   │   ├── itsm_service.py
-│   │   │   ├── audit_service.py
-│   │   └── └── llm_service.py
+│   │   └── services/
+│   │       ├── approval_service.py
+│   │       ├── itsm_service.py
+│   │       ├── audit_service.py
+│   │       └── llm_service.py
 │   └── tests/
-└── ...
+│       ├── test_access_recommender.py
+│       ├── test_approval_gate.py
+│       └── test_llm_fallback.py
+└── private/                     # implementation guides (not needed at runtime)
 ```
 
 ---
 
 ## Production Evolution
 
-See `docs/solution_design.md` for the production path. In summary:
+See `docs/solution_design_1_2_pages.md` for the production path. In summary:
 - Replace mocks with real SaaS APIs (Workday, Slack, ServiceNow, etc.)
 - Add OIDC/OAuth2 authentication
 - Use a secrets manager

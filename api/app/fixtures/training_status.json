@@ -1,29 +1,14 @@
 [
-  {
-    "employee_id": "emp_001",
-    "modules": [
-      {"module_id": "T1", "status": "complete"},
-      {"module_id": "T2", "status": "incomplete"},
-      {"module_id": "T3", "status": "incomplete"},
-      {"module_id": "T4", "status": "not_required_yet"}
-    ]
-  },
-  {
-    "employee_id": "emp_002",
-    "modules": [
-      {"module_id": "T1", "status": "complete"},
-      {"module_id": "T2", "status": "complete"},
-      {"module_id": "T3", "status": "incomplete"},
-      {"module_id": "T4", "status": "not_required_yet"}
-    ]
-  },
-  {
-    "employee_id": "emp_003",
-    "modules": [
-      {"module_id": "T1", "status": "incomplete"},
-      {"module_id": "T2", "status": "incomplete"},
-      {"module_id": "T3", "status": "incomplete"},
-      {"module_id": "T4", "status": "not_required_yet"}
-    ]
-  }
+  {"employee_id": "emp_001", "module_id": "T1", "status": "complete"},
+  {"employee_id": "emp_001", "module_id": "T2", "status": "incomplete"},
+  {"employee_id": "emp_001", "module_id": "T3", "status": "not_required_yet"},
+  {"employee_id": "emp_001", "module_id": "T4", "status": "not_required_yet"},
+  {"employee_id": "emp_002", "module_id": "T1", "status": "complete"},
+  {"employee_id": "emp_002", "module_id": "T2", "status": "complete"},
+  {"employee_id": "emp_002", "module_id": "T3", "status": "incomplete"},
+  {"employee_id": "emp_002", "module_id": "T4", "status": "not_required_yet"},
+  {"employee_id": "emp_003", "module_id": "T1", "status": "incomplete"},
+  {"employee_id": "emp_003", "module_id": "T2", "status": "incomplete"},
+  {"employee_id": "emp_003", "module_id": "T3", "status": "not_required_yet"},
+  {"employee_id": "emp_003", "module_id": "T4", "status": "not_required_yet"}
 ]
