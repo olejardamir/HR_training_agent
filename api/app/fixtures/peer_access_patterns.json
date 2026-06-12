@@ -1,0 +1,13 @@
+[
+  {
+    "role": "Account Executive",
+    "level": "L2",
+    "peer_count": 8,
+    "common_access": [
+      {"system": "Salesforce", "frequency": 8},
+      {"system": "Gong", "frequency": 7},
+      {"system": "Outreach", "frequency": 6},
+      {"system": "Sales Slack Channels", "frequency": 8}
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "name": "Minimal Health Check (n8n → FastAPI)",
+  "nodes": [
+    {
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [250, 300],
+      "parameters": {}
+    },
+    {
+      "id": "health-check",
+      "name": "GET /health",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [450, 300],
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.API_BASE_URL || 'http://api:8000' }}/health",
+        "options": {}
+      }
+    },
+    {
+      "id": "result",
+      "name": "Return Result",
+      "type": "n8n-nodes-base.set",
+      "position": [650, 300],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "name": "healthy",
+              "value": "={{ $json.status }}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{"node": "GET /health", "type": "main", "index": 0}]]
+    },
+    "GET /health": {
+      "main": [[{"node": "Return Result", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false,
+  "settings": {}
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "department": "Sales",
+    "standard_systems": ["Sales Slack Channels"]
+  },
+  {
+    "department": "Engineering",
+    "standard_systems": ["GitHub", "AWS Console"]
+  }
+]

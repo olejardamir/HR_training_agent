@@ -1,0 +1,1286 @@
+{
+  "id": "hr-onboarding-agent-v4",
+  "meta": {
+    "version": "4.0",
+    "templateCredsSetupCompleted": false,
+    "description": "Credential-free n8n workflow for HR onboarding agent using local FastAPI mock SaaS services."
+  },
+  "name": "HR Onboarding Agent \u2014 Governed Mock SaaS Workflow v4",
+  "tags": [
+    {
+      "name": "hr-onboarding"
+    },
+    {
+      "name": "mock-saas"
+    },
+    {
+      "name": "free-linux"
+    },
+    {
+      "name": "approval-gated"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "0b354c86-e0fb-43b5-bb69-a11041eb6ec2",
+      "name": "Main Description",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -2250,
+        -520
+      ],
+      "parameters": {
+        "width": 640,
+        "height": 980,
+        "content": "## HR Onboarding Agent \u2014 Governed Mock SaaS Workflow v4\n\nThis workflow is adapted from a generic employee-provisioning template, but all direct credential-based SaaS provisioning has been removed.\n\nIt demonstrates the candidate-exercise requirements:\n\n1. New employee onboarding trigger.\n2. HR mock lookup for role, level, department, manager, and status.\n3. Training mock lookup for T1-T4 status.\n4. Deterministic role-level + peer-pattern access recommendation.\n5. Employee access-selection simulation.\n6. Manager approval request.\n7. Pre-approval ITSM ticket attempt that must be blocked.\n8. Optional manager auto-approval for happy-path demo.\n9. ITSM ticket creation only after approved manager state.\n10. Final onboarding status and audit-event retrieval.\n\nNo real Google Workspace, Slack, Jira, Salesforce, Gmail, Workday, Okta, Entra, OpenAI, or Gemini credentials are required.\n\nv4 focuses on n8n import/runtime compatibility: standard Webhook, Set, HTTP Request, IF, and Sticky Note nodes only; no credential nodes."
+      },
+      "typeVersion": 1
+    },
+    {
+      "id": "8188a089-fe19-4553-9772-f6febca283d3",
+      "name": "Mock Boundary / No Paid Services",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -2250,
+        500
+      ],
+      "parameters": {
+        "width": 640,
+        "height": 680,
+        "content": "## Mock Boundary / No Paid Services\n\nAll external SaaS behavior is represented by local FastAPI mock endpoints.\n\nReal in prototype:\n- n8n orchestration\n- FastAPI HTTP calls\n- deterministic policy/approval/ticket gate behavior in backend\n- PostgreSQL state/audit, when backend is implemented\n- Ollama or fallback message generation through backend\n\nMocked:\n- HR platform\n- Slack messages\n- Training/LMS\n- Salesforce access target\n- ITSM/Jira/ServiceNow ticketing\n\nNot implemented:\n- real access granting\n- real SaaS provisioning\n- paid hosted model calls\n- direct database writes from n8n",
+        "color": 4
+      },
+      "typeVersion": 1
+    },
+    {
+      "id": "6728b10d-83cd-489a-9a1d-6aaad13b0f1d",
+      "name": "New Hire Onboarding Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        -1500,
+        0
+      ],
+      "webhookId": "f1cb3cca-0529-4566-ad49-054d1e0dbeb0",
+      "parameters": {
+        "path": "hr-onboarding/new-hire",
+        "options": {},
+        "httpMethod": "POST",
+        "responseMode": "lastNode"
+      },
+      "typeVersion": 2.1
+    },
+    {
+      "id": "e3b8d4ca-6405-4976-97e9-2900119b0e9c",
+      "name": "Normalize Demo Input",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        -1280,
+        0
+      ],
+      "parameters": {
+        "options": {},
+        "assignments": {
+          "assignments": [
+            {
+              "id": "employee_id",
+              "name": "employee_id",
+              "type": "string",
+              "value": "={{ $json.body?.employee_id || $json.employee_id || 'emp_001' }}"
+            },
+            {
+              "id": "api_base_url",
+              "name": "API_BASE_URL",
+              "type": "string",
+              "value": "={{ $json.body?.api_base_url || $json.api_base_url || $env.API_BASE_URL || 'http://api:8000' }}"
+            },
+            {
+              "id": "selected_systems",
+              "name": "selected_systems",
+              "type": "array",
+              "value": "={{ $json.body?.selected_systems || $json.selected_systems || ['Salesforce','Gong','Sales Slack Channels'] }}"
+            },
+            {
+              "id": "correlation_id",
+              "name": "correlation_id",
+              "type": "string",
+              "value": "={{ $json.body?.correlation_id || 'corr_' + $now.toMillis() }}"
+            },
+            {
+              "id": "actor",
+              "name": "actor",
+              "type": "string",
+              "value": "n8n-hr-onboarding-workflow"
+            },
+            {
+              "id": "auto_approve",
+              "name": "auto_approve_manager",
+              "type": "boolean",
+              "value": "={{ $json.body?.auto_approve_manager ?? $json.auto_approve_manager ?? true }}"
+            },
+            {
+              "id": "approval_action",
+              "name": "approval_action",
+              "type": "string",
+              "value": "={{ $json.body?.approval_action || \"approve\" }}"
+            },
+            {
+              "id": "demo_note",
+              "name": "demo_note",
+              "type": "string",
+              "value": "={{ $json.body?.demo_note || \"happy_path_with_gate_evidence\" }}"
+            }
+          ]
+        },
+        "includeOtherFields": true
+      },
+      "typeVersion": 3.4
+    },
+    {
+      "id": "06fa7200-0d71-4128-b731-180b7a927895",
+      "name": "Start Onboarding Session",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -1040,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/onboarding/start/\" + $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "correlation_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            },
+            {
+              "name": "source",
+              "value": "n8n"
+            },
+            {
+              "name": "actor",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"actor\"] }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "0f3f728e-7681-44c8-8830-eddb1e7d8f1d",
+      "name": "Fetch HR Profile Mock",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -800,
+        -160
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/hr/employees/\" + $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}",
+        "options": {}
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "943c38b2-063f-4549-be09-2858d94cc6d5",
+      "name": "Fetch Training T1-T4 Mock",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -800,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/training/status/\" + $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}",
+        "options": {}
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "65cdc327-39f7-4607-a795-c2355bb2bd2f",
+      "name": "Generate Role-Level Access Recommendations",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -800,
+        160
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/access/recommendations/\" + $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}",
+        "options": {}
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "2029ad3c-c4e1-4f25-a2eb-e29b78633ef9",
+      "name": "Generate Employee Summary via LLM or Fallback",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -520,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/llm/messages\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message_type",
+              "value": "employee_onboarding_summary"
+            },
+            {
+              "name": "employee_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "name": "correlation_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            },
+            {
+              "name": "llm_boundary",
+              "value": "communication_only"
+            },
+            {
+              "name": "context",
+              "value": "={{ JSON.stringify({ hr_profile: $node[\"Fetch HR Profile Mock\"].json, training: $node[\"Fetch Training T1-T4 Mock\"].json, recommendations: $node[\"Generate Role-Level Access Recommendations\"].json }) }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "c1412f07-0e9e-426b-b500-afadfb3b698f",
+      "name": "Store Employee Slack-Style Message",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -260,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/slack/messages\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "channel_or_user",
+              "value": "={{ $node[\"Fetch HR Profile Mock\"].json[\"email\"] || $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "name": "message_type",
+              "value": "employee_onboarding_summary"
+            },
+            {
+              "name": "message",
+              "value": "={{ $json.message || $json.generated_message || $json.text || \"Your onboarding checklist and recommended access are ready.\" }}"
+            },
+            {
+              "name": "metadata",
+              "value": "={{ JSON.stringify({ employee_id: $node[\"Normalize Demo Input\"].json[\"employee_id\"], correlation_id: $node[\"Normalize Demo Input\"].json[\"correlation_id\"], source: \"n8n\" }) }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "b83321d2-9f58-4871-82fd-872dce021864",
+      "name": "Simulate Employee Access Selection",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/onboarding/select-access\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "employee_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "name": "selected_systems",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"selected_systems\"] }}"
+            },
+            {
+              "name": "correlation_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            },
+            {
+              "name": "source",
+              "value": "n8n-demo"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "897f7967-8240-4597-88bb-e0832f811173",
+      "name": "Create Manager Approval Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        260,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/approvals\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "employee_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "name": "request_id",
+              "value": "={{ $json.request_id }}"
+            },
+            {
+              "name": "manager_id",
+              "value": "={{ $node[\"Fetch HR Profile Mock\"].json[\"manager_id\"] || \"mgr_101\" }}"
+            },
+            {
+              "name": "correlation_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            },
+            {
+              "name": "status",
+              "value": "PENDING"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "3c94cff1-bbc6-4c89-97b7-45aa4a81dfa0",
+      "name": "Generate Manager Approval Message",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        520,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/llm/messages\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message_type",
+              "value": "manager_approval_request"
+            },
+            {
+              "name": "employee_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "name": "approval_id",
+              "value": "={{ $node[\"Create Manager Approval Request\"].json[\"approval_id\"] }}"
+            },
+            {
+              "name": "correlation_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            },
+            {
+              "name": "llm_boundary",
+              "value": "communication_only"
+            },
+            {
+              "name": "context",
+              "value": "={{ JSON.stringify({ hr_profile: $node[\"Fetch HR Profile Mock\"].json, selection: $node[\"Simulate Employee Access Selection\"].json, approval: $node[\"Create Manager Approval Request\"].json }) }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "8671efc2-d557-42ff-8189-929d90fb1776",
+      "name": "Store Manager Approval Message",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        780,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/slack/messages\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "channel_or_user",
+              "value": "={{ $node[\"Fetch HR Profile Mock\"].json[\"manager_id\"] || \"mgr_101\" }}"
+            },
+            {
+              "name": "message_type",
+              "value": "manager_approval_request"
+            },
+            {
+              "name": "message",
+              "value": "={{ $json.message || $json.generated_message || $json.text || \"Please review this access request.\" }}"
+            },
+            {
+              "name": "metadata",
+              "value": "={{ JSON.stringify({ employee_id: $node[\"Normalize Demo Input\"].json[\"employee_id\"], approval_id: $node[\"Create Manager Approval Request\"].json[\"approval_id\"], request_id: $node[\"Simulate Employee Access Selection\"].json[\"request_id\"], correlation_id: $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }) }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "bf52b624-c087-47d5-bad1-59c5dd502928",
+      "name": "Pre-Approval Ticket Attempt Expected Block",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        1040,
+        -160
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/itsm/tickets\" }}",
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true
+            }
+          }
+        },
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "employee_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "name": "approval_id",
+              "value": "={{ $node[\"Create Manager Approval Request\"].json[\"approval_id\"] }}"
+            },
+            {
+              "name": "requested_systems",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"selected_systems\"] }}"
+            },
+            {
+              "name": "requested_by",
+              "value": "n8n-pre-approval-test"
+            },
+            {
+              "name": "correlation_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2,
+      "continueOnFail": true
+    },
+    {
+      "id": "2cb0f93f-35f9-493b-955b-5a47bbdf8b53",
+      "name": "Simulate Manager Approval",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        2000,
+        -160
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/approvals/\" + $node[\"Create Manager Approval Request\"].json[\"approval_id\"] + \"/approve\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "decided_by",
+              "value": "={{ $node[\"Fetch HR Profile Mock\"].json[\"manager_id\"] || \"mgr_101\" }}"
+            },
+            {
+              "name": "decision_reason",
+              "value": "Approved for demo after role-level and peer-pattern recommendation."
+            },
+            {
+              "name": "correlation_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "b8f02f4c-f4f0-4a2e-847c-400331efd31b",
+      "name": "Fetch Approval Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        2210,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/approvals/\" + $node[\"Create Manager Approval Request\"].json[\"approval_id\"] }}",
+        "options": {}
+      },
+      "typeVersion": 4.2
+    },
+    {
+      "id": "318945b5-8828-4c88-b3b0-3a91b2a0af16",
+      "name": "Is Manager Approval Approved?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        2440,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "28958a62-9dd0-41fc-b03e-2cd1b9ea79c6",
+              "leftValue": "={{ $json.approval_is_approved }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "typeVersion": 2.2
+    },
+    {
+      "id": "1c606e55-26b5-4e51-87e9-708e09992861",
+      "name": "Create ITSM Ticket After Approval",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        2680,
+        -120
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/itsm/tickets\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "employee_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "name": "approval_id",
+              "value": "={{ $node[\"Create Manager Approval Request\"].json[\"approval_id\"] }}"
+            },
+            {
+              "name": "requested_systems",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"selected_systems\"] }}"
+            },
+            {
+              "name": "requested_by",
+              "value": "hr-onboarding-agent"
+            },
+            {
+              "name": "idempotency_key",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"employee_id\"] + \":\" + ($node[\"Simulate Employee Access Selection\"].json[\"request_id\"] || $node[\"Create Manager Approval Request\"].json[\"approval_id\"]) }}"
+            },
+            {
+              "name": "correlation_id",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2,
+      "continueOnFail": true
+    },
+    {
+      "id": "1defc3ca-103f-44f1-88e3-b6f85a405e81",
+      "name": "Store Not-Approved Notice",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        2680,
+        120
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/slack/messages\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "channel_or_user",
+              "value": "={{ $node[\"Fetch HR Profile Mock\"].json[\"email\"] || $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "name": "message_type",
+              "value": "access_request_not_approved"
+            },
+            {
+              "name": "message",
+              "value": "={{ \"Access request is not approved; no ITSM ticket was created.\" }}"
+            },
+            {
+              "name": "metadata",
+              "value": "={{ JSON.stringify({ employee_id: $node[\"Normalize Demo Input\"].json[\"employee_id\"], approval_id: $node[\"Create Manager Approval Request\"].json[\"approval_id\"], approval_status: $json.status || $json.approval_status, correlation_id: $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }) }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2,
+      "continueOnFail": true
+    },
+    {
+      "id": "89d387ce-e42f-417c-a3fd-6ada7899ab64",
+      "name": "Fetch Final Onboarding Status",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        2940,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/onboarding/status/\" + $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}",
+        "options": {}
+      },
+      "typeVersion": 4.2,
+      "continueOnFail": true
+    },
+    {
+      "id": "57efb97c-8417-4fd2-b18e-6ccc06eaefb5",
+      "name": "Fetch Audit Events",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        3180,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/audit/events?employee_id=\" + $node[\"Normalize Demo Input\"].json[\"employee_id\"] + \"&correlation_id=\" + $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}",
+        "options": {}
+      },
+      "typeVersion": 4.2,
+      "continueOnFail": true
+    },
+    {
+      "id": "35f230e3-5b65-4c8d-af81-77de97ef3861",
+      "name": "Approval Gate Evidence",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1300,
+        -320
+      ],
+      "parameters": {
+        "width": 610,
+        "height": 300,
+        "content": "## Approval Gate Evidence\n\nThis workflow intentionally attempts ITSM ticket creation before manager approval.\n\nExpected result: backend blocks the request.\n\nThen the workflow either:\n- auto-approves for happy-path demo, or\n- leaves approval pending / not approved for negative-path demo.\n\nThe approved branch is the only branch that creates the final ITSM ticket.",
+        "color": 5
+      },
+      "typeVersion": 1
+    },
+    {
+      "id": "b2b1c41e-0119-4145-8cef-6ceec3a7f165",
+      "name": "Is Pre-Approval Ticket Correctly Blocked?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        1500,
+        -160
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "69f50aa1-9b5b-4f8e-a9df-950b1cb60d4c",
+              "leftValue": "={{ $json.pre_approval_blocked }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "typeVersion": 2
+    },
+    {
+      "id": "827e2f4c-3796-47f1-b5b5-ef9d5a988d85",
+      "name": "Should Auto-Approve Manager for Demo?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        1740,
+        -90
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "0e4724bb-9fae-497c-aced-937edf7596a7",
+              "leftValue": "={{ $node[\"Normalize Demo Input\"].json[\"auto_approve_manager\"] }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "typeVersion": 2
+    },
+    {
+      "id": "c028434c-93a5-4fc0-b992-705f0867d3b6",
+      "name": "Store Approval Gate Failure Notice",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        1740,
+        -320
+      ],
+      "parameters": {
+        "url": "={{ $node[\"Normalize Demo Input\"].json[\"API_BASE_URL\"] + \"/mock/slack/messages\" }}",
+        "options": {},
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "channel_or_user",
+              "value": "audit-reviewer"
+            },
+            {
+              "name": "message_type",
+              "value": "approval_gate_failure"
+            },
+            {
+              "name": "message",
+              "value": "Pre-approval ITSM ticket attempt was not blocked. This is a critical gate failure and the workflow should not be accepted."
+            },
+            {
+              "name": "metadata",
+              "value": "={{ JSON.stringify({ employee_id: $node[\"Normalize Demo Input\"].json[\"employee_id\"], approval_id: $node[\"Create Manager Approval Request\"].json[\"approval_id\"], pre_approval_response: $node[\"Pre-Approval Ticket Attempt Expected Block\"].json, correlation_id: $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }) }}"
+            }
+          ]
+        }
+      },
+      "typeVersion": 4.2,
+      "continueOnFail": true
+    },
+    {
+      "id": "bded2026-7e04-4ab9-8220-e7c8d6cc7373",
+      "name": "Negative Path / Pending Approval Demo",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1500,
+        260
+      ],
+      "parameters": {
+        "color": 5,
+        "width": 520,
+        "height": 230,
+        "content": "## Negative Path Option\n\nSet webhook body `auto_approve_manager` to `false` to demonstrate that the approval remains pending and the workflow does not create an ITSM ticket.\n\nThis supports the rejection/pending gate evidence required by the Definition of Done."
+      },
+      "typeVersion": 1
+    },
+    {
+      "id": "93ee1590-123e-4644-851c-27f2e246368c",
+      "name": "Normalize Pre-Approval Block Result",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1270,
+        -160
+      ],
+      "parameters": {
+        "options": {},
+        "assignments": {
+          "assignments": [
+            {
+              "id": "pre_blocked",
+              "name": "pre_approval_blocked",
+              "type": "boolean",
+              "value": "={{ ($json.status === 'BLOCKED') || ($json.ticket_status === 'BLOCKED') || ($json.result === 'BLOCKED') || ($json.error_code === 'APPROVAL_REQUIRED') || ($json.reason_code === 'APPROVAL_REQUIRED') || ($json.allowed === false) || (!!$json.error) }}"
+            },
+            {
+              "id": "pre_block_reason",
+              "name": "pre_approval_block_reason",
+              "type": "string",
+              "value": "={{ $json.reason_code || $json.error_code || $json.status || $json.ticket_status || ($json.error?.message ? 'HTTP_ERROR_OR_BLOCKED' : 'UNKNOWN') }}"
+            }
+          ]
+        },
+        "includeOtherFields": true
+      }
+    },
+    {
+      "id": "f597defb-1e21-4b14-92fe-8dc6dcdd2f4a",
+      "name": "Normalize Approval Status",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2210,
+        0
+      ],
+      "parameters": {
+        "options": {},
+        "assignments": {
+          "assignments": [
+            {
+              "id": "approval_status_norm",
+              "name": "approval_status_normalized",
+              "type": "string",
+              "value": "={{ ($json.status || $json.approval_status || 'UNKNOWN').toString().toUpperCase() }}"
+            },
+            {
+              "id": "approval_is_approved",
+              "name": "approval_is_approved",
+              "type": "boolean",
+              "value": "={{ (($json.status || $json.approval_status || '').toString().toUpperCase()) === 'APPROVED' }}"
+            }
+          ]
+        },
+        "includeOtherFields": true
+      }
+    },
+    {
+      "id": "90e427e3-f01e-47b6-ae67-716739330f85",
+      "name": "Final Demo Result",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3380,
+        0
+      ],
+      "parameters": {
+        "options": {},
+        "assignments": {
+          "assignments": [
+            {
+              "id": "final_employee_id",
+              "name": "employee_id",
+              "type": "string",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"employee_id\"] }}"
+            },
+            {
+              "id": "final_corr",
+              "name": "correlation_id",
+              "type": "string",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"correlation_id\"] }}"
+            },
+            {
+              "id": "final_gate",
+              "name": "approval_gate_enforced",
+              "type": "boolean",
+              "value": "={{ $node[\"Normalize Pre-Approval Block Result\"].json[\"pre_approval_blocked\"] }}"
+            },
+            {
+              "id": "final_auto",
+              "name": "auto_approve_manager",
+              "type": "boolean",
+              "value": "={{ $node[\"Normalize Demo Input\"].json[\"auto_approve_manager\"] }}"
+            },
+            {
+              "id": "final_appr",
+              "name": "approval_status",
+              "type": "string",
+              "value": "={{ $node[\"Normalize Approval Status\"].json[\"approval_status_normalized\"] }}"
+            },
+            {
+              "id": "final_status",
+              "name": "final_onboarding_status",
+              "type": "string",
+              "value": "={{ $node[\"Fetch Final Onboarding Status\"].json[\"status\"] || $node[\"Fetch Final Onboarding Status\"].json[\"workflow_status\"] || 'see_final_status_payload' }}"
+            },
+            {
+              "id": "final_payload",
+              "name": "final_status_payload",
+              "type": "string",
+              "value": "={{ JSON.stringify($node[\"Fetch Final Onboarding Status\"].json) }}"
+            },
+            {
+              "id": "audit_payload",
+              "name": "audit_events_payload",
+              "type": "string",
+              "value": "={{ JSON.stringify($json) }}"
+            },
+            {
+              "id": "result",
+              "name": "workflow_result",
+              "type": "string",
+              "value": "={{ $node[\"Normalize Pre-Approval Block Result\"].json[\"pre_approval_blocked\"] ? 'approval_gate_validated' : 'approval_gate_failed' }}"
+            }
+          ]
+        },
+        "includeOtherFields": false
+      }
+    },
+    {
+      "id": "279699f5-db6d-43f6-8b68-b9c18beeaeb5",
+      "name": "n8n Compatibility / Import Notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1260,
+        420
+      ],
+      "parameters": {
+        "color": 6,
+        "width": 620,
+        "height": 360,
+        "content": "## n8n Compatibility / Import Notes\n\nThis v4 export intentionally uses only standard credential-free nodes:\n\n- Webhook\n- Set\n- HTTP Request\n- IF\n- Sticky Note\n\nExpected local backend base URL: `http://api:8000` inside Docker Compose, overridable with `API_BASE_URL` in the webhook body or n8n environment.\n\nExpected demo body:\n\n```json\n{\n  \"employee_id\": \"emp_001\",\n  \"selected_systems\": [\"Salesforce\", \"Gong\", \"Sales Slack Channels\"],\n  \"auto_approve_manager\": true\n}\n```\n\nSet `auto_approve_manager` to `false` to demonstrate the pending/no-ticket path."
+      }
+    }
+  ],
+  "active": false,
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1",
+    "saveExecutionProgress": true,
+    "saveManualExecutions": true
+  },
+  "versionId": "3105a1ba-3da6-410b-b90b-9cdd211bfa29",
+  "connections": {
+    "New Hire Onboarding Trigger": {
+      "main": [
+        [
+          {
+            "node": "Normalize Demo Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Demo Input": {
+      "main": [
+        [
+          {
+            "node": "Start Onboarding Session",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Start Onboarding Session": {
+      "main": [
+        [
+          {
+            "node": "Fetch HR Profile Mock",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch HR Profile Mock": {
+      "main": [
+        [
+          {
+            "node": "Fetch Training T1-T4 Mock",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Training T1-T4 Mock": {
+      "main": [
+        [
+          {
+            "node": "Generate Role-Level Access Recommendations",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Role-Level Access Recommendations": {
+      "main": [
+        [
+          {
+            "node": "Generate Employee Summary via LLM or Fallback",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Employee Summary via LLM or Fallback": {
+      "main": [
+        [
+          {
+            "node": "Store Employee Slack-Style Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Employee Slack-Style Message": {
+      "main": [
+        [
+          {
+            "node": "Simulate Employee Access Selection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simulate Employee Access Selection": {
+      "main": [
+        [
+          {
+            "node": "Create Manager Approval Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Manager Approval Request": {
+      "main": [
+        [
+          {
+            "node": "Generate Manager Approval Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Manager Approval Message": {
+      "main": [
+        [
+          {
+            "node": "Store Manager Approval Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Manager Approval Message": {
+      "main": [
+        [
+          {
+            "node": "Pre-Approval Ticket Attempt Expected Block",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pre-Approval Ticket Attempt Expected Block": {
+      "main": [
+        [
+          {
+            "node": "Normalize Pre-Approval Block Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simulate Manager Approval": {
+      "main": [
+        [
+          {
+            "node": "Fetch Approval Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Approval Status": {
+      "main": [
+        [
+          {
+            "node": "Normalize Approval Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Manager Approval Approved?": {
+      "main": [
+        [
+          {
+            "node": "Create ITSM Ticket After Approval",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Store Not-Approved Notice",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create ITSM Ticket After Approval": {
+      "main": [
+        [
+          {
+            "node": "Fetch Final Onboarding Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Not-Approved Notice": {
+      "main": [
+        [
+          {
+            "node": "Fetch Final Onboarding Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Final Onboarding Status": {
+      "main": [
+        [
+          {
+            "node": "Fetch Audit Events",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Pre-Approval Ticket Correctly Blocked?": {
+      "main": [
+        [
+          {
+            "node": "Should Auto-Approve Manager for Demo?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Store Approval Gate Failure Notice",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Should Auto-Approve Manager for Demo?": {
+      "main": [
+        [
+          {
+            "node": "Simulate Manager Approval",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Fetch Approval Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Approval Gate Failure Notice": {
+      "main": [
+        [
+          {
+            "node": "Fetch Final Onboarding Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Pre-Approval Block Result": {
+      "main": [
+        [
+          {
+            "node": "Is Pre-Approval Ticket Correctly Blocked?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Approval Status": {
+      "main": [
+        [
+          {
+            "node": "Is Manager Approval Approved?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Audit Events": {
+      "main": [
+        [
+          {
+            "node": "Final Demo Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Final Demo Result": {
+      "main": [
+        []
+      ]
+    }
+  }
+}

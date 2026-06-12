@@ -1,0 +1,18 @@
+[
+  {
+    "role": "Account Executive",
+    "level": "L2",
+    "required_systems": ["Slack", "HR Platform"],
+    "recommended_systems": ["Salesforce", "Gong", "Outreach", "Sales Slack Channels"],
+    "forbidden_systems": ["Payroll Admin", "Production Database Admin"],
+    "policy_version": "v1"
+  },
+  {
+    "role": "Software Engineer",
+    "level": "L2",
+    "required_systems": ["Slack", "HR Platform", "GitHub"],
+    "recommended_systems": ["AWS Console (read-only)", "Datadog Viewer"],
+    "forbidden_systems": ["Production Database Admin", "Payroll Admin"],
+    "policy_version": "v1"
+  }
+]
