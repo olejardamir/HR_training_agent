@@ -1,7 +1,9 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends
+from starlette.responses import JSONResponse
 from sqlalchemy.orm import Session
 from ..database import get_db
 from ..schemas import LLMMessageRequest, LLMMessageResponse
+from ..config import settings
 from ..services.llm_service import generate_message
 from ..services.audit_service import log_event
 
@@ -17,7 +19,10 @@ async def llm_messages(request: LLMMessageRequest,
         "onboarding_question_answer",
     }
     if request.message_type not in allowed_types:
-        raise HTTPException(status_code=400, detail=f"Unknown message type: {request.message_type}")
+        return JSONResponse(status_code=400, content={
+            "ok": False, "status": "ERROR", "error_code": "INVALID_MESSAGE_TYPE",
+            "message": f"Unknown message type: {request.message_type}",
+        })
 
     context = request.context or {}
     defaults = {
@@ -54,7 +59,8 @@ async def llm_messages(request: LLMMessageRequest,
         context.setdefault(k, v)
 
     message, provider = await generate_message(
-        request.message_type, context, fallback_enabled=True,
+        request.message_type, context,
+        fallback_enabled=settings.llm_fallback_enabled,
     )
     fallback_used = provider == "fallback"
 

@@ -1,0 +1,9 @@
+=== Smoke: LLM Fallback ===
+1. Employee onboarding summary (no Ollama)
+   Employee summary OK
+2. Manager approval request
+   Manager request OK
+3. Fallback with empty context
+   Empty context OK
+
+=== LLM FALLBACK PASSED ===

@@ -1,0 +1,22 @@
+{
+    "ok": true,
+    "events": [
+        {
+            "event_id": 120,
+            "correlation_id": "audit_evidence_1781307466",
+            "employee_id": "emp_001",
+            "actor_type": "system",
+            "actor_id": "onboarding",
+            "action": "workflow_started",
+            "target_type": "session",
+            "target_id": "emp_001",
+            "status": "STARTED",
+            "reason_code": null,
+            "metadata_json": null,
+            "created_at": "2026-06-12T23:37:46.048642Z"
+        }
+    ],
+    "count": 1,
+    "limit": 100,
+    "offset": 0
+}

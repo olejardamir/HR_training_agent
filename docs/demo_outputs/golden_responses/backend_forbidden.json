@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "status": "BLOCKED",
+  "error_code": "FORBIDDEN_SYSTEM_SELECTED",
+  "message": "System 'Payroll Admin' is forbidden",
+  "employee_id": "emp_001",
+  "correlation_id": "corr_<uuid/dynamic>"
+}

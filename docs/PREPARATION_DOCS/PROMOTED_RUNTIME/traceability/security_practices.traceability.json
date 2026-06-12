@@ -1,0 +1,112 @@
+[
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5043f64a13051918bb7d4a382aaa724808a30042785b2272ec180a6e3f158004",
+    "item_index": 0,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "afd63374bf812c91b9706e273449362f9d185b88f64b40543348afaa0203a273",
+    "item_index": 1,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "35e851d64d53fafa5300107e67d41663e6152a252f3da631e51b90157dc1acab",
+    "item_index": 2,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "764fec935c1a044fe70a32d8ac469224ffc68b6cb2341320aab3a03760e4123f",
+    "item_index": 3,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_4bb6ac8681cc"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f7d1ca3d9221ddda39f7cc679cc5d8f25a147da6430c2b33c0840d1e2978cd6f",
+    "item_index": 4,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f4de5b40efddcb0294b24aa60382a2285a5719d3a0ef4536093eaacd14722f38",
+    "item_index": 5,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_6b02b499456a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0a7265e14dbdb1e669829ddf3e7cb1078e1ea2f1c45c10b35e7fdb1c7f250280",
+    "item_index": 6,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ebe8a3b1fdc66a7ff65478affac00090530ba073678de791c6ae4eb2e26cf18d",
+    "item_index": 7,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "74ecbd9591e5e2bc678ca040f2bfa1c7c1a25a3a46489b5b648bea510fa19fc4",
+    "item_index": 8,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "864ec665fec13b11505ee2e7c792d3476a48964390612182ab5fffb0859964c5",
+    "item_index": 9,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "security_practices.json",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+=== Smoke: Pending Path (no approval -> no ticket) ===
+1. Start onboarding
+2. Select access
+3. Create approval (no approve call)
+4. Try ticket before approval (should be 409 with pre_approval_blocked=true)
+   Got 409 with pre_approval_blocked=true, ticket_created=false
+5. Verify audit contains ticket_blocked
+   Audit ticket_blocked found
+
+=== PENDING PATH PASSED ===

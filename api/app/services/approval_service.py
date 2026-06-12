@@ -15,6 +15,12 @@ def create_approval(db: Session, employee_id: str, request_id: str, manager_id: 
     if manager_id != emp.manager_id:
         return {"error": "WRONG_MANAGER"}
 
+    existing = db.query(ManagerApproval).filter(
+        ManagerApproval.request_id == request_id
+    ).first()
+    if existing:
+        return existing
+
     approval_id = _generate_approval_id()
     approval = ManagerApproval(
         approval_id=approval_id,
@@ -39,7 +45,11 @@ def approve_approval(db: Session, approval_id: str, decided_by: str, decision_re
     if approval.status != ApprovalStatus.PENDING:
         return approval
     if decided_by != approval.manager_id:
-        return None
+        return {
+            "error": "WRONG_MANAGER",
+            "expected_manager": approval.manager_id,
+            "decided_by": decided_by,
+        }
     approval.status = ApprovalStatus.APPROVED
     approval.decided_by = decided_by
     approval.decision_reason = decision_reason
@@ -54,6 +64,12 @@ def reject_approval(db: Session, approval_id: str, decided_by: str, decision_rea
         return None
     if approval.status != ApprovalStatus.PENDING:
         return approval
+    if decided_by != approval.manager_id:
+        return {
+            "error": "WRONG_MANAGER",
+            "expected_manager": approval.manager_id,
+            "decided_by": decided_by,
+        }
     approval.status = ApprovalStatus.REJECTED
     approval.decided_by = decided_by
     approval.decision_reason = decision_reason

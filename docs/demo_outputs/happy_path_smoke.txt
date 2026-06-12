@@ -1,0 +1,20 @@
+=== Smoke: Happy Path (approve -> ticket created) ===
+1. Demo reset
+2. Health check
+3. Readiness check
+4. Version check
+5. HR profile lookup
+6. Training status
+7. Salesforce profile
+8. Access recommendations
+9. Start onboarding
+10. Select access (valid)
+11. Create approval
+12. Try ticket before approval (should block with 409 + pre_approval_blocked=true)
+   HTTP 409, pre_approval_blocked=true, ticket_created=false
+13. Manager approves
+14. Create ticket (should succeed)
+15. Check idempotency
+16. Audit events exist
+
+=== HAPPY PATH PASSED ===

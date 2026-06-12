@@ -1,0 +1,125 @@
+[
+  {
+    "phase": "first_day",
+    "phase_label": "First Day",
+    "tasks": [
+      "Company orientation. (Remember to bring two forms of ID and your I-9 form.)",
+      "Attend Company orientation and take oath of office.",
+      "After orientation is over, call or text your buddy who will walk with you to Company.",
+      "Receive your laptop, badge, and phone.",
+      "Log onto your Mac and change your root password.",
+      "Connect to Company’s secure network",
+      "Change your ENT (enterprise) password. This is your password for signing into systems administered by Company, including your email, calendar, and Google Drive.",
+      "Sign into your work email",
+      "Set up Company’s 2FA so that you can access your work email from outside of a federal building. Note: You must complete this task inside a federal building.",
+      "Set up Slack, our chat program, so that you can communicate with your colleagues",
+      "Add your contact information to the Company Staff Contact Document"
+    ],
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.474329+00:00"
+  },
+  {
+    "phase": "first_month",
+    "phase_label": "First Month",
+    "tasks": [
+      "Fill out OGE 450",
+      "Schedule a virtual tea with two coworkers",
+      "Receive necessary software licenses",
+      "Learn about Company Org Chart and Company’s relation to OCSIT",
+      "Confirm CHRIS account",
+      "Sign into Employee Express",
+      "Confirm OLU (Online Learning University) account.",
+      "Check to make sure all of your submitted benefits information is correct.",
+      "Take travel training so that you can travel.",
+      "Complete mandatory OLU trainings.",
+      "Fill out your Individual Development Plan.",
+      "Learn about Company Offsites",
+      "Ask to be added to Company Trello board"
+    ],
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.474348+00:00"
+  },
+  {
+    "phase": "first_week",
+    "phase_label": "First Week",
+    "tasks": [
+      "After receiving your work phone, set up 2FA.",
+      "Pick up badge",
+      "Set up GitHub account.",
+      "Set up VPN.",
+      "Set up printer",
+      "Sign up for listservs that interest you.",
+      "Meet with your director",
+      "Write your bio and submit a picture for the Company website",
+      "Add yourself to the Team API"
+    ],
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.474357+00:00"
+  },
+  {
+    "phase": "pre_arrival",
+    "phase_label": "Pre-Arrival",
+    "tasks": [
+      "Company Employee Benefits and Information",
+      "Company Onboarding Document",
+      "SF-144 - Statement of Prior Federal Service",
+      "I-9 - Employment Eligibility Verification",
+      "SF-256 - Self-Identification of Disability",
+      "SF-181 - Ethnicity and Race Identification",
+      "SF-1199 - Direct Deposit Sign-Up Form",
+      "W-4 - Federal Income Tax Withholding",
+      "State Tax Withholding Forms",
+      "RSIF - Reserve Status Identification Form",
+      "ECI - Emergency Contact Information",
+      "SF-2809 - Health Benefits Election Form",
+      "SF-2817 - Life Insurance Election Form",
+      "TSP-1 - Thrift Savings Plan Election Form",
+      "SF-1152 - Designation of Beneficiary (Unpaid Compensation)",
+      "Receive email from Team Talent and your buddy about your first week.",
+      "Read up on Company and Company orientation.",
+      "Send bio (3-5 lines) and preferred gender pronoun to your buddy."
+    ],
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.474367+00:00"
+  },
+  {
+    "phase": "second_day",
+    "phase_label": "Second Day",
+    "tasks": [
+      "Orientation classes begin. You will be taking a variety of Slack-based classes in the #Company-classes channel with your cohort",
+      "Make sure your Macbook is secure",
+      "Double check to make sure you have access to Company Calendars and double check your inbox to make sure you've received a note from Company-team@Company.gov.",
+      "Read your Office Guide to learn more about where you work",
+      "Attend Company’s weekly all-hands meeting",
+      "Fill out transit subsidy, if you commute via public transportation to work.",
+      "Make sure your Slack avatar and Google avatar contain a picture"
+    ],
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.474373+00:00"
+  }
+]

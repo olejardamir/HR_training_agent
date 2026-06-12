@@ -8,7 +8,7 @@
 
 ## What This Is
 
-A production‑shaped HR onboarding agent that:
+A governance‑first HR onboarding agent that:
 - Identifies new employee role, level, department, manager from HR source of truth.
 - Recommends access using role‑level policy + same‑role peer patterns.
 - Requires employee selection and asynchronous manager approval.
@@ -29,16 +29,18 @@ docker compose up --build
 ```
 
 Then in another terminal:
+
 ```bash
 # Check health
 curl http://localhost:8000/health
 
-# Import n8n workflow (open http://localhost:5678, import from file n8n/hr_onboarding_workflow.json)
+# Import n8n workflow (automated via CLI)
+bash scripts/import_n8n_workflow.sh
 
-# Run demo happy path
-curl -X POST http://localhost:5678/webhook/hr-onboarding \
+# Run demo — happy path
+curl -X POST http://localhost:5678/webhook/hr-onboarding/new-hire \
   -H "Content-Type: application/json" \
-  -d '{"employee_id":"emp_001","selected_systems":["Salesforce","Gong"],"auto_approve_manager":true}'
+  -d '{"employee_id":"emp_001","selected_systems":["Salesforce","Gong"],"approval_action":"approve"}'
 ```
 
 ---
@@ -46,10 +48,82 @@ curl -X POST http://localhost:5678/webhook/hr-onboarding \
 ## Services
 
 | Service | URL | Credentials |
-|---------|-----|--------------|
-| n8n workflow UI | http://localhost:5678 | none (self‑hosted) |
+|---------|-----|-------------|
+| n8n workflow UI | http://localhost:5678 | Authentication disabled for local demo |
 | FastAPI Swagger | http://localhost:8000/docs | none |
 | PostgreSQL | localhost:5432 | `hr_agent` / `hr_agent_dev_password` |
+
+---
+
+## Webhook Input Contract
+
+Trigger at `POST /webhook/hr-onboarding/new-hire`:
+
+```json
+{
+  "employee_id": "emp_001",
+  "selected_systems": ["Salesforce", "Gong"],
+  "approval_action": "approve"
+}
+```
+
+Supported `approval_action` values:
+
+| Value | Behavior |
+|-------|----------|
+| `approve` | Manager approves → ticket created |
+| `reject` | Manager rejects → no ticket |
+| `expire` | Approval expired → no ticket |
+| `pending` | No decision made → no ticket |
+| `wrong_manager` | Wrong manager attempts → blocked |
+
+Backward compatible: `auto_approve_manager=true` maps to `approve`, `false` to `pending`.
+
+---
+
+## Demo Scenarios
+
+See `docs/demo_walkthrough.md` for 7 guided scenarios (happy, pending, reject, expire,
+forbidden, wrong-manager, LLM fallback).
+
+---
+
+## Testing
+
+```bash
+# One-command verification (infra, tests, contracts, smokes)
+bash scripts/verify_all.sh
+
+# Or run individual checks:
+
+# Backend tests (84 tests)
+docker compose exec api pytest -v
+
+# Direct FastAPI smoke scripts
+bash scripts/smoke_happy_path.sh
+bash scripts/smoke_pending_path.sh
+bash scripts/smoke_reject_path.sh
+bash scripts/smoke_forbidden_path.sh
+bash scripts/smoke_llm_fallback.sh
+
+# n8n webhook smoke scripts (after workflow import)
+bash scripts/smoke_n8n_happy_path.sh
+bash scripts/smoke_n8n_reject_path.sh
+bash scripts/smoke_n8n_pending_path.sh
+bash scripts/smoke_n8n_expire_path.sh
+bash scripts/smoke_n8n_wrong_manager_path.sh
+bash scripts/smoke_n8n_forbidden_path.sh
+
+# Workflow contract validator (static + 24 negative tests)
+python3 scripts/validate_workflow_contract.py
+python3 scripts/validate_workflow_contract.py --negative
+
+# OpenAPI endpoint contract check
+python3 scripts/validate_openapi_contract.py
+
+# Regenerate evidence manifest
+python3 scripts/generate_evidence_manifest.py
+```
 
 ---
 
@@ -57,27 +131,15 @@ curl -X POST http://localhost:5678/webhook/hr-onboarding \
 
 | Component | Implementation | Production path |
 |-----------|----------------|-----------------|
-| HR platform | FastAPI + PostgreSQL fixture | Workday, BambooHR, etc. |
+| HR platform | FastAPI + PostgreSQL fixture | Workday, BambooHR |
 | Slack | FastAPI + `slack_messages` table | Real Slack API |
 | Training | FastAPI + fixture | LMS API |
 | ITSM | FastAPI + `itsm_tickets` table | ServiceNow, Jira SM |
-| LLM | Ollama or deterministic fallback | Enterprise LLM gateway |
+| LLM | Ollama (gemma2:2b) with deterministic template fallback | Enterprise LLM gateway |
+| Salesforce | FastAPI + `salesforce_profiles` table | Real Salesforce API |
 
-All mock services are **stateful** (PostgreSQL) and support failure cases (unknown employee, missing manager, etc.).
-
----
-
-## Testing
-
-Run the test suite:
-```bash
-docker compose exec api pytest -v
-```
-
-Critical tests:
-- `test_recommendations_for_emp_001` – checks role/level and peer patterns
-- `test_ticket_blocked_before_approval` – proves approval gate
-- `test_employee_summary_fallback` – LLM/fallback works without Ollama
+All mocks are **stateful** (PostgreSQL) and handle edge cases (unknown employee,
+missing manager, forbidden systems, wrong manager).
 
 ---
 
@@ -85,11 +147,11 @@ Critical tests:
 
 | Basic n8n onboarding | This agent |
 |----------------------|-------------|
-| Creates accounts / sends notifications | Recommends access based on role, level, and peer patterns |
-| Simple task list | Policy validation + asynchronous manager approval |
+| Creates accounts / sends notifications | Recommends access based on role, level, peer patterns |
+| Simple task list | Policy validation + async manager approval |
 | May create IT task directly | Ticket creation blocked until **approved** |
 | Minimal logging | Full audit trail with correlation ID |
-| LLM used for free‑form chat | LLM only for summaries, no authorization |
+| LLM for free‑form chat | LLM only for summaries, no authorization |
 
 ---
 
@@ -99,86 +161,102 @@ Critical tests:
 hr-onboarding-agent/
 ├── docker-compose.yml
 ├── .env.example
-├── evidence_manifest.json        # generated after full verification
+├── evidence_manifest.json
 ├── README.md
 ├── docs/
 │   ├── solution_design_1_2_pages.md
 │   ├── demo_walkthrough.md
-│   ├── standards_alignment.md
 │   ├── traceability_matrix.md
-│   └── evidence_manifest_example.md
+│   ├── final_verification_report.md
+│   ├── expected_outputs.md
+│   ├── backend_only_demo.md
+│   ├── dependency_license_attribution.md
+│   ├── environment_matrix.md
+│   ├── source_of_truth.md
+│   ├── claim_to_evidence_audit.md
+│   ├── generated_artifacts_policy.md
+│   ├── archive_boundary.md
+│   ├── demo_outputs/  (live-captured evidence)
+│   └── archive/       (historical planning docs)
 ├── scripts/
+│   ├── verify_all.sh
+│   ├── wait_for_stack.sh
+│   ├── import_n8n_workflow.sh
+│   ├── collect_evidence.sh
+│   ├── generate_evidence_manifest.py
+│   ├── validate_workflow_contract.py
+│   ├── validate_openapi_contract.py
 │   ├── validate_no_collapsed_files.py
 │   ├── validate_no_secrets.py
-│   ├── validate_workflow_contract.py
-│   ├── generate_evidence_manifest.py
 │   ├── smoke_happy_path.sh
 │   ├── smoke_pending_path.sh
 │   ├── smoke_reject_path.sh
 │   ├── smoke_forbidden_path.sh
-│   └── smoke_llm_fallback.sh
+│   ├── smoke_llm_fallback.sh
+│   ├── smoke_n8n_happy_path.sh
+│   ├── smoke_n8n_reject_path.sh
+│   ├── smoke_n8n_pending_path.sh
+│   ├── smoke_n8n_expire_path.sh
+│   ├── smoke_n8n_wrong_manager_path.sh
+│   └── smoke_n8n_forbidden_path.sh
 ├── n8n/
 │   └── hr_onboarding_workflow.json
-├── api/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── models.py
-│   │   ├── database.py
-│   │   ├── seed.py
-│   │   ├── schemas.py
-│   │   ├── fixtures/
-│   │   │   ├── employees.json
-│   │   │   ├── training_status.json
-│   │   │   ├── role_access_policies.json
-│   │   │   ├── peer_access_patterns.json
-│   │   │   ├── department_standards.json
-│   │   │   └── salesforce_profiles.json
-│   │   ├── logic/
-│   │   │   └── access_recommender.py
-│   │   └── services/
-│   │       ├── approval_service.py
-│   │       ├── itsm_service.py
-│   │       ├── audit_service.py
-│   │       └── llm_service.py
-│   └── tests/
-│       ├── test_access_recommender.py
-│       ├── test_approval_gate.py
-│       └── test_llm_fallback.py
-└── private/                     # implementation guides (not needed at runtime)
+└── api/
+    ├── app/ (FastAPI)
+    │   ├── routers/ (endpoints)
+    │   ├── services/ (business logic)
+    │   ├── logic/ (recommender)
+    │   ├── models.py, schemas.py, seed.py
+    │   └── fixtures/ (seed data)
+    └── tests/ (pytest)
 ```
 
 ---
 
-## Production Evolution
+## Evidence & Verification
 
-See `docs/solution_design_1_2_pages.md` for the production path. In summary:
-- Replace mocks with real SaaS APIs (Workday, Slack, ServiceNow, etc.)
-- Add OIDC/OAuth2 authentication
-- Use a secrets manager
-- Replace local Ollama with enterprise LLM endpoint
-- Export audit logs to SIEM
+Every commit is verified against 20 checks in `evidence_manifest.json`. See also `docs/generated_artifacts_policy.md` for which files are committed evidence vs local artifacts.
+
+```
+docker compose config -q                      # Compose file valid
+curl -fsS http://localhost:8000/health         # API healthy
+curl -fsS http://localhost:8000/ready          # DB + seed loaded
+docker compose exec -T api pytest -q           # 84 tests pass
+scripts/validate_workflow_contract.py          # Workflow matches contract
+scripts/validate_openapi_contract.py           # OpenAPI endpoint conformance
+scripts/validate_no_collapsed_files.py         # No truncated files
+scripts/validate_no_secrets.py                 # No credentials leaked
+smoke_happy_path.sh                            # Approve → ticket
+smoke_pending_path.sh                          # Pending → no ticket
+smoke_reject_path.sh                           # Reject → no ticket
+smoke_forbidden_path.sh                        # Forbidden → 403
+smoke_llm_fallback.sh                          # Ollama or fallback text
+bash scripts/smoke_n8n_happy_path.sh           # n8n webhook approve path
+bash scripts/smoke_n8n_reject_path.sh          # n8n webhook reject path
+bash scripts/smoke_n8n_pending_path.sh         # n8n webhook pending path
+bash scripts/smoke_n8n_expire_path.sh          # n8n webhook expire path
+bash scripts/smoke_n8n_wrong_manager_path.sh   # n8n webhook wrong-manager path
+bash scripts/smoke_n8n_forbidden_path.sh       # n8n webhook forbidden path
+scripts/validate_workflow_contract.py --negative    # Negative tests (24 mutants)
+scripts/validate_evidence_manifest_freshness.py     # Manifest commit matches HEAD
+```
+
+---
+
+## If n8n import fails on your machine
+
+1. The **backend-only smoke path** (`bash scripts/smoke_happy_path.sh` etc.) still proves the governance logic — see `docs/backend_only_demo.md`.
+2. The n8n workflow JSON (`n8n/hr_onboarding_workflow.json`) can be inspected statically.
+3. The workflow contract validator (`scripts/validate_workflow_contract.py`) confirms endpoint/field alignment.
+4. Golden response snapshots are in `docs/demo_outputs/golden_responses/`.
 
 ---
 
 ## License & Attribution
 
-This prototype is built for a candidate exercise. All external standards are referenced for alignment; no compliance claim is made. The n8n workflow is original but inspired by public patterns; the value is the custom backend governance.
+This prototype is built for a candidate exercise. All external standards are
+referenced for alignment; no compliance claim is made. See `docs/dependency_license_attribution.md` for details.
 
 ---
 
-## Evaluation Checklist
-
-The evaluator can verify:
-- [ ] Runs on Linux without paid services
-- [ ] Role/level sourced from HR mock, not user input
-- [ ] Recommendations include peer‑pattern reason codes
-- [ ] Forbidden systems rejected
-- [ ] Pre‑approval ticket attempt blocked (403)
-- [ ] Post‑approval ticket created (idempotent)
-- [ ] Audit trail shows correlation ID
-- [ ] LLM/fallback works without external keys
-- [ ] Differentiators from basic templates are documented
-
----
-
-**Ready to demo?** Follow `docs/demo_walkthrough.md` for a 5‑minute guided tour.
+**Ready to demo?** Follow `docs/demo_walkthrough.md` for a guided tour of all 7 paths.

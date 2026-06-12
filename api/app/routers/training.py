@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
+from starlette.responses import JSONResponse
 from sqlalchemy.orm import Session
 from ..database import get_db
 from ..schemas import (
@@ -28,11 +29,18 @@ def patch_training_module(employee_id: str, module_id: str,
                           db: Session = Depends(get_db)):
     allowed_modules = {"T1", "T2", "T3", "T4"}
     if module_id not in allowed_modules:
-        raise HTTPException(status_code=400,
-                            detail="Only modules T1-T4 are supported")
+        return JSONResponse(status_code=400, content={
+            "ok": False, "status": "ERROR",
+            "error_code": "INVALID_MODULE",
+            "message": "Only modules T1-T4 are supported",
+        })
     allowed_statuses = {"complete", "incomplete", "not_required_yet", "blocked"}
     if request.status not in allowed_statuses:
-        raise HTTPException(status_code=400, detail=f"Invalid status '{request.status}'")
+        return JSONResponse(status_code=400, content={
+            "ok": False, "status": "ERROR",
+            "error_code": "INVALID_STATUS",
+            "message": f"Invalid status '{request.status}'",
+        })
 
     result = update_module(db, employee_id, module_id, request.status)
     log_event(db, request.correlation_id, employee_id, "employee", employee_id,

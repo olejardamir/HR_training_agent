@@ -1,0 +1,210 @@
+{
+  "command": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/tools/data_prep/run_data_prep.py --force --generate-json --generate-fixtures --generate-content",
+  "raw_files_found": 22,
+  "readable_files": 22,
+  "unreadable_files": 0,
+  "unsupported_files": 0,
+  "duplicate_sources": 0,
+  "near_duplicate_sources": 0,
+  "detected_topics": [
+    "general_onboarding",
+    "manager_approval",
+    "salesforce_setup",
+    "it_ticketing",
+    "role_specific_training",
+    "role_access_policy",
+    "security_training",
+    "systems_access_training",
+    "slack_profile_setup",
+    "privacy_compliance_training",
+    "hr_faq"
+  ],
+  "cleaned_source_files_generated": 22,
+  "review_packet_files_generated": 11,
+  "warnings": [],
+  "errors": [],
+  "source_coverage_gaps": [
+    "No source support for topic: employee_profile_setup"
+  ],
+  "source_coverage_matrix": {
+    "general_onboarding": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_3a2a06cb8b7c",
+        "src_0554e04f527e",
+        "src_7e07631ff1ab",
+        "src_08ea2735d9d8",
+        "src_5c5042e7ae18",
+        "src_79d367a0c008",
+        "src_72b55285f6ff",
+        "src_7cb5866f767a",
+        "src_c289345f25e7",
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a",
+        "src_09610df40185"
+      ],
+      "notes": ""
+    },
+    "security_training": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_3a2a06cb8b7c",
+        "src_79d367a0c008",
+        "src_5542b3f65212",
+        "src_d90b516ce1da",
+        "src_bc71d90aeef0",
+        "src_0985445747e4",
+        "src_c289345f25e7",
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a",
+        "src_09610df40185"
+      ],
+      "notes": ""
+    },
+    "privacy_compliance_training": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_3a2a06cb8b7c",
+        "src_7e07631ff1ab",
+        "src_d476a7c48f15",
+        "src_5c5042e7ae18",
+        "src_79d367a0c008",
+        "src_628d9b404413",
+        "src_5542b3f65212",
+        "src_72b55285f6ff",
+        "src_8aae5c1ff70d",
+        "src_d90b516ce1da",
+        "src_e7637d180d27",
+        "src_bc71d90aeef0",
+        "src_0985445747e4",
+        "src_7cb5866f767a",
+        "src_c289345f25e7",
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a",
+        "src_09610df40185"
+      ],
+      "notes": ""
+    },
+    "role_specific_training": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_3a2a06cb8b7c",
+        "src_0554e04f527e",
+        "src_7e07631ff1ab",
+        "src_08ea2735d9d8",
+        "src_d476a7c48f15",
+        "src_5c5042e7ae18",
+        "src_79d367a0c008",
+        "src_628d9b404413",
+        "src_5542b3f65212",
+        "src_72b55285f6ff",
+        "src_d90b516ce1da",
+        "src_e7637d180d27",
+        "src_bc71d90aeef0",
+        "src_0985445747e4",
+        "src_7cb5866f767a",
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a",
+        "src_09610df40185"
+      ],
+      "notes": ""
+    },
+    "systems_access_training": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_72b55285f6ff",
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a"
+      ],
+      "notes": ""
+    },
+    "employee_profile_setup": {
+      "support_level": "none",
+      "supporting_source_ids": [],
+      "notes": "No usable source support in RAW_DATA."
+    },
+    "slack_profile_setup": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_3a2a06cb8b7c",
+        "src_c289345f25e7",
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a",
+        "src_09610df40185"
+      ],
+      "notes": ""
+    },
+    "salesforce_setup": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a"
+      ],
+      "notes": ""
+    },
+    "manager_approval": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_7cb5866f767a",
+        "src_09610df40185"
+      ],
+      "notes": ""
+    },
+    "it_ticketing": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a"
+      ],
+      "notes": ""
+    },
+    "role_access_policy": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a"
+      ],
+      "notes": ""
+    },
+    "hr_faq": {
+      "support_level": "strong",
+      "supporting_source_ids": [
+        "src_3a2a06cb8b7c",
+        "src_0554e04f527e",
+        "src_7e07631ff1ab",
+        "src_08ea2735d9d8",
+        "src_79d367a0c008",
+        "src_628d9b404413",
+        "src_5542b3f65212",
+        "src_8aae5c1ff70d",
+        "src_39cd9ae52a58",
+        "src_bc71d90aeef0",
+        "src_0985445747e4",
+        "src_7cb5866f767a",
+        "src_9f74c55137dd",
+        "src_4bb6ac8681cc",
+        "src_6b02b499456a",
+        "src_09610df40185"
+      ],
+      "notes": ""
+    }
+  },
+  "unsafe_or_rejected_claims": [],
+  "items_needing_human_review": [],
+  "validation_result": "pass",
+  "db_insertion_performed": false,
+  "final_fixture_json_generated": false,
+  "rag_chunks_generated": false,
+  "vector_index_built": false,
+  "runtime_agent_modified": false,
+  "later_use_readiness": "ready_for_review"
+}

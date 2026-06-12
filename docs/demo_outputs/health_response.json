@@ -1,0 +1,6 @@
+{
+    "ok": true,
+    "status": "healthy",
+    "service": "hr-onboarding-api",
+    "version": "0.1.0"
+}

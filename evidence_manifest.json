@@ -1,15 +1,32 @@
 {
-  "generated_at": "2026-06-12T12:13:12Z",
-  "repo_commit": "local",
-  "test_results": {
-    "pytest": "63 passed",
-    "smoke_happy_path": "PASS",
-    "smoke_pending": "PASS",
-    "smoke_reject": "PASS",
-    "smoke_forbidden": "PASS",
-    "smoke_llm_fallback": "PASS",
-    "workflow_contract": "PASS",
-    "no_collapsed_files": "PASS",
-    "no_secrets": "PASS"
+  "generated_at": "2026-06-13T02:12:30Z",
+  "verified_commit": "44bcd48b37411e2421de4bb499b7d80c6af6fa0b",
+  "checks": {
+    "docker_compose_config": "pass",
+    "api_health": "pass",
+    "api_ready": "pass",
+    "pytest": "pass",
+    "n8n_workflow_static_validation": "pass",
+    "n8n_workflow_negative_validation": "pass",
+    "no_collapsed_files": "pass",
+    "no_secrets": "pass",
+    "openapi_contract": "pass",
+    "happy_path_smoke": "pass",
+    "pending_path_smoke": "pass",
+    "reject_path_smoke": "pass",
+    "forbidden_path_smoke": "pass",
+    "llm_fallback_smoke": "pass",
+    "n8n_webhook_smoke": "pass",
+    "n8n_reject_path_smoke": "pass",
+    "n8n_pending_path_smoke": "pass",
+    "n8n_expire_path_smoke": "pass",
+    "n8n_wrong_manager_path_smoke": "pass",
+    "n8n_forbidden_path_smoke": "pass"
+  },
+  "artifacts": {
+    "workflow": "n8n/hr_onboarding_workflow.json",
+    "solution_design": "docs/solution_design_1_2_pages.md",
+    "demo_walkthrough": "docs/demo_walkthrough.md",
+    "traceability": "docs/traceability_matrix.md"
   }
 }

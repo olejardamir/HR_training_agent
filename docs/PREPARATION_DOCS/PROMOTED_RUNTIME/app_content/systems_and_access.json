@@ -1,0 +1,58 @@
+[
+  {
+    "content_preview": "GitLab Onboarding | The GitLab Handbook View page source Edit this page Manage maintainers Maintainers @rallen3 On This Page GitLab Onboarding Onboarding at GitLab and Onboarding Issue Templates Onboarding is incredibly important at GitLab. We don&rsquo;t expect you to hit the ground running from day one. We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training. Please feel free to participate in your team&rsquo;",
+    "filename": "src_4bb6ac8681cc__gitlab_general_onboarding.html",
+    "source_id": "src_4bb6ac8681cc",
+    "source_ids": [
+      "src_4bb6ac8681cc"
+    ],
+    "systems_mentioned": [
+      "email",
+      "identity_provider",
+      "slack"
+    ]
+  },
+  {
+    "content_preview": "GitLab IT Onboarding 101 | The GitLab Handbook View page source Edit this page Manage maintainers Maintainers @smanzuik @dzhu-gl On This Page GitLab IT Onboarding 101 Welcome To GitLab Congratulations on joining GitLab! This page is dedicated to the IT onboarding experience, here at GitLab we use many applications and the latest hardware to enable you to complete your work to the best of your ability! While it may seen a little bit overwhelming at the start the Team member enablement team is her",
+    "filename": "src_6b02b499456a__gitlab_it_onboarding101.html",
+    "source_id": "src_6b02b499456a",
+    "source_ids": [
+      "src_6b02b499456a"
+    ],
+    "systems_mentioned": [
+      "email",
+      "identity_provider",
+      "slack"
+    ]
+  },
+  {
+    "content_preview": "CSE Team Member Onboarding | The GitLab Handbook View page source Edit this page Manage maintainers Maintainers @afrusciano @esivak On This Page CSE Team Member Onboarding Overview of CSE Onboarding Onboarding for Customer Success Engineers at GitLab is a guided, methodical process to ensure new team members have the knowledge and skills they need to engage customers effectively at scale. This page provides an overview of what to expect during your onboarding journey, including learning objectiv",
+    "filename": "src_9f74c55137dd__gitlab_customer_success_onboarding.html",
+    "source_id": "src_9f74c55137dd",
+    "source_ids": [
+      "src_9f74c55137dd"
+    ],
+    "systems_mentioned": [
+      "identity_provider",
+      "monitoring",
+      "slack"
+    ]
+  },
+  {
+    "content_preview": "# Our Internal Systems\n\nBesides the customer-facing applications, like the different versions of Workplace, we have a number of internal systems that help us support, report, and operate the company. They are as follows:\n\n## Queenbee\n\nQueenbee is our invoice, accounting, and identity system. Here you can look up any customer account, see whether they are comped, refund an invoice, or even login as a customer.\n\nThat’s an immense amount of power and we take its use very seriously. We only ever logi",
+    "filename": "src_5542b3f65212__our-internal-systems.md",
+    "source_id": "src_5542b3f65212",
+    "source_ids": [
+      "src_5542b3f65212"
+    ],
+    "systems_mentioned": [
+      "Queenbee",
+      "Sentry",
+      "Grafana",
+      "Dash",
+      "Omarchy",
+      "Kandji",
+      "Shipshape"
+    ]
+  }
+]

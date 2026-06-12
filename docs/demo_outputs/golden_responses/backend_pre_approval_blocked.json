@@ -1,0 +1,18 @@
+{
+  "ok": false,
+  "status": "BLOCKED",
+  "ticket_id": null,
+  "request_id": null,
+  "approval_id": "apr_9b17810455ad4455b9a803cbb4973da5",
+  "employee_id": "emp_001",
+  "requested_systems": null,
+  "ticket_created": false,
+  "duplicate": false,
+  "pre_approval_blocked": true,
+  "correlation_id": "corr_<uuid/dynamic>",
+  "error_code": "MANAGER_APPROVAL_REQUIRED",
+  "reason_code": "MANAGER_APPROVAL_REQUIRED",
+  "message": "A valid manager approval is required before ticket creation.",
+  "recoverable": true,
+  "next_action": "WAIT_FOR_MANAGER_APPROVAL"
+}

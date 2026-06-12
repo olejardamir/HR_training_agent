@@ -1,0 +1,20 @@
+{
+  "checked_files": [
+    "app_content/hr_policies.json",
+    "app_content/onboarding_content.json",
+    "app_content/onboarding_guides.json",
+    "app_content/onboarding_tasks.json",
+    "app_content/role_skill_matrices.json",
+    "app_content/security_practices.json",
+    "app_content/systems_and_access.json",
+    "app_content/training_content.json",
+    "app_content/training_modules.json",
+    "app_fixtures/department_standards.json",
+    "app_fixtures/role_access_policies.json",
+    "app_knowledge/source_chunks.json"
+  ],
+  "errors": [],
+  "generated_at": "2026-06-13T01:20:06+00:00",
+  "tool_version": "5.0",
+  "warnings": []
+}

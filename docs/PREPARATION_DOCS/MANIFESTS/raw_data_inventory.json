@@ -1,0 +1,860 @@
+[
+  {
+    "source_id": "src_3a2a06cb8b7c",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/18f_new_hire_checklist.md",
+    "filename": "18f_new_hire_checklist.md",
+    "extension": ".md",
+    "size_bytes": 22652,
+    "sha256": "10f580ea4a00bc0f2011863a88a54d845f90185a3fb03ce480f2af4eac4f4a3b",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 544,
+    "word_count": 1828,
+    "probable_topics": [
+      "general_onboarding",
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "slack_profile_setup",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "onboarding",
+      "2fa",
+      "nda",
+      "support",
+      "slack",
+      "benefits"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://checklistomania.apps.cloud.gov/",
+    "source_title": null,
+    "source_organization": "18F (U.S. GSA)",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://checklistomania.apps.cloud.gov/"
+    ]
+  },
+  {
+    "source_id": "src_0554e04f527e",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/README.md",
+    "filename": "README.md",
+    "extension": ".md",
+    "size_bytes": 2176,
+    "sha256": "42db6f898fbee62bfd06f92907c3cbbbe4fac21664209669451622d24d6671b6",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 28,
+    "word_count": 192,
+    "probable_topics": [
+      "general_onboarding",
+      "role_specific_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "getting started",
+      "designer",
+      "benefits"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://basecamp.com/handbook",
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://basecamp.com/handbook"
+    ]
+  },
+  {
+    "source_id": "src_7e07631ff1ab",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/benefits-and-perks.md",
+    "filename": "benefits-and-perks.md",
+    "extension": ".md",
+    "size_bytes": 13718,
+    "sha256": "9cdac8d92933ab074910a8b11d2bf7ddfa0d90d7d60254d7a9fbc016425ac22a",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 137,
+    "word_count": 2217,
+    "probable_topics": [
+      "general_onboarding",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "first day",
+      "nda",
+      "lead",
+      "benefits"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://3.basecamp.com/2914079/buckets/28168307/vaults/5060979274",
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://3.basecamp.com/2914079/buckets/28168307/vaults/5060979274"
+    ]
+  },
+  {
+    "source_id": "src_08ea2735d9d8",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/getting-started.md",
+    "filename": "getting-started.md",
+    "extension": ".md",
+    "size_bytes": 3182,
+    "sha256": "85c289c06720331588ccb25df3be74a827f88d9135a8036fc19c5df8dac7ac53",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 23,
+    "word_count": 530,
+    "probable_topics": [
+      "general_onboarding",
+      "role_specific_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "onboarding",
+      "support",
+      "benefits"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://omarchy.org",
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://omarchy.org"
+    ]
+  },
+  {
+    "source_id": "src_d476a7c48f15",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/how-we-work.md",
+    "filename": "how-we-work.md",
+    "extension": ".md",
+    "size_bytes": 6608,
+    "sha256": "f2210e454b3cc2078edcbb93af3a442da11ba54bddea099f7011faf4d8083625",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 65,
+    "word_count": 1038,
+    "probable_topics": [
+      "privacy_compliance_training",
+      "role_specific_training"
+    ],
+    "content_signals": [
+      "nda",
+      "lead"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://basecamp.com/books/remote",
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://basecamp.com/books/remote"
+    ]
+  },
+  {
+    "source_id": "src_5c5042e7ae18",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/making-a-career.md",
+    "filename": "making-a-career.md",
+    "extension": ".md",
+    "size_bytes": 6098,
+    "sha256": "c10f902253fe1a795a514c789078f76582ae91957c6526598e3baac7e55c4f51",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 54,
+    "word_count": 921,
+    "probable_topics": [
+      "general_onboarding",
+      "privacy_compliance_training",
+      "role_specific_training"
+    ],
+    "content_signals": [
+      "day one",
+      "nda",
+      "junior"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://world.hey.com/jason/on-hiring-rehiring-and-one-question-to-answer-them-all-5db97bcb",
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://world.hey.com/jason/on-hiring-rehiring-and-one-question-to-answer-them-all-5db97bcb"
+    ]
+  },
+  {
+    "source_id": "src_79d367a0c008",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/managing-work-devices.md",
+    "filename": "managing-work-devices.md",
+    "extension": ".md",
+    "size_bytes": 2954,
+    "sha256": "9d8c6d61069aafd094df14bc78f99a679c013fdee59104fb13f01474bd68a882",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 24,
+    "word_count": 431,
+    "probable_topics": [
+      "general_onboarding",
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "onboarding",
+      "security",
+      "nda",
+      "support",
+      "leave"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://github.com/basecamp/handbook/blob/f094e5f8b778515d363d84c9ae139cc006b66f3b/getting-started.md#your-first-few-days",
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://github.com/basecamp/handbook/blob/f094e5f8b778515d363d84c9ae139cc006b66f3b/getting-started.md#your-first-few-days"
+    ]
+  },
+  {
+    "source_id": "src_628d9b404413",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/moonlighting.md",
+    "filename": "moonlighting.md",
+    "extension": ".md",
+    "size_bytes": 3543,
+    "sha256": "75c5ed2e01415d75a3b18501806b131c5a7736a2c14f8c5c7cc54638b607b972",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 35,
+    "word_count": 618,
+    "probable_topics": [
+      "privacy_compliance_training",
+      "role_specific_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "nda",
+      "designer",
+      "vacation"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": null,
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "No URL found in raw text"
+    ]
+  },
+  {
+    "source_id": "src_5542b3f65212",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/our-internal-systems.md",
+    "filename": "our-internal-systems.md",
+    "extension": ".md",
+    "size_bytes": 2856,
+    "sha256": "d08913b68b9743b87269becccecd635b1e5583c5a6a1b0df691e4ebf484f0f4e",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 44,
+    "word_count": 411,
+    "probable_topics": [
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "security",
+      "confidential",
+      "lead",
+      "pto"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://billing.37signals.com",
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://billing.37signals.com"
+    ]
+  },
+  {
+    "source_id": "src_72b55285f6ff",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/our-rituals.md",
+    "filename": "our-rituals.md",
+    "extension": ".md",
+    "size_bytes": 1858,
+    "sha256": "983ee127c83cb309b7c70bb89b606ad4a186078a058fd08162637a83494ed3d1",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 20,
+    "word_count": 309,
+    "probable_topics": [
+      "general_onboarding",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "systems_access_training"
+    ],
+    "content_signals": [
+      "new hire",
+      "nda",
+      "support",
+      "iam"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": null,
+    "source_title": null,
+    "source_organization": null,
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "No URL found in raw text"
+    ]
+  },
+  {
+    "source_id": "src_8aae5c1ff70d",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/severance.md",
+    "filename": "severance.md",
+    "extension": ".md",
+    "size_bytes": 1079,
+    "sha256": "4186bbcccf9f96dfce9fb493663dd5abb85d9fcc4d7f9042c1218c6f12347800",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 8,
+    "word_count": 175,
+    "probable_topics": [
+      "privacy_compliance_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "nda",
+      "vacation"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": null,
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "No URL found in raw text"
+    ]
+  },
+  {
+    "source_id": "src_39cd9ae52a58",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/stateFMLA.md",
+    "filename": "stateFMLA.md",
+    "extension": ".md",
+    "size_bytes": 6624,
+    "sha256": "507af0055b6b3fe29865501a8fe1737b75a28515ff3f6de5a14a65f21b52ed13",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 40,
+    "word_count": 853,
+    "probable_topics": [
+      "hr_faq"
+    ],
+    "content_signals": [
+      "benefits"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://3.basecamp.com/2914079/buckets/28168307/vaults/9398609755",
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://3.basecamp.com/2914079/buckets/28168307/vaults/9398609755"
+    ]
+  },
+  {
+    "source_id": "src_d90b516ce1da",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/titles-for-QA.md",
+    "filename": "titles-for-QA.md",
+    "extension": ".md",
+    "size_bytes": 5578,
+    "sha256": "57f04606ff63b25dedad5073be8983f31a802279d29369d5d433f8a75be522fe",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 18,
+    "word_count": 831,
+    "probable_topics": [
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training"
+    ],
+    "content_signals": [
+      "security",
+      "nda",
+      "junior"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": null,
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "No URL found in raw text"
+    ]
+  },
+  {
+    "source_id": "src_e7637d180d27",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/titles-for-designers.md",
+    "filename": "titles-for-designers.md",
+    "extension": ".md",
+    "size_bytes": 9497,
+    "sha256": "1f8e512b3fc3e099084f590529b5ef40690fe910af674f45fec824fefc1d984f",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 21,
+    "word_count": 1563,
+    "probable_topics": [
+      "privacy_compliance_training",
+      "role_specific_training"
+    ],
+    "content_signals": [
+      "nda",
+      "junior"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": null,
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "No URL found in raw text"
+    ]
+  },
+  {
+    "source_id": "src_bc71d90aeef0",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/titles-for-ops.md",
+    "filename": "titles-for-ops.md",
+    "extension": ".md",
+    "size_bytes": 10909,
+    "sha256": "047f75bfafec8be3f11b83ec9f316691478a307de9ac0e8e4b19e682809eff3f",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 21,
+    "word_count": 1666,
+    "probable_topics": [
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "security",
+      "nda",
+      "junior",
+      "leave"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": null,
+    "source_title": null,
+    "source_organization": null,
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "No URL found in raw text"
+    ]
+  },
+  {
+    "source_id": "src_0985445747e4",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/titles-for-programmers.md",
+    "filename": "titles-for-programmers.md",
+    "extension": ".md",
+    "size_bytes": 10736,
+    "sha256": "c78fe35efc42f3539695edce83250f81ffd1fe4895a7745f9c7bf17c8d8296d0",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 31,
+    "word_count": 1579,
+    "probable_topics": [
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "security",
+      "nda",
+      "junior",
+      "leave"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": null,
+    "source_title": null,
+    "source_organization": null,
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "No URL found in raw text"
+    ]
+  },
+  {
+    "source_id": "src_7cb5866f767a",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook/titles-for-support.md",
+    "filename": "titles-for-support.md",
+    "extension": ".md",
+    "size_bytes": 16816,
+    "sha256": "3ef13dbc3e42138683d6a05b893e26e2373288c369449f668f4fd2ddb295f1a9",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 39,
+    "word_count": 2576,
+    "probable_topics": [
+      "general_onboarding",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "manager_approval",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "onboarding",
+      "nda",
+      "junior",
+      "approve",
+      "leave"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": null,
+    "source_title": null,
+    "source_organization": "Basecamp / 37signals",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "No URL found in raw text"
+    ]
+  },
+  {
+    "source_id": "src_c289345f25e7",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/ever_onboarding.md",
+    "filename": "ever_onboarding.md",
+    "extension": ".md",
+    "size_bytes": 3847,
+    "sha256": "713e40ffbdbffe6c1bcf469992165014952a7214d1dcd80dbd93c1eabe70ee54",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 34,
+    "word_count": 648,
+    "probable_topics": [
+      "general_onboarding",
+      "security_training",
+      "privacy_compliance_training",
+      "slack_profile_setup"
+    ],
+    "content_signals": [
+      "onboarding",
+      "2fa",
+      "nda",
+      "slack"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://slack.com/intl/en-us/downloads",
+    "source_title": null,
+    "source_organization": "Ever",
+    "publication_date": "unknown",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://slack.com/intl/en-us/downloads"
+    ]
+  },
+  {
+    "source_id": "src_9f74c55137dd",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/gitlab_customer_success_onboarding.html",
+    "filename": "gitlab_customer_success_onboarding.html",
+    "extension": ".html",
+    "size_bytes": 2301196,
+    "sha256": "1baac2d89e31bb40d5ac280cf3d35bcc80866937d1ded4d1805a491ed510067d",
+    "detected_type": "html",
+    "readable": true,
+    "line_count": 16744,
+    "word_count": 77393,
+    "probable_topics": [
+      "general_onboarding",
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "systems_access_training",
+      "slack_profile_setup",
+      "salesforce_setup",
+      "it_ticketing",
+      "role_access_policy",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "onboarding",
+      "security",
+      "privacy",
+      "role-specific",
+      "systems access",
+      "slack",
+      "salesforce",
+      "itsm",
+      "access policy",
+      "benefits"
+    ],
+    "extraction_method": "html_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "http://schema.org/WebPage",
+    "source_title": null,
+    "source_organization": "GitLab",
+    "publication_date": "2026-04-16",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: http://schema.org/WebPage"
+    ]
+  },
+  {
+    "source_id": "src_4bb6ac8681cc",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/gitlab_general_onboarding.html",
+    "filename": "gitlab_general_onboarding.html",
+    "extension": ".html",
+    "size_bytes": 2294679,
+    "sha256": "4f4a063ad538e53e072de9d66d658ad12e041df925b9da0f041f096bb50b94bf",
+    "detected_type": "html",
+    "readable": true,
+    "line_count": 16650,
+    "word_count": 76593,
+    "probable_topics": [
+      "general_onboarding",
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "systems_access_training",
+      "slack_profile_setup",
+      "salesforce_setup",
+      "it_ticketing",
+      "role_access_policy",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "onboarding",
+      "security",
+      "privacy",
+      "role-specific",
+      "systems access",
+      "slack",
+      "salesforce",
+      "itsm",
+      "access policy",
+      "benefits"
+    ],
+    "extraction_method": "html_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "http://schema.org/WebPage",
+    "source_title": null,
+    "source_organization": "GitLab",
+    "publication_date": "2026-05-19",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: http://schema.org/WebPage"
+    ]
+  },
+  {
+    "source_id": "src_6b02b499456a",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/gitlab_it_onboarding101.html",
+    "filename": "gitlab_it_onboarding101.html",
+    "extension": ".html",
+    "size_bytes": 2301315,
+    "sha256": "3e1b0d211be684aba9ea6ce7d815740ce33e6565e043ad933975e647698a5495",
+    "detected_type": "html",
+    "readable": true,
+    "line_count": 16782,
+    "word_count": 77434,
+    "probable_topics": [
+      "general_onboarding",
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "systems_access_training",
+      "slack_profile_setup",
+      "salesforce_setup",
+      "it_ticketing",
+      "role_access_policy",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "onboarding",
+      "security",
+      "privacy",
+      "senior",
+      "systems access",
+      "slack",
+      "salesforce",
+      "itsm",
+      "access policy",
+      "benefits"
+    ],
+    "extraction_method": "html_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "http://schema.org/WebPage",
+    "source_title": null,
+    "source_organization": "GitLab",
+    "publication_date": "2025-11-27",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: http://schema.org/WebPage"
+    ]
+  },
+  {
+    "source_id": "src_09610df40185",
+    "path": "/home/glompy/Desktop/OTHER_PROJECTS/HR_training_agent/docs/PREPARATION_DOCS/RAW_DATA/opengov_hr_manual.md",
+    "filename": "opengov_hr_manual.md",
+    "extension": ".md",
+    "size_bytes": 19241,
+    "sha256": "a40e08f5ad55c8f5785616b27c27cf56df20d5203ef7dca9d073c085010d7b07",
+    "detected_type": "markdown",
+    "readable": true,
+    "line_count": 253,
+    "word_count": 2909,
+    "probable_topics": [
+      "general_onboarding",
+      "security_training",
+      "privacy_compliance_training",
+      "role_specific_training",
+      "slack_profile_setup",
+      "manager_approval",
+      "hr_faq"
+    ],
+    "content_signals": [
+      "onboarding",
+      "password",
+      "confidential",
+      "senior",
+      "slack",
+      "approve",
+      "benefits"
+    ],
+    "extraction_method": "markdown_text",
+    "quality_score": "high",
+    "duplicate_of": null,
+    "near_duplicate_of": [],
+    "warnings": [],
+    "errors": [],
+    "source_url": "https://www.eeoc.gov/laws/index.cfm",
+    "source_title": null,
+    "source_organization": "OpenGov Foundation",
+    "publication_date": "2018-01-08",
+    "access_date": "unknown",
+    "provenance_notes": [
+      "URL found in raw text: https://www.eeoc.gov/laws/index.cfm"
+    ]
+  }
+]

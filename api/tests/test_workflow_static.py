@@ -33,3 +33,9 @@ def test_workflow_has_start():
         data = json.load(f)
     types = [n["type"] for n in data["nodes"]]
     assert "n8n-nodes-base.manualTrigger" in types or "n8n-nodes-base.webhook" in types
+
+
+def test_workflow_inactive_by_default():
+    with open(get_wf_path()) as f:
+        data = json.load(f)
+    assert data.get("active") is False, "Workflow must be inactive by default for import-readiness"

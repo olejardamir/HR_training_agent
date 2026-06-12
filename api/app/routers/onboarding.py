@@ -1,6 +1,6 @@
 import uuid
-from fastapi import APIRouter, Depends, HTTPException, Query
-from fastapi.responses import JSONResponse
+from fastapi import APIRouter, Depends, HTTPException
+from starlette.responses import JSONResponse
 from sqlalchemy.orm import Session
 from ..database import get_db
 from ..models import Employee, OnboardingSession, SelectedAccessRequest
@@ -20,9 +20,14 @@ router = APIRouter()
 @router.post("/onboarding/start/{employee_id}")
 def start_onboarding(employee_id: str, request: OnboardingStartRequest,
                      db: Session = Depends(get_db)):
+    if not employee_id or not employee_id.strip():
+        return JSONResponse(status_code=400, content={
+            "ok": False, "error_code": "INVALID_EMPLOYEE_ID",
+            "message": "Employee ID must not be empty",
+        })
     emp = get_employee(db, employee_id)
     if not emp:
-        raise HTTPException(status_code=404, detail={
+        return JSONResponse(status_code=404, content={
             "ok": False, "error_code": "EMPLOYEE_NOT_FOUND",
             "message": f"Employee {employee_id} not found",
         })
@@ -52,7 +57,10 @@ def get_onboarding_status(employee_id: str, db: Session = Depends(get_db)):
         OnboardingSession.employee_id == employee_id
     ).first()
     if not session:
-        raise HTTPException(status_code=404, detail="No onboarding session found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR", "error_code": "SESSION_NOT_FOUND",
+            "message": "No onboarding session found",
+        })
     return OnboardingStatusResponse(
         employee_id=session.employee_id,
         status="active",
@@ -67,7 +75,13 @@ def select_access(request: SelectAccessRequest, db: Session = Depends(get_db)):
     if "error" in validation:
         error = validation["error"]
         if error == "NO_ACTIVE_SESSION":
-            raise HTTPException(status_code=409, detail="No active onboarding session")
+            return JSONResponse(status_code=409, content={
+                "ok": False, "status": "BLOCKED",
+                "error_code": "NO_ACTIVE_SESSION",
+                "message": "No active onboarding session",
+                "employee_id": request.employee_id,
+                "correlation_id": request.correlation_id,
+            })
         if error == "FORBIDDEN_SYSTEM_SELECTED":
             log_event(db, request.correlation_id, request.employee_id,
                       "employee", request.employee_id,
@@ -75,8 +89,9 @@ def select_access(request: SelectAccessRequest, db: Session = Depends(get_db)):
                       "FORBIDDEN_SYSTEM_SELECTED",
                       {"system": validation.get("system")})
             db.commit()
-            raise HTTPException(status_code=403, detail={
-                "ok": False, "error_code": "FORBIDDEN_SYSTEM_SELECTED",
+            return JSONResponse(status_code=403, content={
+                "ok": False, "status": "BLOCKED",
+                "error_code": "FORBIDDEN_SYSTEM_SELECTED",
                 "message": f"System '{validation.get('system')}' is forbidden",
                 "employee_id": request.employee_id,
                 "correlation_id": request.correlation_id,
@@ -95,7 +110,11 @@ def select_access(request: SelectAccessRequest, db: Session = Depends(get_db)):
                 "employee_id": request.employee_id,
                 "correlation_id": request.correlation_id,
             })
-        raise HTTPException(status_code=400, detail=error)
+        return JSONResponse(status_code=400, content={
+            "ok": False, "status": "ERROR",
+            "error_code": error,
+            "message": "Selection validation failed",
+        })
 
     selected = validation["selected_systems"]
     request_id = f"req_{uuid.uuid4().hex[:12]}"
@@ -139,7 +158,10 @@ def onboarding_questions(request: OnboardingQuestionRequest,
 
     emp = get_employee(db, request.employee_id)
     if not emp:
-        raise HTTPException(status_code=404, detail="Employee not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR", "error_code": "EMPLOYEE_NOT_FOUND",
+            "message": "Employee not found",
+        })
 
     training = db.query(SelectedAccessRequest).filter(
         SelectedAccessRequest.employee_id == request.employee_id

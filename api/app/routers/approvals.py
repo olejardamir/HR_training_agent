@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
+from starlette.responses import JSONResponse
 from sqlalchemy.orm import Session
 from ..database import get_db
 from ..models import SelectedAccessRequest, Employee
@@ -42,10 +43,16 @@ def create_approval_endpoint(request: CreateApprovalRequest,
         Employee.employee_id == request.employee_id
     ).first()
     if not emp:
-        raise HTTPException(status_code=404, detail="Employee not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR",
+            "error_code": "EMPLOYEE_NOT_FOUND",
+            "message": "Employee not found",
+            "employee_id": request.employee_id,
+        })
     if not emp.manager_id:
-        raise HTTPException(status_code=409, detail={
-            "ok": False, "error_code": "MISSING_MANAGER",
+        return JSONResponse(status_code=409, content={
+            "ok": False, "status": "BLOCKED",
+            "error_code": "MISSING_MANAGER",
             "message": "Employee has no manager assigned",
             "employee_id": request.employee_id,
         })
@@ -55,8 +62,9 @@ def create_approval_endpoint(request: CreateApprovalRequest,
                   "wrong_manager_blocked", "approval", None,
                   "BLOCKED", "WRONG_MANAGER",
                   {"expected_manager": emp.manager_id})
-        raise HTTPException(status_code=403, detail={
-            "ok": False, "error_code": "WRONG_MANAGER",
+        return JSONResponse(status_code=403, content={
+            "ok": False, "status": "BLOCKED",
+            "error_code": "WRONG_MANAGER",
             "message": f"Expected manager {emp.manager_id}, got {request.manager_id}",
             "employee_id": request.employee_id,
         })
@@ -66,12 +74,21 @@ def create_approval_endpoint(request: CreateApprovalRequest,
         SelectedAccessRequest.request_id == request_id
     ).first()
     if not selection:
-        raise HTTPException(status_code=404, detail="Selection request not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR",
+            "error_code": "SELECTION_NOT_FOUND",
+            "message": "Selection request not found",
+            "request_id": str(request_id),
+        })
 
     approval = create_approval(db, request.employee_id, selection.request_id,
                                request.manager_id)
     if isinstance(approval, dict) and "error" in approval:
-        raise HTTPException(status_code=400, detail=approval["error"])
+        return JSONResponse(status_code=400, content={
+            "ok": False, "status": "ERROR",
+            "error_code": approval["error"],
+            "message": f"Approval creation failed: {approval['error']}",
+        })
 
     selection.approval_id = approval.approval_id
     db.commit()
@@ -89,7 +106,11 @@ def get_approval_endpoint(approval_id: str, correlation_id: str = None,
                           db: Session = Depends(get_db)):
     approval = get_approval(db, approval_id)
     if not approval:
-        raise HTTPException(status_code=404, detail="Approval not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR",
+            "error_code": "APPROVAL_NOT_FOUND",
+            "message": f"Approval {approval_id} not found",
+        })
     return _build_approval_response(approval, correlation_id or "")
 
 
@@ -99,9 +120,16 @@ def approve(approval_id: str, request: ApprovalDecisionRequest,
     approval = approve_approval(db, approval_id, request.decided_by,
                                 request.decision_reason)
     if not approval:
-        raise HTTPException(status_code=403, detail={
-            "ok": False, "error_code": "NOT_AUTHORIZED",
-            "message": "Not authorized or approval not found",
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR",
+            "error_code": "APPROVAL_NOT_FOUND",
+            "message": f"Approval {approval_id} not found",
+        })
+    if isinstance(approval, dict) and "error" in approval:
+        return JSONResponse(status_code=403, content={
+            "ok": False, "status": "BLOCKED",
+            "error_code": "WRONG_MANAGER",
+            "message": f"Wrong manager. Expected {approval['expected_manager']}, got {approval['decided_by']}",
         })
     log_event(db, request.correlation_id, approval.employee_id,
               "manager", request.decided_by,
@@ -117,9 +145,16 @@ def reject(approval_id: str, request: ApprovalDecisionRequest,
     approval = reject_approval(db, approval_id, request.decided_by,
                                request.decision_reason)
     if not approval:
-        raise HTTPException(status_code=403, detail={
-            "ok": False, "error_code": "NOT_AUTHORIZED",
-            "message": "Not authorized or approval not found",
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR",
+            "error_code": "APPROVAL_NOT_FOUND",
+            "message": f"Approval {approval_id} not found",
+        })
+    if isinstance(approval, dict) and "error" in approval:
+        return JSONResponse(status_code=403, content={
+            "ok": False, "status": "BLOCKED",
+            "error_code": "WRONG_MANAGER",
+            "message": f"Wrong manager. Expected {approval['expected_manager']}, got {approval['decided_by']}",
         })
     log_event(db, request.correlation_id, approval.employee_id,
               "manager", request.decided_by,
@@ -135,7 +170,11 @@ def expire(approval_id: str, request: ApprovalDecisionRequest = None,
     correlation_id = request.correlation_id if request else ""
     approval = expire_approval(db, approval_id)
     if not approval:
-        raise HTTPException(status_code=404, detail="Approval not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR",
+            "error_code": "APPROVAL_NOT_FOUND",
+            "message": f"Approval {approval_id} not found",
+        })
     if correlation_id:
         log_event(db, correlation_id, approval.employee_id,
                   "system", "system",

@@ -60,7 +60,7 @@ All external SaaS interactions are mocked; the prototype requires no real creden
 | Role/level source of truth | HR mock (employee_id → role, level) – not user‑supplied |
 | Peer‑pattern recommendation | Fixture of same‑role/level common access, frequency threshold |
 | Forbidden system blocking | Policy engine rejects selection of restricted systems |
-| Manager approval gate | Ticket creation endpoint checks approval status; returns 403 if not APPROVED |
+| Manager approval gate | Ticket creation endpoint checks approval status; returns 409 if not APPROVED |
 | Idempotency | Each ticket request uses `idempotency_key`; duplicate requests return existing ticket |
 | Audit trail | Every major action logged with `correlation_id` |
 | LLM boundary | LLM generates text only; never decides approval or access |

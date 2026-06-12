@@ -1,0 +1,194 @@
+[
+  {
+    "content_preview": "[Read on Workplace.com](https://Workplace.com/handbook)\n\n# 37signals Employee Handbook\n\nIn this handbook, you’ll find everything you need to know about 37signals policies and benefits. Hopefully it also offers a small peek at our culture.\n\nIf you’re new to the company, welcome! It’s important that you review everything in this handbook, so you know what’s expected of you and what you can expect from us. Please note that this handbook may be updated at any time, and it’s up to you to keep abreast o",
+    "filename": "src_0554e04f527e__README.md",
+    "policy_categories": [
+      "benefits_and_compensation",
+      "leave_and_time_off",
+      "severance",
+      "outside_employment"
+    ],
+    "source_id": "src_0554e04f527e",
+    "source_ids": [
+      "src_0554e04f527e"
+    ]
+  },
+  {
+    "content_preview": "# Getting Started\n\nGetting started at 37signals involves a lot of little details, a number of big tasks, learning the details of your new job, meeting new coworkers, all while working remotely. Your teammates, your manager, your 37signals buddy, your Ops buddy, and our People team are all here to help as you navigate your first few days and weeks.\n\n## Your First Few Days\n\nBefore you start, the People team will order you a new computer with the specs you request and any accessories you need like ",
+    "filename": "src_08ea2735d9d8__getting-started.md",
+    "policy_categories": [
+      "benefits_and_compensation",
+      "remote_work"
+    ],
+    "source_id": "src_08ea2735d9d8",
+    "source_ids": [
+      "src_08ea2735d9d8"
+    ]
+  },
+  {
+    "content_preview": "# Policy Manual\n\nLast Updated: 2018-01-08\n\n## Our Mission\nWe serve those who serve the people in America's legislatures.\n\n## Vision\nTo serve as a reliable product development partner for legislators who want to make systems of governance more open, more accessible, and more effective. Our products are iteratively built to address meaningful, well-known problems in new, innovative ways and are focused intently on serving user needs over stakeholder interests.\n\n## Values\nIn our work, we will striv",
+    "filename": "src_09610df40185__opengov_hr_manual.md",
+    "policy_categories": [
+      "benefits_and_compensation",
+      "leave_and_time_off",
+      "code_of_conduct",
+      "remote_work"
+    ],
+    "source_id": "src_09610df40185",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "content_preview": "# Titles for Programmers\n\n## Programming Management\n\nOn Web, SIP, and Mobile programming teams, Lead Programmers (L4) and Principal Programmers (L5) act as tech leads to Junior - Senior Programmers (L1-3). All Principals report directly to our CTO. Tech leads are responsible for:\n- Reviewing a report's substantial PRs before they're shipped.\n- Having a kick-off conversation with a report on every substantial project.\n- Reviewing a report's on-call work and handoff after every shift.\n- Providing ",
+    "filename": "src_0985445747e4__titles-for-programmers.md",
+    "policy_categories": [
+      "leave_and_time_off"
+    ],
+    "source_id": "src_0985445747e4",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "content_preview": "# State Medical and Family Leave Provisions\n\nBelow are states that have Paid Medical and Family Leave provisions and in which 37signals has employees. If you work in one of the following states and contribute to these programs, you may qualify for leave. More detailed explanations of these benefits and their workplace posters can be [found in Workplace](https://3.Workplace.com/2914079/buckets/28168307/vaults/9398609755).\n\n## California Medical and Family Leave\n\n* Residents of California may be eli",
+    "filename": "src_39cd9ae52a58__stateFMLA.md",
+    "policy_categories": [
+      "benefits_and_compensation",
+      "leave_and_time_off"
+    ],
+    "source_id": "src_39cd9ae52a58",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "content_preview": "# New employee orientation and checklist\n\n## Introduction\n\nAs part of the new employee onboarding process, we created this checklist to assist you through the days, weeks, and months as a new employee with Company. After your join Company, you can start using our internal checklist tool, [checklistomania](https://checklistomania.apps.cloud.gov/).\n\nThis document serves as a list of tasks for you to complete with corresponding timelines. Some of the items listed below are transactional (for example: compl",
+    "filename": "src_3a2a06cb8b7c__18f_new_hire_checklist.md",
+    "policy_categories": [
+      "benefits_and_compensation",
+      "leave_and_time_off"
+    ],
+    "source_id": "src_3a2a06cb8b7c",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "content_preview": "GitLab Onboarding | The GitLab Handbook View page source Edit this page Manage maintainers Maintainers @rallen3 On This Page GitLab Onboarding Onboarding at GitLab and Onboarding Issue Templates Onboarding is incredibly important at GitLab. We don&rsquo;t expect you to hit the ground running from day one. We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training. Please feel free to participate in your team&rsquo;",
+    "filename": "src_4bb6ac8681cc__gitlab_general_onboarding.html",
+    "policy_categories": [
+      "leave_and_time_off",
+      "remote_work"
+    ],
+    "source_id": "src_4bb6ac8681cc",
+    "source_ids": [
+      "src_4bb6ac8681cc"
+    ]
+  },
+  {
+    "content_preview": "# Our Internal Systems\n\nBesides the customer-facing applications, like the different versions of Workplace, we have a number of internal systems that help us support, report, and operate the company. They are as follows:\n\n## Queenbee\n\nQueenbee is our invoice, accounting, and identity system. Here you can look up any customer account, see whether they are comped, refund an invoice, or even login as a customer.\n\nThat’s an immense amount of power and we take its use very seriously. We only ever logi",
+    "filename": "src_5542b3f65212__our-internal-systems.md",
+    "policy_categories": [
+      "leave_and_time_off"
+    ],
+    "source_id": "src_5542b3f65212",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "content_preview": "# A Note About Moonlighting\n\nMoonlighting means working other professional, paid jobs outside of your work at 37signals. It’s not a black and white topic. There are one-time gigs, other pursuits, or opportunities that help you grow and make life interesting. We want to support that. But we want to make sure professional endeavors outside of 37signals don’t create conflicts of interest or affect your time, dedication, or performance at 37signals. So it’s a delicate balance.\n\nWith that in mind, he",
+    "filename": "src_628d9b404413__moonlighting.md",
+    "policy_categories": [
+      "leave_and_time_off",
+      "outside_employment"
+    ],
+    "source_id": "src_628d9b404413",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "content_preview": "GitLab IT Onboarding 101 | The GitLab Handbook View page source Edit this page Manage maintainers Maintainers @smanzuik @dzhu-gl On This Page GitLab IT Onboarding 101 Welcome To GitLab Congratulations on joining GitLab! This page is dedicated to the IT onboarding experience, here at GitLab we use many applications and the latest hardware to enable you to complete your work to the best of your ability! While it may seen a little bit overwhelming at the start the Team member enablement team is her",
+    "filename": "src_6b02b499456a__gitlab_it_onboarding101.html",
+    "policy_categories": [
+      "leave_and_time_off",
+      "remote_work"
+    ],
+    "source_id": "src_6b02b499456a",
+    "source_ids": [
+      "src_6b02b499456a"
+    ]
+  },
+  {
+    "content_preview": "# Managing work devices\n\nEveryone receives a new Mac [when they join 37signals](https://github.com/Workplace/handbook/blob/f094e5f8b778515d363d84c9ae139cc006b66f3b/getting-started.md#your-first-few-days). We centrally manage and secure these devices with [Kandji](https://kandji.io/) which reduces our exposure to security incidents. Kandji applies a standard configuration to every device (e.g. enable disk encryption, firewall, password rules), it installs essential apps (e.g. EncryptMe), and it wi",
+    "filename": "src_79d367a0c008__managing-work-devices.md",
+    "policy_categories": [
+      "leave_and_time_off",
+      "remote_work"
+    ],
+    "source_id": "src_79d367a0c008",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "content_preview": "# Titles for Customer Support\n\n| Category | Junior Customer Support Rep (L1) | Customer Support Rep (L2) | Senior Customer Support Rep (L3) | Lead Customer Support Rep (L4) | Principal Customer Support Rep (L5) |\n| ----- | ----- | ----- | ----- | ----- | ----- |\n| **Skill** | | | | | |\n| *Technical* | Communicates basic product knowledge to customers well and with enthusiasm. | Confident in product knowledge and well versed in one product. Communicates knowledge to customers well and with enthus",
+    "filename": "src_7cb5866f767a__titles-for-support.md",
+    "policy_categories": [
+      "leave_and_time_off"
+    ],
+    "source_id": "src_7cb5866f767a",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "content_preview": "# Benefits & Perks\n\n## Health Insurance\n\nDetailed information about all 37signals insurance policies and other benefits can be found in [Workplace](https://3.Workplace.com/2914079/buckets/28168307/vaults/5060979274).\n\n### Medical Insurance\n\nIn the United States, medical insurance is provided through Blue Cross Blue Shield PPO. The company pays 75% of the premium and the employee pays the other 25%. Open enrollment is in November every year, with new coverage beginning December 1. Marriages and dom",
+    "filename": "src_7e07631ff1ab__benefits-and-perks.md",
+    "policy_categories": [
+      "benefits_and_compensation",
+      "leave_and_time_off"
+    ],
+    "source_id": "src_7e07631ff1ab",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "content_preview": "# Severance Packages\n\nIf your employment or contract with 37signals is terminated, you may be eligible for a severance package. In most cases, if you've been with the company for less than 1 year, you'll be offered a lump sum payment equivalent to 4 weeks pay. If you've been with the company for over 1 year, you'll be offered an additional 2 weeks pay for every year of employment, with a maximum of 4 months of severance pay.\n\nThe package will also include health insurance for you and your depend",
+    "filename": "src_8aae5c1ff70d__severance.md",
+    "policy_categories": [
+      "benefits_and_compensation",
+      "leave_and_time_off",
+      "severance"
+    ],
+    "source_id": "src_8aae5c1ff70d",
+    "source_ids": [
+      "src_8aae5c1ff70d"
+    ]
+  },
+  {
+    "content_preview": "CSE Team Member Onboarding | The GitLab Handbook View page source Edit this page Manage maintainers Maintainers @afrusciano @esivak On This Page CSE Team Member Onboarding Overview of CSE Onboarding Onboarding for Customer Success Engineers at GitLab is a guided, methodical process to ensure new team members have the knowledge and skills they need to engage customers effectively at scale. This page provides an overview of what to expect during your onboarding journey, including learning objectiv",
+    "filename": "src_9f74c55137dd__gitlab_customer_success_onboarding.html",
+    "policy_categories": [
+      "leave_and_time_off"
+    ],
+    "source_id": "src_9f74c55137dd",
+    "source_ids": [
+      "src_9f74c55137dd"
+    ]
+  },
+  {
+    "content_preview": "# Titles for Ops\n\n| Category | Junior SRE (L1) | SRE (L2) | Senior SRE (L3) | Lead SRE (L4) | Principal SRE (L5) |\n| ----- | ----- | ----- | ----- | ----- | ----- |\n| **Skill** | | | | | |\n| *Mastery* | Competent in 1-2 areas (e.g. networking, configuration management, containers, orchestration) and with common processes and procedures. | Proficient in one or more areas of expertise (e.g. networking, configuration management, containers, orchestration), and experienced with common processes and ",
+    "filename": "src_bc71d90aeef0__titles-for-ops.md",
+    "policy_categories": [
+      "leave_and_time_off"
+    ],
+    "source_id": "src_bc71d90aeef0",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  }
+]

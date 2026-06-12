@@ -1,0 +1,94 @@
+[
+  {
+    "phase": "first_day",
+    "phase_label": "First Day",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "tasks": [
+      "Company orientation. (Remember to bring two forms of ID and your I-9 form.)",
+      "Attend Company orientation.",
+      "After orientation is over, call or text your buddy who will walk with you to Company.",
+      "Receive your laptop, badge, and phone.",
+      "Log onto your Mac and change your root password.",
+      "Connect to Company’s secure network",
+      "Change your ENT (enterprise) password. This is your password for signing into systems administered by Company, including your email, calendar, and Google Drive.",
+      "Sign into your work email",
+      "Set up Company’s 2FA so that you can access your work email from anywhere.",
+      "Set up Slack, our chat program, so that you can communicate with your colleagues",
+      "Add your contact information to the Company Staff Contact Document"
+    ]
+  },
+  {
+    "phase": "first_month",
+    "phase_label": "First Month",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "tasks": [
+      "Schedule a virtual tea with two coworkers",
+      "Receive necessary software licenses",
+      "Learn about Company Org Chart and team structure",
+      "Confirm your HR system account",
+      "Complete required compliance trainings",
+      "Fill out your Individual Development Plan.",
+      "Learn about Company Offsites",
+      "Ask to be added to team collaboration tools"
+    ]
+  },
+  {
+    "phase": "first_week",
+    "phase_label": "First Week",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "tasks": [
+      "After receiving your work phone, set up 2FA.",
+      "Pick up badge",
+      "Set up GitHub account.",
+      "Set up VPN.",
+      "Set up printer",
+      "Sign up for listservs that interest you.",
+      "Meet with your director",
+      "Write your bio and submit a picture for the Company website",
+      "Add yourself to the Team API"
+    ]
+  },
+  {
+    "phase": "pre_arrival",
+    "phase_label": "Pre-Arrival",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "tasks": [
+      "Company Employee Benefits and Information",
+      "Company Onboarding Document",
+      "I-9 - Employment Eligibility Verification",
+      "W-4 - Tax Withholding",
+      "State Tax Withholding Forms",
+      "ECI - Emergency Contact Information",
+      "Health Benefits Election Form",
+      "Life Insurance Election Form",
+      "Designation of Beneficiary Form",
+      "Receive email from Team Talent and your buddy about your first week.",
+      "Read up on Company and Company orientation.",
+      "Send bio (3-5 lines) and preferred gender pronoun to your buddy."
+    ]
+  },
+  {
+    "phase": "second_day",
+    "phase_label": "Second Day",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ],
+    "tasks": [
+      "Orientation classes begin. You will be taking a variety of Slack-based classes in the #Company-classes channel with your cohort",
+      "Make sure your Macbook is secure",
+      "Double check to make sure you have access to Company Calendars and double check your inbox to make sure you've received a note from Company-team@Company.gov.",
+      "Read your Office Guide to learn more about where you work",
+      "Attend Company’s weekly all-hands meeting",
+      "Fill out transit subsidy, if you commute via public transportation to work.",
+      "Make sure your Slack avatar and Google avatar contain a picture"
+    ]
+  }
+]

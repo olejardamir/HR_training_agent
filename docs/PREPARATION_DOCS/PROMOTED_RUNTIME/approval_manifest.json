@@ -1,0 +1,9 @@
+{
+  "manifest_version": "2.0",
+  "reviewer": "Project owner",
+  "decision": "approved_for_demo_runtime",
+  "review_scope": "Candidate JSON reviewed for HR onboarding demo fixture use only",
+  "review_date": "2026-06-12",
+  "approved_at": "2026-06-12",
+  "notes": "Runtime fixtures manually corrected to match demo story: Account Executive has Salesforce+Gong+Sales Slack Channels, Software Engineer has Engineering Slack Channels+CI/CD, HR Coordinator has HR Shared Drive+Onboarding Tracker, Manager has Manager Dashboard+Approval Queue. GSA/18F government-specific content removed from onboarding tasks."
+}

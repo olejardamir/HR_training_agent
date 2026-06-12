@@ -1,0 +1,104 @@
+{
+  "approval_manifest_fingerprint_sha256": "4b748e94f14f664bf31de90e822fec9713ceef25bb1006fe516dabb7810035a5",
+  "candidate_package_fingerprint_sha256": "a5b83466baca38b30f5a4b701b1e30167d288f2936eb62d0e7483a8a21aebaf5",
+  "files": {
+    "app_content/hr_policies.json": {
+      "canonical_json_sha256": "e9edce4b4a4ef7e00e333f0652dcf061e60129d4d54a88f10b78f68111e53b24",
+      "sha256": "4a5fb4c6aeece5633f9299c39b61cc9ceb3f856e6e0b4696339017159e798438"
+    },
+    "app_content/onboarding_content.json": {
+      "canonical_json_sha256": "3da5147a145cbfa47c8c10c973f3daef35a05326e5a59070db17e8f0420b2f8f",
+      "sha256": "0e2018dbddefc30e0299c00faed4ea59ea1458a5329462dd44316f8e9e2ca550"
+    },
+    "app_content/onboarding_guides.json": {
+      "canonical_json_sha256": "2a290fb71da7a3ad8eb63bbc769224aa6d28f201aa6fdc52d3a99087558fa097",
+      "sha256": "ec54bf250e5e9eaf68fb351d8714ff13396af7e277345d902e66de3978208ab0"
+    },
+    "app_content/onboarding_tasks.json": {
+      "canonical_json_sha256": "a40385d612f84410043b2b8bab78411bafa083e8729bf3ddcb91ca7c392ebda4",
+      "sha256": "01dfb1db767bbacf2ca65973ddf32474fe38085a942cedd74064e3febcb394b8"
+    },
+    "app_content/role_skill_matrices.json": {
+      "canonical_json_sha256": "5b95c0a75c3ddc3ac7cae472d0c7f8c6748a8ded2f4927dd903c403a63f2630c",
+      "sha256": "1eebd3c011fbfde30f1d7da0828b36d4784eb8caeba9acba25e5e2f6ef24fcd7"
+    },
+    "app_content/security_practices.json": {
+      "canonical_json_sha256": "b4f093130a5d021ff22bdc7ada242a0369bfecf38116b57777aa8ab95f42a943",
+      "sha256": "dc99a06558a00995ab447f01e3e08f6ce2140582f17790252bd206b6212d8e9f"
+    },
+    "app_content/systems_and_access.json": {
+      "canonical_json_sha256": "0ea12fe78bfd9c239bee0c1784ea3f75a4380e6953483ed3ad35183caccbf5b8",
+      "sha256": "02b5ab7c0deb19e33422988ad62704b5e1dde373af51c36762d5b026f0a1d2a7"
+    },
+    "app_content/training_content.json": {
+      "canonical_json_sha256": "bfc52b8653fddeb6c3dc45869d129adc71c1e909b334cb7f345d7ccce38577c0",
+      "sha256": "62ac6beced6c56b0c3c39035d52d1b80e6112dc773b1f95015912e7aed6a0b84"
+    },
+    "app_content/training_modules.json": {
+      "canonical_json_sha256": "94925de73c17b1538aa039ff1759dd52028c43514acfa9aec02ca94323880f7b",
+      "sha256": "46ca1c0c0d8e005f6848fb6c37b74b3136deb321315673ad2b2a9b76fe306c5b"
+    },
+    "app_fixtures/department_standards.json": {
+      "canonical_json_sha256": "0bd64dbe9718519580cf4fffbe54996b602201155dc4325386337b81461c92de",
+      "sha256": "5bc8c5c7f4d9614fd68e737896cde191310ca0f35faf3cca7223a6d3ced08d20"
+    },
+    "app_fixtures/role_access_policies.json": {
+      "canonical_json_sha256": "23e88567bf0815ffab5f5e0b12f057e8fc01c4175eebd24eed05a288663f383b",
+      "sha256": "4d822bbac560c4e4910ffc353100fafff16b2120b918da089fd5bb88a98182e7"
+    },
+    "app_knowledge/source_chunks.json": {
+      "canonical_json_sha256": "7fc4f1eb1c7fdabf856608bfe18bcc52d935f7e0f71eceb91db5aab704b0f7fc",
+      "sha256": "7d41db04dd8ad44d1cc0ac5caed3e6e9cc0baa339c0f82e949c6cd67d08798dc"
+    },
+    "traceability/content__onboarding_content.traceability.json": {
+      "canonical_json_sha256": "d4fbe75dc6ae805e6d352c7de6c5d6803713f71ad3bf932659d402014bcd9e4a",
+      "sha256": "a6df1156c7abb27d871de629fbbb2eb290c0a4968e46d6e9944a4d6fe2198110"
+    },
+    "traceability/content__training_content.traceability.json": {
+      "canonical_json_sha256": "7d5f0eed86ef04c8a76b52256149a2410bc55e46a41aa48be3b5c777878d4e91",
+      "sha256": "91db77d8e6ae4149a847398dc4d72b7bffdad72c2b18acd6ca113025196ea382"
+    },
+    "traceability/department_standards.traceability.json": {
+      "canonical_json_sha256": "bc8afa175446b1405fd021e211b910aada372289e2f7629d8789f7dd5cb2011e",
+      "sha256": "c1a8d6d663c7d1980f1c9371d44dc9c8059896f111ffefa3240b8e9c804cc5be"
+    },
+    "traceability/hr_policies.traceability.json": {
+      "canonical_json_sha256": "2c0dfee571cb318cd7cd8f3f91e4b525c04939bb37814cbbc42bf174b78e84df",
+      "sha256": "ddc4263503fe34d2b7ee7a3e4fc79cd14c0472d72f2febc5cba9d6741e58bf26"
+    },
+    "traceability/onboarding_guides.traceability.json": {
+      "canonical_json_sha256": "706bad96f448faefe4ca8b7d9839ab8af4268516c5744f9be72c93ed74d8c491",
+      "sha256": "e319ffaa191fc690adc6784e3282b468f285523587e765597ae86270cff4dbbe"
+    },
+    "traceability/onboarding_tasks.traceability.json": {
+      "canonical_json_sha256": "4ebb9cc2ab5d91f791655cca5ad2da1322bc46527b07317165d642f1b536bb73",
+      "sha256": "5d11801e4e7179b7eb2af878d725246e54b31f03a949c70862d6cbe31ddf8816"
+    },
+    "traceability/role_access_policies.traceability.json": {
+      "canonical_json_sha256": "a2c323915bb001a31e19cd43412913000dbde31f0eceed293fef0aa08ba1af64",
+      "sha256": "6070ee361eeff42a3effb24dc127c425482a5f1bf9634fc9f1c0423f407f9b5c"
+    },
+    "traceability/role_skill_matrices.traceability.json": {
+      "canonical_json_sha256": "7b97ca7644743633f9580f7209b03159986002af235b083cb7c5f0c485ef52f5",
+      "sha256": "bc07ca2b5c0afd5f614131cb7250af556dbbddbb8bb433a5c4ec3849df7c53a6"
+    },
+    "traceability/security_practices.traceability.json": {
+      "canonical_json_sha256": "1650f628d127d8d9770f7f536f46ec054ccaac8309ab6c75375e797afe669566",
+      "sha256": "76e178609e0b28f11d525249ac78434829369c66bc83bd21ae86f2be46433bbe"
+    },
+    "traceability/source_chunks.traceability.json": {
+      "canonical_json_sha256": "a4e639cf21977aa0254a65f7cff0b3201292caa7669e9682e85994d43e145ee0",
+      "sha256": "57ac2df0bc405f53ffb6ce07a57910e3dbc4c92a082b62257ff6c96917db311c"
+    },
+    "traceability/systems_and_access.traceability.json": {
+      "canonical_json_sha256": "621540bd19e443f7ac918f300f644bb11001cb9cffdd3868c89525d118055d94",
+      "sha256": "1d9fb92abdf521d94242737b23ed49054ae647ded09a553761c03120b5b7501b"
+    },
+    "traceability/training_modules.traceability.json": {
+      "canonical_json_sha256": "a11c5c8a97b80e9837e7fe367b997894cdd6819307662899a9642508d227acd8",
+      "sha256": "19ebae8fbbbf1b333bef8054971f2f3d2ad91debf71d080498d6a4a9b7366656"
+    }
+  },
+  "generated_at": "2026-06-13T01:20:06+00:00",
+  "tool_version": "5.0"
+}

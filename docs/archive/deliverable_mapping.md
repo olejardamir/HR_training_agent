@@ -32,4 +32,4 @@ Maps each v10 deliverable to its implementation location.
 | Idempotency | `logic/idempotency.py` | Done |
 | PII Filter | `logic/pii.py` | Done |
 | Conftest | `tests/conftest.py` | Done |
-| N8n Contract Drift | `tests/test_n8n_contract_drift.py` | Done |
+| N8n Contract Drift | `api/tests/test_n8n_contract_drift.py` | Done |

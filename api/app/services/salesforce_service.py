@@ -10,7 +10,7 @@ def get_profile(db: Session, employee_id: str):
 
 
 def update_profile(db: Session, employee_id: str, profile_complete: bool = None,
-                   salesforce_role: str = None):
+                   role_profile: str = None):
     profile = get_profile(db, employee_id)
     if not profile:
         return {"error": "PROFILE_NOT_FOUND"}

@@ -1,0 +1,116 @@
+{
+  "files": {
+    "content/onboarding_content.json": {
+      "bytes": 121776,
+      "canonical_json_sha256": "850dff9eda981373b930341b08875a5a970df90344a7c2c57cca4832aeebd705",
+      "items": 85,
+      "items_with_sources": 85,
+      "items_without_sources": 0,
+      "sha256": "01a69d45074d078480493f29d361b276210cb8034225e951ce767bf4d059055d",
+      "type": "list"
+    },
+    "content/training_content.json": {
+      "bytes": 189823,
+      "canonical_json_sha256": "a7f8d30a8c35245e3b305726fa38f6bacf4ae0cce2b34a5cc6a6ca92923ee965",
+      "items": 114,
+      "items_with_sources": 114,
+      "items_without_sources": 0,
+      "sha256": "89b7de809615981df8eeac7bddf09107efac950ec72314a212b3bcb010c32e4a",
+      "type": "list"
+    },
+    "fixtures/department_standards.json": {
+      "bytes": 1582,
+      "canonical_json_sha256": "d688955059a2cc37d60621f3a596b89d2ba92a26691927ff6b257c473993a21c",
+      "items": 7,
+      "items_with_sources": 7,
+      "items_without_sources": 0,
+      "sha256": "2a72728c574963b51ecbb6dea6df709d3002a9119e45493db460a10a09fc9583",
+      "type": "list"
+    },
+    "fixtures/role_access_policies.json": {
+      "bytes": 12604,
+      "canonical_json_sha256": "2fd40c281d440c553547e0938c83db6a0cd14980a48d829f903040405f49b3bc",
+      "items": 27,
+      "items_with_sources": 27,
+      "items_without_sources": 0,
+      "sha256": "b21f75b70f95a75f3b32ceaecbb99bc7d39cd9a2ed639263000500c66f5ecc39",
+      "type": "list"
+    },
+    "hr_policies.json": {
+      "bytes": 14767,
+      "canonical_json_sha256": "e7cee337f6dbfabb026d667d2b0a6d9c19e3078a99280f2305fef587baa55faa",
+      "items": 16,
+      "items_with_sources": 16,
+      "items_without_sources": 0,
+      "sha256": "5bd52955ebf73a767df4f642c4bf6505a1f5938ab3ec865d3f43285f8deb747b",
+      "type": "list"
+    },
+    "onboarding_guides.json": {
+      "bytes": 100390,
+      "canonical_json_sha256": "4998a66f8c5d949d17822833f76a66df31988a4c9f1c5d26ed5913a660a90efc",
+      "items": 10,
+      "items_with_sources": 10,
+      "items_without_sources": 0,
+      "sha256": "ddb69a262250bcaa27eca4fa8bedcd3a60a6bf228e081ef2a1aa4adbf583b97a",
+      "type": "list"
+    },
+    "onboarding_tasks.json": {
+      "bytes": 4913,
+      "canonical_json_sha256": "52177f2a2d78cf449b5c8999c63a6495c49b466e5791fc42ecd09f813eeb50af",
+      "items": 5,
+      "items_with_sources": 5,
+      "items_without_sources": 0,
+      "sha256": "df2f1f61f72c4f91b39c40011cd948982d7de87d148498a6d19e3754846aeb7c",
+      "type": "list"
+    },
+    "role_skill_matrices.json": {
+      "bytes": 6774,
+      "canonical_json_sha256": "5bed95cb2821fd8a28efebcc17f62299a40f8b9204856b80df8f39ea527d93cd",
+      "items": 6,
+      "items_with_sources": 6,
+      "items_without_sources": 0,
+      "sha256": "5e1259824531e494c0197ca6c90da1a52b4ccecdaa9029597b738a5e6674c6f4",
+      "type": "list"
+    },
+    "security_practices.json": {
+      "bytes": 9215,
+      "canonical_json_sha256": "3843f78304db5f8983c52dde42b9644125614f4acfd3038656bbec8de06c6c71",
+      "items": 10,
+      "items_with_sources": 10,
+      "items_without_sources": 0,
+      "sha256": "5eb03594e69f7192b64e223c51f758291cf0bf2e5cef8dacc6218fac475d4524",
+      "type": "list"
+    },
+    "source_chunks.json": {
+      "bytes": 290439,
+      "canonical_json_sha256": "5576662c29be3f35b9b6d044fcffc7f57b0259cd9326c115e14f05aba976ea9c",
+      "items": 156,
+      "items_with_sources": 156,
+      "items_without_sources": 0,
+      "sha256": "93d8d92c16ab058e515f5d572fc4a9fb75c2268df0ca859a902a0b07c26d6d7b",
+      "type": "list"
+    },
+    "systems_and_access.json": {
+      "bytes": 3782,
+      "canonical_json_sha256": "427dff5e61fe8c7367a0466fb6f7f7a5a39d73130e9e149ecb9adf0a2411c8a1",
+      "items": 4,
+      "items_with_sources": 4,
+      "items_without_sources": 0,
+      "sha256": "6b21b60233235e420acebf6d72f458354172c14cc05d0496b0af2b07e61e16c6",
+      "type": "list"
+    },
+    "training_modules.json": {
+      "bytes": 4168,
+      "canonical_json_sha256": "15ea5bdcd9b9f6d82cfdaadc266adcc317bd0399f8a53ee37957958f6c124afe",
+      "items": 4,
+      "items_with_sources": 4,
+      "items_without_sources": 0,
+      "sha256": "598f69053f079d7508e27cefaab2f3cef7b6371dd7054da5372302d4a237c42e",
+      "type": "list"
+    }
+  },
+  "generated_at": "2026-06-13T01:20:06+00:00",
+  "missing_required_files": [],
+  "package_fingerprint_sha256": "a5b83466baca38b30f5a4b701b1e30167d288f2936eb62d0e7483a8a21aebaf5",
+  "tool_version": "5.0"
+}

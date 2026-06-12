@@ -19,7 +19,8 @@ def compute_idempotency_key(employee_id: str, request_id: str, approval_id: str,
 
 
 def create_ticket(db: Session, employee_id: str, approval_id: str,
-                  requested_systems: list, idempotency_key: str = None):
+                  requested_systems: list, idempotency_key: str = None,
+                  simulate_failure: bool = False):
     approval = db.query(ManagerApproval).filter(
         ManagerApproval.approval_id == approval_id
     ).first()
@@ -72,6 +73,16 @@ def create_ticket(db: Session, employee_id: str, approval_id: str,
                 "pre_approval_blocked": True,
                 "ticket_created": False,
             }
+
+    if simulate_failure:
+        return {
+            "ok": False, "status": "FAILED",
+            "error_code": "ITSM_MOCK_FAILURE",
+            "reason_code": "ITSM_MOCK_FAILURE",
+            "ticket_created": False,
+            "recoverable": True,
+            "next_action": "RETRY_ITSM_TICKET",
+        }
 
     if not idempotency_key:
         idempotency_key = compute_idempotency_key(

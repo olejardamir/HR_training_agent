@@ -14,6 +14,7 @@ env/
 
 # Database
 *.db
+*.db-journal
 *.sqlite3
 
 # Environment
@@ -41,8 +42,14 @@ postgres_data/
 
 # n8n
 n8n/screenshots/
+n8n_data/
+
+# Node
+node_modules/
 
 # Logs
 *.log
 
 private/
+docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook
+tools/

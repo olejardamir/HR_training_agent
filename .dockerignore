@@ -1,0 +1,16 @@
+.git
+.gitignore
+.pytest_cache
+__pycache__
+*.pyc
+.venv
+venv
+node_modules
+.env
+postgres_data
+n8n_data
+*.log
+.DS_Store
+docs/private
+private/
+README.md

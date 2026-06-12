@@ -117,7 +117,7 @@ SalesforceProfileOut = SalesforceProfile
 
 class SalesforceProfilePatchRequest(BaseModel):
     salesforce_profile_complete: Optional[bool] = None
-    salesforce_role: Optional[str] = Field(None, alias="role_profile")
+    role_profile: Optional[str] = None
     correlation_id: str
 
 
@@ -193,6 +193,7 @@ class CreateTicketRequest(BaseModel):
     requested_by: str = "hr-onboarding-agent"
     idempotency_key: Optional[str] = None
     correlation_id: str
+    simulate_failure: bool = False
 
 
 class TicketResponse(BaseModel):
@@ -231,13 +232,7 @@ class SlackMessageResponse(BaseModel):
 
 
 class LLMMessageRequest(BaseModel):
-    message_type: Literal[
-        "employee_onboarding_summary",
-        "manager_approval_request",
-        "recommendation_explanation",
-        "status_update",
-        "onboarding_question_answer"
-    ]
+    message_type: str
     employee_id: str
     correlation_id: str
     llm_boundary: str = "communication_only"

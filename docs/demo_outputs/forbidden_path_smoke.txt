@@ -1,0 +1,10 @@
+=== Smoke: Forbidden Path (selecting forbidden system -> 403) ===
+1. Start onboarding
+2. Try to select Payroll Admin (forbidden for Account Executive L2)
+   Got 403 as expected
+3. Verify audit event for forbidden selection
+   Audit event found
+4. Verify no approval and no ticket were created
+   No ticket or approval created
+
+=== FORBIDDEN PATH PASSED ===

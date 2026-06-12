@@ -1,0 +1,1256 @@
+[
+  {
+    "candidate_only": true,
+    "input_item_sha256": "01a8e5194912d5f84f255732679309bb65c0ced13443b03f5db9f59884984345",
+    "item_index": 0,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_0554e04f527e"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "db498907eceb27fe877f156fcaca1025242e00ebd744b485e0cfb48f34e54bfb",
+    "item_index": 1,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_0554e04f527e"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "09118ec54c16d46459b65d1f681fd55e46db4f65b927fb5882ce94d750754832",
+    "item_index": 2,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_08ea2735d9d8"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ea42292ab6f6088d93f9c8ce44907e1744d0b6abc94e86d0ea256df23eed6a63",
+    "item_index": 3,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_08ea2735d9d8"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "faebaedf6d9b247117d9cc36e7672118fd4a086d3ae658225a996d580e6115b4",
+    "item_index": 4,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "8991822cbb8a91bd57a2967b1172479c755e0ab4180f7433c0d2530a8fbf9d68",
+    "item_index": 5,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "833c1fbe217033f70889f66e7eba26ff5d76d756830e8fa81d691372081d827b",
+    "item_index": 6,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f216660ed466a780f25465407dd5b17f9ad8d2ebdfa5d2e1099ea0ed0ac1b512",
+    "item_index": 7,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c3656dd81143b288279327ec1a52f39ed94d540c83553ac347940bf1c7cd4b39",
+    "item_index": 8,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f23c5e8584153de6c1e54a245cb923bcdb39438614dca37335dd3e1ab41d15d5",
+    "item_index": 9,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c47d59ceaf6c8a5b71194092e28293aff69fba11dd7a4799dd01d042625e2ee1",
+    "item_index": 10,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "7c9b8708d93ea7fad0b1194d3f8c92e0e600f4e341fb95e3b04c36f4c97a9578",
+    "item_index": 11,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "aead31937e3d3e0c3e7a5acfc8a4dc875d9f0e9f1f2e4ff2b3e3727a9a058640",
+    "item_index": 12,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "326c962e376c7a4d2b2deeac79ea83b069f67d889d95f37e546db600176e4f9e",
+    "item_index": 13,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "36ce20ebdc5c6b6b8a0dc67d86617fe19aeec833d581e48007276d65dbeac917",
+    "item_index": 14,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4480e53122b309edee85f80ec1e1edd0e798ce1cd38c21597b98fcc6ae344946",
+    "item_index": 15,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5fac80423c5fbeab919e162825fcc698a5a1369fceeb1770217a3238df4b2e5e",
+    "item_index": 16,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5a7db7501c91608e82013c181570ec8f72382328512224c3499ddb38205ba850",
+    "item_index": 17,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a92c8031d337f5722554410536074ad70752530b0efa4a2b549f72d4bebcf0fe",
+    "item_index": 18,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f9f1f7a20b5e5ca9dbd2dda94e4bc1ec210bbc52c5c016440c86904be4927df2",
+    "item_index": 19,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4b9065bb9c5a01adafbfc8e0df05f2300f5268152f44455ef8624821c9373ec5",
+    "item_index": 20,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c1fe4076d82847704a94e0ff51d4a072b57d89d325f03aba410682e62a4fff15",
+    "item_index": 21,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "8f58f9f60f4ebad627957cfa9b44727bafa80bd30b145892b20b592161fba982",
+    "item_index": 22,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "996885a35476ad1984269f8da0286d4f971c526281cd651e29436d048b8faf0d",
+    "item_index": 23,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "2de42295e2323d46e1ed7cf1bce2dfad7c16638ad4bcf796008cb69bb0333a54",
+    "item_index": 24,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d74f0f12d00bbab124cd744e4b02ff625f31003c85756b1f1fe897845039917b",
+    "item_index": 25,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e506e22fef7f70afb1da2b25b94b05f2b3d13f076704d962b9448a92a137dff5",
+    "item_index": 26,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1a9040797b92ba70c0fd90d3cc9b30b9935d7d06fd1ec034b89d79a56164989f",
+    "item_index": 27,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3368d76bbe9846811c00764977a35408791e551a81d773c5dea6fe0c06fea35a",
+    "item_index": 28,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d96fbac2d1f049fa175377f9401ba4614d3c76c6f10eab182c6a63355300cfa0",
+    "item_index": 29,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a55797b8906f63ab8b23aefa0178c8c47fa19360a547e60f52a48f65edffa901",
+    "item_index": 30,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b5a140770d925489bfe6984afb63983cbc39284f2c7ca324430771770d53bfad",
+    "item_index": 31,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e839d3f6f387c9d2b03a132e5ab3d75170ac94a15951568f03d3ddda94f48aa7",
+    "item_index": 32,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3379704c273b57e6657659ec094019119c4f09cb0a84d93d5429296eec22c21f",
+    "item_index": 33,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3eebdcc545b98ab1d752a7c986e8ac84935e354f7b8e0c73ee962c8352e3448a",
+    "item_index": 34,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5ad126cf7b6d58376f9eaa6e6b2d85aa283b7dad42816f870df99929592c1b0c",
+    "item_index": 35,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "56fc0a3056c4928cd116830de98960fa835e11d6e8189d3b1b0a31f3e0a4c8ec",
+    "item_index": 36,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4a9f84fb90806510a0ec732d4a4837cdc3a08d609e4ae70945948c7c463e33d1",
+    "item_index": 37,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b36b304848a0c77f0a4b4dd79859add3432d0e441e125b6a24107b59b91b2c00",
+    "item_index": 38,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "34c5fb51ed628f376409f3f9f38f1b6f69244787ac142e1c57056902e8f27fbb",
+    "item_index": 39,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1f9b4495a2341947f94c48ee0edd976721d57a8bfd022f5160a2f020f3bedd6e",
+    "item_index": 40,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f7d235217336c1df70b04d4fa7c0358a6df61e5f0b05310f8c598ee5dd0b4e1d",
+    "item_index": 41,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9510c32431ae508f1109523b3bd3287ce1655241f6c513b67dbd9eb37c9ec386",
+    "item_index": 42,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9dd1977e6ca4b3567af18616807f178f9d05184d814984ebbdf4aa0f2bdd4f4e",
+    "item_index": 43,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "2473635c5892bf8397ac108237bfa93161a92a5c266e70fc8146983c14db8198",
+    "item_index": 44,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d800a1580b40c73617f22a656e1f15c0af6d4f28d9087284412b5e3861fe1e82",
+    "item_index": 45,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1679eb3cbeef171e94b1e77e25338b1f2f210e7f11790a87bb252ec31cd2cd24",
+    "item_index": 46,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "61538890eda184b57afad6d2d1ea77017b9ee23676bf9c30b51dda833f95cb7b",
+    "item_index": 47,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "fdc981e9ab05e9bfe77f7e6bba377f110ce47d643e6b2dbb2c6926414035fc77",
+    "item_index": 48,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0805e9fc3d87ec365d0bbb91350fad53e92fa20bea6ecaef8241d20bbc64bfc7",
+    "item_index": 49,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "565bbfee4fc8ad7d5edc3af8bd3a97b648d5585515d7f4b60836774e48f23bc6",
+    "item_index": 50,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1c7125e150195dbb1a5b9eeab18ff89adbaadaba08376235bb5a5928bbc52a0d",
+    "item_index": 51,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "03196ce68ef0e18b56c5ed035da53ea2a40ea8c0aba51f54dae18dc9b1ecd08b",
+    "item_index": 52,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9d471f2269137ff97f917141a45463510c5ae995b69e32735db83d85c6426f07",
+    "item_index": 53,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3a0a9328a63468074ee194f9937f23498a295e16382ea92a62b9b31bec7aa641",
+    "item_index": 54,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "28f5f1c05dc5e748fd9a2d5fa24dbb65eb8d8c32f6b1b51d04bb8d17d684194f",
+    "item_index": 55,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "bb7c208a8284ad936d498095964a5bb0a3d7300f1479da0783e9078feaabff0a",
+    "item_index": 56,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9e6e899cf317c83c9918926ecb8531ff0e3ca5234b4754ec432d151acca1099a",
+    "item_index": 57,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "134ac84dea1974db2c82b3a90f1e4a26838e699c60eb69323f74cc7fae8eabf7",
+    "item_index": 58,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "07ef9f0441c4ffb859a2b50475ae2a9a065e76196f0c758d53caddfbf984e8bb",
+    "item_index": 59,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a601915793e248b3f92cbc73596e478fec883608487b930923fd5ffd29d1a995",
+    "item_index": 60,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3de8e25eec93e6f04fc83a76b84d16150b2f0b12148b48e27f183608f36316cf",
+    "item_index": 61,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "45af0bbd702c80009a2711732bcf96595b511129d089f51553215bb3ffc963ec",
+    "item_index": 62,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e0025c394adfb2e03a41cba953c6a8abefa85a3b76bbaecf7a96520f4d416aad",
+    "item_index": 63,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "764994b7bd4e82a7e079bce7ba7155017dbfcae27980b51423b757fdfdac2a83",
+    "item_index": 64,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "bebb59f0eaf23795e742f01998243433ca875c4e4c8784131736c7080be5ae89",
+    "item_index": 65,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9dd90c85821ada41b2296075cba3b1a92da27f0cff3ee91c25d517cbae0415c2",
+    "item_index": 66,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_72b55285f6ff"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "889f3f635392888b3c65d19d7df515cf8bda5a59fc8e87b07c300834b14c7d1b",
+    "item_index": 67,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_72b55285f6ff"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9ba9ec25f1b85ea204aa0dde8dcbc77efb628add4bca930e844f3c35ed07b05a",
+    "item_index": 68,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_72b55285f6ff"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9dd30aaf326125ad79b75ea8f16d3f45fb2205c4265de9b8ae43416ce7d8e48d",
+    "item_index": 69,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "df5eff388114b9aade71e9ca97c5b0171fddaa96bff1a9d922b7c530ed65852f",
+    "item_index": 70,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "fcaed7c75f9e38987b3560cb934b8ade97c4780056df30734500b38faf06becf",
+    "item_index": 71,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "16b2d79542a10b1232751d7cd8d83be7be1dc3447c138468e4862de7770193e2",
+    "item_index": 72,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "90bb94c4e7a2251f1ae2b02dbe6971f406d27364bae28e036abca83d35913d2c",
+    "item_index": 73,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "120353a4f6a662800092fb04dda2672f9e54670f1f164b1171cb73b5cb60de16",
+    "item_index": 74,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4a35b9f4684eb4421e40e1dc9e6c624bd9b9348c19a165298e5fb40d43088572",
+    "item_index": 75,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "091bf94a1b5db7573c5a3a4cfc03f18d1387b4f9cbb8141975466be5731f70d1",
+    "item_index": 76,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a4b6edbeeec54982c2787e1cf205999a4bc4315823cfb2e1f62175eabd850dbf",
+    "item_index": 77,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "2ad58e946d6ceed9cec09646a0112ecad3ed53ce169262aa16c98e961d1c02c8",
+    "item_index": 78,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "74133d9e9dd3fad4095534d31eae15e4bb1f60ba15dd23164fae6543e72fcaff",
+    "item_index": 79,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "34cf3dcace458601a6400d1dd69e945e478f7b43eec4cd1ba1822bfccb39398f",
+    "item_index": 80,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "bd4057048f8efce787501c11e0f733a3ce3b51178ad3a07858731b02e6be7799",
+    "item_index": 81,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "217d9d046a2f1860745dba741639d3c969026895987900968ea3b258e3bc2688",
+    "item_index": 82,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a716378e229e5c9e5d9ccad12e4c570bc70d962914db6dc502e09edbf257cc4c",
+    "item_index": 83,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a985001ed7524164f9b6a9a2953c419b18ccaea8060924502eced6303bfb8636",
+    "item_index": 84,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c08353559bc7e604edd6da5a067cb48f3cb9c21f3bfec21becc013c462a2433e",
+    "item_index": 85,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c7999d5f985a28fc3657bebb10be5b8342157d22d10500174e64bf41ba3b996d",
+    "item_index": 86,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "288a3f996dfc1034b5ab4118df6dd4a2a5d267e1040cc032ae6a2aed9e230175",
+    "item_index": 87,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9e911f863faf23272e5682022cdbd9e558a253fb0c546fc36b32f90227149360",
+    "item_index": 88,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a120af88a40d4e9dfdca4e7821f090791522c490f7d30f4a11f12a3bb9470c20",
+    "item_index": 89,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d9ab9dc2a4e128c2082c4ef6d56fc6a6f91d31eb1bbeb52a70e4c40d8fbeec5d",
+    "item_index": 90,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a7c5032de1654e25d7bdfd107ed3e415a7062a24c1d3f4c27c075f3f7a5154dd",
+    "item_index": 91,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5f5c0d1d45e5688e69fc02620194e1b9805fe1522d095f911ec44f0b1fa3f608",
+    "item_index": 92,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b7ea4cbec04a995d473be5b277e77276aa4fe6ea1727686c2d38a73b55b72ea3",
+    "item_index": 93,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "fcea058f1b64aad0cf942b15728269fcdf2211775df00cdbee55e656c361bc73",
+    "item_index": 94,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "bb6de38685475d5ea2ff216d20c2b2612ea6c7a97494c2d5f000763c40cb2e02",
+    "item_index": 95,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cf35117942ba23713fa0af7105350e55be05bd5546ca810686e323c7322abaf1",
+    "item_index": 96,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "580f7d8c80c878ba322ebc3275019b0470395a0e693c2f9357d743fb8544e868",
+    "item_index": 97,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3cf9048b9842e6d87f63f14f73ac2cecd826e48d8e3a16b2d474d63c20f3bc6d",
+    "item_index": 98,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4ddbb76261c9de84301725686683de159fe80d551b87ec036d5f3d28c00ef62b",
+    "item_index": 99,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_8aae5c1ff70d"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "8d601a50f1253cdac5bdd9be87c84603ef4a9219c25e9eb6fa80f4b983b19d9c",
+    "item_index": 100,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "12185f3d97eea06e7e88d1e8a091aa0f22b47c3a07131f0de72be6bb9fe8e744",
+    "item_index": 101,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1a311223cc289bcf2d41c700a6b63c05fe828e05189ccc6deae158f544c6eeeb",
+    "item_index": 102,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "fedd96901e005aef015fbdce2ff524298c02a1531cd9e700ce441024660bfe83",
+    "item_index": 103,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "018ec9d65504a1a6366c385d482ac55f8eec9d564bd2af4934f6b5e38371cf61",
+    "item_index": 104,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "99ed49335580b7c6a05a37c870683d7cfd50b99d9a6cbbb3951be22ecf2c033e",
+    "item_index": 105,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1cd624b507493dd8e2d57901d43e48898908b8e0dec579c8990c994491606086",
+    "item_index": 106,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ec6596aaf733161d3a466a99b16707d2bbf2b4a4c6776767d02210d693726a1d",
+    "item_index": 107,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6db83b7a6dc12a5faf9ca7c7b2c7a76e6581044e5252dbdfae90ee6fbf1bfd66",
+    "item_index": 108,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cda0eeee6237e0d5cce763aeac9afc48c9c4d4dc8eea6bdd67a66471d76d99b7",
+    "item_index": 109,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ae150b7642e88bd561a0711162566e9168e21cd02fd16987f6529c2b9e996438",
+    "item_index": 110,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1bfeb0c5b6952b668301f2dddc7bf57716ec5333455e7bcc4ba93d59b40c9492",
+    "item_index": 111,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ea909d7549e3b99ada0783290d9390920d2b93be350afa20064392452169d91f",
+    "item_index": 112,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cbafd092d658c138113aad593d04475488c18a54516c886b521fb8ef8d64b65d",
+    "item_index": 113,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "content/training_content.json",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  }
+]

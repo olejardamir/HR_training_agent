@@ -1,0 +1,1718 @@
+[
+  {
+    "candidate_only": true,
+    "input_item_sha256": "810566207fb8a6968d09ddc22e855d7ef1db058c314391e334c7e2e6b7a2144c",
+    "item_index": 0,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_0554e04f527e"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "46f566e5225e9dd2a8cc03516db7fd7a9c4ce354f848613e6fc62ecd468f82c8",
+    "item_index": 1,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_0554e04f527e"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "88555f0bc386e0bc239375d450dcb144f3f09b806cb3052a7f978107d8d36211",
+    "item_index": 2,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_08ea2735d9d8"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "8b4f6dcba5ebee200647d095d2035807c50bbd49967505fd00a4d6660cf85ba2",
+    "item_index": 3,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_08ea2735d9d8"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c8e3e1a8c63ab594a64760c28258c87c3ceba4c8b104ea14a12ca6c0548828c1",
+    "item_index": 4,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_08ea2735d9d8"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "2b804cb774eed786a9b908a16d402d4a8b36097003ec15d424c2c4f8fac6ff03",
+    "item_index": 5,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_08ea2735d9d8"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1573a2017eee2ad622298bfba5df828d8b294bb2fb7c55635cfa590da1baeda4",
+    "item_index": 6,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "57c7345791e8c6f95935512414d4660b085a8322e3d66a36fc87a1e95df737d2",
+    "item_index": 7,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f181380974f1c3bc450fac35bc4982e9630a7a8019468ede5244c69432d771a7",
+    "item_index": 8,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a1a0dbccb905a9f918b2407142a0878fd14b3ffdb8a8fac97a457c85b7ac2777",
+    "item_index": 9,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d66dd44a5dc9452e34d9d4f0f6b50235538e95a202abc6be60060262eb2ea864",
+    "item_index": 10,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "149b1fe178d8fae35bb3dbc0255c891e708dfdac6935e5276cb390d5d951a0fd",
+    "item_index": 11,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0c7fa1c012246b40f7b211fbf3935a09312fe469e54d7f293d1d6f28c496e16f",
+    "item_index": 12,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6f5a693b0526bb201468df5d129b8ca2039d0a847b0579512602b11869cdb280",
+    "item_index": 13,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0494bdc1b69448eaf9317873d7ad1a802a11b4c37daabf6c36a5f6fa0201591f",
+    "item_index": 14,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "163790e9be9e7ad6826cfe726c75b9e2ddc4d4793309ed9f2d52cc13eff8c008",
+    "item_index": 15,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d4d4c0d379f89c39fd3d89ae29624814b1642d553f5d2a52caefdfe2c80e975a",
+    "item_index": 16,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cfce7d0649c6aca5a23295a1a353044bf97c61862dd99f81d10a0c0340237dbc",
+    "item_index": 17,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cdc0cb9c1038455fa18507206d239d90d55e12a11c79bbf185e15b513540d849",
+    "item_index": 18,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ffa9e91f356f6ddccf9a0ca434bf1fcb823fa6fd8b6427312d1de3ffc70ef201",
+    "item_index": 19,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a5adbbbe9ded9722d0f6995e59afa2009f8a0558f97bb7085bc78204913670d9",
+    "item_index": 20,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "7e24f1829203dfa2fc9a7c4acd0f203154584b3a321118306be647ae77435033",
+    "item_index": 21,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9f2e1bea59a60ecd74acaee5711894606cd32ec11b01596b5ec566b7c7fbc35c",
+    "item_index": 22,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a0431fc5d2ac2d823b637b798e0c4f2b240afa7a2d8340361d1ae7425bd900c2",
+    "item_index": 23,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5e7a5ecca3be4f5916f088783fe7e9bcb4cf8d3273b2aa84cf8cc6e648919ced",
+    "item_index": 24,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c3767b3b0d063801b7ec5f35123efbca10a8168e55b87994382f953960dccce7",
+    "item_index": 25,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "15a6087693593384ecf1f31997261528d7d56c8f547e0a9116f54e0410d3de3b",
+    "item_index": 26,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "766553dd9a2b858431648ec28810c4ad5c917f45403c67b90ded56eddbc5e7fd",
+    "item_index": 27,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d9875ec90294bf74463b78b76582b08167582e2333e2e4e3813a189b3b299298",
+    "item_index": 28,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "71ae2343013446d1f49f4b9e50ebd981ed7e62e969677e97596bb08798b53ce0",
+    "item_index": 29,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ccc5c49cee9dfc47557694a0f9f6b6883bc51b02727e006d6ec97d2688cddfb3",
+    "item_index": 30,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d2c7a492d39481c42fdf0baeb9fc722e198a816675c71719852781cca7bc6db3",
+    "item_index": 31,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3a99980fea037eb0c456451ca324dc22c61d2024f1df0ef75cfc5aaad878012c",
+    "item_index": 32,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6eb965bcae4e03a8f936536578649ddca6be19304d73df873294f6127eb44dc9",
+    "item_index": 33,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6de798e6badb20e0bc182efcda9bcd559c68fffc09d76ab25d11ac5aea6a4def",
+    "item_index": 34,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "62dd83de807e469a70c6a216628276a059997534cf3906afded8685287233fe8",
+    "item_index": 35,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d90916877618141b759ddca973c0260f30b2eaf62d26d96a44e5a7689e8c6926",
+    "item_index": 36,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9142b23019eeb06bf4ec2dd149a37f91694fe3cd0e8b393972425bcfa7b1eedb",
+    "item_index": 37,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "743b601e3b70686eaefeb8c826567089c46ce66213bbbfbb0f74fc478cfea1a3",
+    "item_index": 38,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5081e8a8a72850b92e0c57fc548d98f03782e3d460145a1ac099c8337f21854c",
+    "item_index": 39,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d1e6622bc0e55018d42058247ca753ad682a891643147cab5597f9b2a6c3035d",
+    "item_index": 40,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1db3e65548303f1b52c6eb7eef24de902d97d4ac9067ad33fb1785596075ea89",
+    "item_index": 41,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "84a4f44f08c79004ef26745b11ff72879f14a4870fa6fac5b6b2ddba9d92575a",
+    "item_index": 42,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "48fa89bddcd159011bdac0a93efe72f2471b144b336900df9fb65e4747003761",
+    "item_index": 43,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "01c3e9e526f3629c8d57fa55b16a310ac37949a1a1615dbef9cd640b179e21cb",
+    "item_index": 44,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "602579e6092987c16a4b5cd2337ff20fccc8139ac448ffe977645bce3e6a6109",
+    "item_index": 45,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "fb016062cea81056ee5c0b9ab6ea227c0c4ffc610a5c5cd750644e718c1fa953",
+    "item_index": 46,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4c68de1490d99315f6288cc28242998b6c24d97fa12a05a017b22881dccce8d0",
+    "item_index": 47,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0fd6707350f31ca4162a7b77a92b8fa5d2cc4ccc27b434597e4edd52bfb71360",
+    "item_index": 48,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0cd3465cc654b3929ec39246ef9d9969c68425368bd25be01f903a128da34609",
+    "item_index": 49,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4d5c41971a6b65f926923155fda4a03b9265a13c530f1a71102efaeb1700bc34",
+    "item_index": 50,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "353748bf30f787327cb76d1e57d3edc3c7937ad706a44667b2d62f45f34eab0b",
+    "item_index": 51,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "143c15925b507024703febf9ea3776a1ff3dda144ca178df6528d55f967cc225",
+    "item_index": 52,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c6f15f374db73d78f5c2834a4d49f249ff464e21ac56e0e0f1f715e5245e2761",
+    "item_index": 53,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "33e5b328dd55edfd9020c9efb783757c053fe13121b9502bba6fca38e12a9d1b",
+    "item_index": 54,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "89471eb1e31d3fda498f94af57280dd4013136463ec3be89c77968a9b351eb9c",
+    "item_index": 55,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e6a367066531c29505e06e41a7c26cbd5bedf0785e4cfb207d8741d7f924c7cb",
+    "item_index": 56,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "198c2b4499d23bb88d1ace3cbb6c9d9b4f59f415cb24b99fb5f2c50bdedc2564",
+    "item_index": 57,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "19da48a02693e0344425b8faaa556c866758d32b830c8e2a3e75c1d8dabbbac7",
+    "item_index": 58,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "c66873d9ccf1f2ac76d57678c7914c1c432f8b9028a64632e17e7e963d7a06a1",
+    "item_index": 59,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "71cba049586d6c4ed1f35fa390ff1d771976c4a5d2c074b2de2c5bd0c26096b1",
+    "item_index": 60,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f465c59826dd7f0be31614282cede5555bcba024a97acde44c200a94a6700648",
+    "item_index": 61,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "2f6702bf8d748c7b9d289bc7c9b3dc8cd11f30e41ddf4cc855b36c04966cee80",
+    "item_index": 62,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9dd3fe06020d72b699e595c5bf9e6031482372a0ecff003edffecb940cdb4c31",
+    "item_index": 63,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cfa04a93324fbf4e14a58590888bf856587c70a70726adbfbd86f91706a1a565",
+    "item_index": 64,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "efe7c82b2b7a50fd3d54c2d780d6307cb2ec1c10208e0ed6426a6980cd418df5",
+    "item_index": 65,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "df0759eb86b9938a12b5ef0d247edc615b31991e6952d07162a15c8d3b64b904",
+    "item_index": 66,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3930828cb740f7df75694f4263e727c24d2649e99fe938421b18d4b3f647707a",
+    "item_index": 67,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "15e3c3fcb677236200a216bbfe540db5824320f8c6bdbc8938a25a5c030b9557",
+    "item_index": 68,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e99db368c9164408dade966091eb5bc544affef65bea38404fbc22a6c94f9d07",
+    "item_index": 69,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "bd4565ad9c8ee2fb4427ae8b9ee08cc2bf8be4682c74afe23bd1b227184b2e82",
+    "item_index": 70,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6a67d8e7873cd7f0697e3d2e24be44441dc4d08474f5512d78e8fb9aa7c18ea5",
+    "item_index": 71,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f76c8f1fb437ca1eb680672062215d30cc3b59b7cef17e0eb9c9b16117ce37fb",
+    "item_index": 72,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4be519a2618950e0925ef73f576224992de2e730fd39f82b759e7bb57350ef84",
+    "item_index": 73,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0001eea198433940d7c2d68225ce1688a07ab257d9bd3d327f523d3cea5580c1",
+    "item_index": 74,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d94685ecbe80607b561fed8702a74c8dc45e5c896f5bb8ac9a757514a10ed6ee",
+    "item_index": 75,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "881d22d42836914d61d2051284e854f6343c58ee39d95906fbf15e68256b4b03",
+    "item_index": 76,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_4bb6ac8681cc"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "f4f7ac19dc29cdd6baf39217239059bfcf9622e4ce51b1bb5d92cc5f427141e8",
+    "item_index": 77,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0a3924dafbec0702dcd6774d03c65027252790b6c9427e1ebaa61354c61dee53",
+    "item_index": 78,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9a0d19f85fa90aa81658c2e0c3bd1a4881594fc38717e5b95a7b57f19b26cd2f",
+    "item_index": 79,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1475d29610d04ac6dabe5adc4b0cbaacfa901a3afa0e188d078571af7b2b1c55",
+    "item_index": 80,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "9f005c75a3960723bf39a35ff8f77d7a0fe7425d88cdfd99880cae301e8c2cdd",
+    "item_index": 81,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "67430f862a4d541e4a075125cc2322caef6d4782769fb69d5161c483ddd667ee",
+    "item_index": 82,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5071de7eac778705a817971349dead358bf5c4c3a582bdab7c4c8dbe2646b0c4",
+    "item_index": 83,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "69cf6f62ca13b019bfd6c825119d32cf3e714aa0621d1463f2b3eb404e7057f0",
+    "item_index": 84,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "67ef89431d59105b900c02b079313e795166d3ec35b0a407111d92e87cbe03e7",
+    "item_index": 85,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "95c626bf2147ac249e92d5011e248d24e6d926bb9fa87afb3995b1c552afb4f5",
+    "item_index": 86,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "dc49942cde3b06a8d47e03be5e21dac61e73c9ecee1b7dfb6d75113ee60b0c67",
+    "item_index": 87,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3bb22cb1e12cd537efd30576bde68252c246d0f8408699dcf85fd32e04c28668",
+    "item_index": 88,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "aba15a70e8e3a50064d56d7086e29ff9c067b8376e3d855cbb7eb66790bdcdf2",
+    "item_index": 89,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "72374825fd220c5752239cd54b608c0468b6976de0c9be217f40e432292f7f6a",
+    "item_index": 90,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5a70749349b5879d5975b988f9a4e9335e3fd8885e3071aa44a322f24a8deb79",
+    "item_index": 91,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "8d58105a04df0dfe0a118ddf23b23e865f2b785b24c7d6bf69409e84be18d552",
+    "item_index": 92,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "50195bcb1130f28d4a3ec535998a36f52e17914f6a96b68696141f26d11adcc5",
+    "item_index": 93,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5887d74f556345c81977e79c2387ddbdbd808fbbeefae8e0d6424977829e628e",
+    "item_index": 94,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5bca88663eb84dbe3e05762cc034d63700f6d3acc9555aa63d9209e91d396a18",
+    "item_index": 95,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "47e9e118f957c0a8cbff107032b8203e3df7b64e3a52844dee15a5cc72ae31b8",
+    "item_index": 96,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_6b02b499456a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b2dd49e6a99bc1df7d38ee55266084c30a93073d22274775b7d32e90a9f49413",
+    "item_index": 97,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_72b55285f6ff"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e9d3d2a4448a0ba6fe82604afa3769bebb15faa2ac9ab04e2f9463eb28c0de32",
+    "item_index": 98,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_72b55285f6ff"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "083cd9c4a29bd42ba15679e65229f67fe9a76f5df3cecb27c836c6c5bba8fc49",
+    "item_index": 99,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_72b55285f6ff"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "61b649306d3d1be9651d06fb08c1bfbb062ad4946f51f3e97c81ed5f9373133c",
+    "item_index": 100,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_72b55285f6ff"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3a1054eaa1783dd1ddf42a2a315b82fb8751fe5dffaad1d2f77358a15a5362a9",
+    "item_index": 101,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "036b8a79b34b856489087511920d1b3b3674f4528ef682f2c35f99a954c014c7",
+    "item_index": 102,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "528b071f685e8067ca0018ad563a4c7a85ccd2323bf76de3b47600481a523bce",
+    "item_index": 103,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4d70cd3e2f844b76e02d319313b64ed080ac16f24468d93c64f7b14c3cf62d00",
+    "item_index": 104,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b8173d1021275f88fb76d0716baf224a748ff2f49b7607d5849d1a8b07497cc4",
+    "item_index": 105,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1c4e7b1238943c151999cce089beeb526e9ed40374718f1c0b6111944cad0347",
+    "item_index": 106,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e54051fcd09fabeefa21ca807307de306b217da4c0dfe41c5923c89e756aac73",
+    "item_index": 107,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1188e5b42f8ac02de17ae8b531277de190e31e8e282d14b98e21716b405843bb",
+    "item_index": 108,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "4d41192783e04538859dc5683c44e8a17a7c9b854a492003919878ba752a157a",
+    "item_index": 109,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "570080ac1c99a5a046980a30f1ec10e786a16fdbda455d4c471652fa5cd1c23e",
+    "item_index": 110,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5f1269c712462cf3a870ff8b9d71ef5f7442bf31783d1106da0acda419c1bdf9",
+    "item_index": 111,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e258e8b1cf20a2a310e40584d6b320ee744b098f049d43ca2d4fcc3d53f71d26",
+    "item_index": 112,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ef893bee157e217b9e210f6c802bac6b26843c064ffb80e962b6240053a5b18a",
+    "item_index": 113,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d7477823644c7b51fdbf58239e4895a0d4fd13e0c97e00090a0a104cdac070d2",
+    "item_index": 114,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6c608b605f36c6d169dd11629266dac8c0227b9049ce47787d945419722b0b2d",
+    "item_index": 115,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d45bb9339bcbc13d36bdb1d3e1b0419b534319e54685fae4b6121c62b318e446",
+    "item_index": 116,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "eddfc836566bda27965d9894d0c5c676e36ea643a6cdea9cc221ab8fec93292d",
+    "item_index": 117,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "38fec58cc8242b095ab34fb9456aa73640cf03f6814fb6a6f1b516e6c40bbb55",
+    "item_index": 118,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5d1baad15ff974615c99c5be4d44b646f9ff73d11fcb125ac650919014529dd6",
+    "item_index": 119,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6fe517e03bb6c9f69d2a9a4da85f75d6b5eccd7d690a722dddecb566a8039a07",
+    "item_index": 120,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "83c30621a17f0f8d862e33598f5b14e998f1eba85069cae2e628b4f59bbcf1ff",
+    "item_index": 121,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "33dffae43dbef289684f321e3115bb5bae2200f1600ee4700c4ea3be6958e779",
+    "item_index": 122,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "48be5e9416c2ad58cf458aaaa7e742f301d02ce39febe8f68981ba259028de6b",
+    "item_index": 123,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "295d7265d6052cec7ea74d5dc2639a7f28adeb4ddb0f2a5c93d4d424d354a41f",
+    "item_index": 124,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ab60fe4a98cdfef66a4be42118af3a3028f8d0d71f641d33f039b3347ac75712",
+    "item_index": 125,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1ee11059f5302926cb8a5ba1fdcfff3f3440c0e0e86b4dbef6a8e7981b24551c",
+    "item_index": 126,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "34f1908cfc1d35a4b048b533cd3ccd04d3393490fcf26e6c2af82787d48b44a4",
+    "item_index": 127,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a7e8573f0a607563e37e70e8f4499ce5b4a3b62bd71b02c30e420db3c0af12a1",
+    "item_index": 128,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "705c7b45f936a62c7ae2e8fd97f9d2e9097307583249c3d9582284858d1b2fb8",
+    "item_index": 129,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "00baf7711134a1f98c900f441926bb53861504ef3d8ed035951d0bbea3fed709",
+    "item_index": 130,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "66b43de937c7b57e9679bf3820f04cf8632a993f4aa1b60826f760812a71347a",
+    "item_index": 131,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "549ec773477dfe147aa6ad22b806e24608afd4306faadaac12775947dd05ca7c",
+    "item_index": 132,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0e6da9d27ae7c564d4d73589e049601c2ce39cb248b75c16a0abadf399435ef7",
+    "item_index": 133,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b1e47921b0f85dea6604d419ad7fc3e1251407f1c757ad34034b90f55fa24b92",
+    "item_index": 134,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_8aae5c1ff70d"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b628f07b2a19de3418e7aa2f624ec8bce796fde86ebae8a4616130f177a840bb",
+    "item_index": 135,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_9f74c55137dd"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ca6c4699104591342ed1712b53ab8e5468d9b07ac9ca5ae44b531315b3576d8c",
+    "item_index": 136,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cfbdfe63fe691ab121639dc1aae0ca6fb912d90e83f39f0f2fd0bf0ae16504de",
+    "item_index": 137,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "435e0502f674186fc2862bcad15d9bd7c24f3e808aa1e1a18ade10a6cff40173",
+    "item_index": 138,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "e486972d178b59e31df2fc4810d3f034e88eb69b80b4ef142a27e1b67dc69634",
+    "item_index": 139,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b0b956a3780305a76f349beec758dfcb11f50ee04b81679d252ae7d85669488b",
+    "item_index": 140,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "fee513f5066a614ab357f0592f1cf91bc68c7b5c2d45967c1c3e60fd2fc17f28",
+    "item_index": 141,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "378096038c8c1a952beec60dcecca51a3b74e00fb96e8bcbace231769c832c70",
+    "item_index": 142,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "1b3fd80ab2952bd1014fc87376093c8cd023e6e17004ea34fd8d30cfd74eabcd",
+    "item_index": 143,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cb459c9d47e88a5e4d0ddef9edf398ca596f738a15a4b1083a5324fab49dd2ff",
+    "item_index": 144,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6195228a857ed00431d1f2c6d23344cc2a45b607e312c8302ccaa1e5668556fa",
+    "item_index": 145,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "66107997aedb614909d07bf2921e118e3dd45be93fafa74174d2d4cf5b1b8a94",
+    "item_index": 146,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "a53ffc3cf5a3154c5aef7c861ece050ecc20c8baecd51a7766df15d9d9d2f6c8",
+    "item_index": 147,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "46d86bd8daac2e2a5bc21e56dc7fec33beecc5af783a7532a007903af4aff139",
+    "item_index": 148,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6a70ce13f15c0dae20238325161f585a93db3f37d981e976cce1dbbb3f5280a0",
+    "item_index": 149,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "ddd7f7ea0f68f63295b61dd0774dff6f889f96532a3a98a9b47439248286c9b7",
+    "item_index": 150,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "20ec2ce6a285613a1504e2182ef7c9dd4fc1ecab2c437f92f8f091ffce8a8390",
+    "item_index": 151,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d476a7c48f15"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "b26696dd5c719d5a90a6325218aa0064a23504dac2e6ab879d0f5dc8188a69b1",
+    "item_index": 152,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "7c0977b9b536d20a6275ae7d9305bac82d4cac427483a17de8efbf57ee41578c",
+    "item_index": 153,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cb2ec4d53100f26e6a5d786535d0fa2b46831edf46c2d6be1640342d59c18dc0",
+    "item_index": 154,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "81c0fb3501e3418591460b8381a41a4d31ede746ea966d7adb0cdfb7f4211bf7",
+    "item_index": 155,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "source_chunks.json",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  }
+]

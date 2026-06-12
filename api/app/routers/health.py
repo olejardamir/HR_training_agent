@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from starlette.responses import JSONResponse
 from ..config import settings
 from ..schemas import HealthResponse, ReadyResponse, VersionResponse
 
@@ -31,8 +32,7 @@ def ready():
             version=settings.app_version,
         )
     except Exception:
-        from fastapi import HTTPException
-        raise HTTPException(status_code=503, detail={
+        return JSONResponse(status_code=503, content={
             "ok": False, "status": "not_ready",
             "error_code": "DATABASE_UNAVAILABLE",
             "message": "Database connection failed.",

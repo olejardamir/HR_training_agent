@@ -1,0 +1,178 @@
+[
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6334da037ae3045a5ea9aeef2101272def7aee5b404e3f595a8c3aca0d9d0bf7",
+    "item_index": 0,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_0554e04f527e"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "aaf5f7609c503e4304c585a5038d5112adcd3e60cf97b5c1397f3c955e821c1b",
+    "item_index": 1,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_08ea2735d9d8"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "20d179bbb8bf01617ef8828a304d1631b3f2bde953098af1e7288ae43cb09edc",
+    "item_index": 2,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6d38366a2964f169a9ec4b6a5de73081e764e839e8fbb725b358fe5fb0082e33",
+    "item_index": 3,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5091ca9ac2dbb948ad82e417178e8302ebdc51f6280c4eb2953f6b2e4908e713",
+    "item_index": 4,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_39cd9ae52a58"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "11b65a0f6395b91e99925de4622e25ebc72cb253b081ed76bef699f3e312a94f",
+    "item_index": 5,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "3ab4471014ef0b100b1555e7b7bc47d31f2cead135127cb00c813c882b7270f6",
+    "item_index": 6,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_4bb6ac8681cc"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0df0792a19fe3941f37757de7180ab2987ac7679e09f8308a6a6b3d2f6047535",
+    "item_index": 7,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "cd9c06f1269eae6f042df760b66f768c6f5f60d5580f93be9c5c5d43df627197",
+    "item_index": 8,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_628d9b404413"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "2bd7948ad97c9b430ca0ab2334eaf5e117e8f52ea136545174548a579b246872",
+    "item_index": 9,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_6b02b499456a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "6ef6fe9c93b66ceabb2a14190aa510345f62dd6937e4d41687a8f5ac81d9c0f1",
+    "item_index": 10,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5cdc39650979bd17aeab40d6dc3881650a5fcf785396987d34d19d37c0fe7493",
+    "item_index": 11,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "d9ff69c33897ef296b42ed295dc65c12bd5baf9f8c90d55548ad8ebcb2402ef1",
+    "item_index": 12,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "213867fe7189cb6c52e145e2cb529a1ae8887cc17059fa87bbec569901cc0a66",
+    "item_index": 13,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_8aae5c1ff70d"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "12f568875612105ee35871e64c9d2fbf7f927d4dcfdf3482a9fcab5f0690aa07",
+    "item_index": 14,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_9f74c55137dd"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "0527c55c047cecf7069300a563ca3e2744372865139af4887f34f070b5964906",
+    "item_index": 15,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "hr_policies.json",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  }
+]

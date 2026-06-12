@@ -164,6 +164,36 @@ Index("ix_ticket_approval", ITSMTicket.approval_id)
 Index("ix_ticket_employee", ITSMTicket.employee_id)
 
 
+class TrainingContent(Base):
+    __tablename__ = "training_content"
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    content_id = Column(String, unique=True, index=True)
+    module_ids = Column(JSON)
+    title = Column(String)
+    body = Column(Text)
+    format = Column(String, default="markdown")
+    source_ids = Column(JSON, default=[])
+    candidate_only = Column(Boolean, default=True)
+    review_required = Column(Boolean, default=True)
+    runtime_approved = Column(Boolean, default=False)
+    generated_at = Column(String)
+
+
+class OnboardingContent(Base):
+    __tablename__ = "onboarding_content"
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    content_id = Column(String, unique=True, index=True)
+    phases = Column(JSON)
+    title = Column(String)
+    body = Column(Text)
+    format = Column(String, default="markdown")
+    source_ids = Column(JSON, default=[])
+    candidate_only = Column(Boolean, default=True)
+    review_required = Column(Boolean, default=True)
+    runtime_approved = Column(Boolean, default=False)
+    generated_at = Column(String)
+
+
 class SlackMessage(Base):
     __tablename__ = "slack_messages"
     message_id = Column(Integer, primary_key=True, index=True, autoincrement=True)

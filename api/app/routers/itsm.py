@@ -21,7 +21,23 @@ def create_ticket_endpoint(request: CreateTicketRequest,
     result = create_ticket(
         db, request.employee_id, request.approval_id,
         request.requested_systems, request.idempotency_key,
+        simulate_failure=request.simulate_failure,
     )
+    if result.get("error_code") == "ITSM_MOCK_FAILURE":
+        log_event(db, request.correlation_id, request.employee_id,
+                  "system", "itsm-mock",
+                  "itsm_ticket_failed", "ticket", None,
+                  "FAILED", "ITSM_MOCK_FAILURE")
+        db.commit()
+        return JSONResponse(status_code=503, content={
+            "ok": False, "status": "FAILED",
+            "error_code": "ITSM_MOCK_FAILURE",
+            "reason_code": "ITSM_MOCK_FAILURE",
+            "ticket_created": False,
+            "recoverable": True,
+            "next_action": "RETRY_ITSM_TICKET",
+            "correlation_id": request.correlation_id,
+        })
     if "error_code" in result:
         log_event(db, request.correlation_id, request.employee_id,
                   "system", "itsm-mock",
@@ -42,7 +58,7 @@ def create_ticket_endpoint(request: CreateTicketRequest,
         ).model_dump())
     if "error" in result:
         error = result["error"]
-        status = 403 if error == "APPROVAL_NOT_APPROVED" else 404
+        status = 409 if error == "APPROVAL_NOT_APPROVED" else 404
         return JSONResponse(status_code=status, content={"error": result.get("error")})
 
     db.commit()
@@ -80,7 +96,10 @@ def get_ticket(ticket_id: str, db: Session = Depends(get_db)):
         ITSMTicket.ticket_id == ticket_id
     ).first()
     if not ticket:
-        raise HTTPException(status_code=404, detail="Ticket not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR", "error_code": "TICKET_NOT_FOUND",
+            "message": "Ticket not found",
+        })
     return TicketResponse(
         ok=True, status=ticket.status,
         ticket_id=ticket.ticket_id,

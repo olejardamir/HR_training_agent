@@ -22,7 +22,7 @@ def test_salesforce_profile_get_valid_returns_profile():
 
 def test_salesforce_profile_patch_valid_returns_updated():
     resp = client.patch("/mock/salesforce/profile/emp_001", json={
-        "salesforce_role": "Enterprise Account Executive",
+        "role_profile": "Enterprise Account Executive",
         "salesforce_profile_complete": True,
         "correlation_id": "corr_sf_01",
     })

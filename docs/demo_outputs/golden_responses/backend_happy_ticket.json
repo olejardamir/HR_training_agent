@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "status": "CREATED",
+  "ticket_id": "itsm_<uuid/dynamic>",
+  "request_id": "req_37def5179a8d",
+  "approval_id": "apr_ff00deddcd554130ad780723afcf7bc6",
+  "employee_id": "emp_001",
+  "requested_systems": [
+    "Salesforce",
+    "Gong"
+  ],
+  "ticket_created": true,
+  "duplicate": false,
+  "pre_approval_blocked": false,
+  "correlation_id": "corr_<uuid/dynamic>",
+  "error_code": null,
+  "reason_code": null,
+  "message": null,
+  "recoverable": null,
+  "next_action": "FETCH_FINAL_STATUS"
+}

@@ -1,0 +1,8 @@
+=== Smoke: n8n Webhook Happy Path ===
+1. n8n health check
+   ok
+2. Post to webhook /webhook/hr-onboarding/new-hire (approve path)
+   HTTP 200
+   ok=true, approval_status=APPROVED, pre_approval_blocked=true
+   ticket_created=true, ticket_id=itsm_fd1581492eb5442491979c9680866b79
+=== N8N WEBHOOK SMOKE PASSED ===

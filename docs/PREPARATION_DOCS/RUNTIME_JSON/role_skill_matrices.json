@@ -1,0 +1,265 @@
+[
+  {
+    "source_id": "src_0554e04f527e",
+    "role": "Unknown",
+    "levels": [],
+    "skill_categories": [],
+    "source_ids": [
+      "src_0554e04f527e"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.490005+00:00"
+  },
+  {
+    "source_id": "src_0985445747e4",
+    "role": "Titles for Programmers",
+    "levels": [
+      {
+        "level": "Lead",
+        "description": "Programmers (L4) and Principal Programmers (L5) act as tech leads to Junior - Senior Programmers (L1-3). All Principals report directly to our CTO. Tech leads are responsible for:"
+      },
+      {
+        "level": "Junior",
+        "description": "Programmer (L1)"
+      },
+      {
+        "level": "L2",
+        "description": ""
+      },
+      {
+        "level": "Senior",
+        "description": "Programmer (L3)"
+      },
+      {
+        "level": "Lead",
+        "description": "Programmer (L4)"
+      },
+      {
+        "level": "Principal",
+        "description": "Programmer (L5)"
+      },
+      {
+        "level": "Lead",
+        "description": "ership*"
+      },
+      {
+        "level": "L1",
+        "description": "L3 Programmers. Helps define performance standards. People outside the team seek their guidance. A leader on the team, technically and culturally."
+      },
+      {
+        "level": "L1",
+        "description": "2 programmers that deepens their knowledge across broad areas."
+      }
+    ],
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_ids": [
+      "src_0985445747e4"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.490300+00:00"
+  },
+  {
+    "source_id": "src_7cb5866f767a",
+    "role": "Titles for Customer Support",
+    "levels": [
+      {
+        "level": "Junior",
+        "description": "Customer Support Rep (L1)"
+      },
+      {
+        "level": "L2",
+        "description": ""
+      },
+      {
+        "level": "Senior",
+        "description": "Customer Support Rep (L3)"
+      },
+      {
+        "level": "Lead",
+        "description": "Customer Support Rep (L4)"
+      },
+      {
+        "level": "Principal",
+        "description": "Customer Support Rep (L5)"
+      },
+      {
+        "level": "Lead",
+        "description": "ership*"
+      },
+      {
+        "level": "L1",
+        "description": "L2 Representatives. Works well with anyone. Navigates difficult situations directly and with ease."
+      },
+      {
+        "level": "Lead",
+        "description": "ership"
+      },
+      {
+        "level": "Senior",
+        "description": "Customer Support Manager (M2)"
+      },
+      {
+        "level": "Lead",
+        "description": "ership. Work happens autonomously with no need for status checks. Work is almost always free of mistakes."
+      }
+    ],
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_ids": [
+      "src_7cb5866f767a"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.490834+00:00"
+  },
+  {
+    "source_id": "src_bc71d90aeef0",
+    "role": "Titles for Ops",
+    "levels": [
+      {
+        "level": "Junior",
+        "description": "SRE (L1)"
+      },
+      {
+        "level": "L2",
+        "description": ""
+      },
+      {
+        "level": "Senior",
+        "description": "SRE (L3)"
+      },
+      {
+        "level": "Lead",
+        "description": "SRE (L4)"
+      },
+      {
+        "level": "Principal",
+        "description": "SRE (L5)"
+      },
+      {
+        "level": "Lead",
+        "description": "s the team and mentors others on common processes and procedures."
+      },
+      {
+        "level": "Lead",
+        "description": "s high-risk maintenance with limited to no customer impact."
+      },
+      {
+        "level": "Lead",
+        "description": "s high-risk maintenance with limited to no customer impact. When a site is down, something is broken, or work is crazy, ready to save the day and lead us to a successful resolution."
+      },
+      {
+        "level": "Lead",
+        "description": "s problem resolution via emergency procedures."
+      },
+      {
+        "level": "Lead",
+        "description": "er on the team, technically and culturally. Manages critical, complex projects independently and capable of effectively delegating large subsections of work to your teammates. Spends considerable time helping others improve."
+      },
+      {
+        "level": "Lead",
+        "description": "ership*"
+      },
+      {
+        "level": "L1",
+        "description": "L3 SREs. Helps define performance standards. People outside the team seek their guidance. A leader on the team, technically and culturally."
+      }
+    ],
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.491142+00:00"
+  },
+  {
+    "source_id": "src_d90b516ce1da",
+    "role": "Titles for QA",
+    "levels": [
+      {
+        "level": "Senior",
+        "description": "QA Tester (L3)"
+      },
+      {
+        "level": "Lead",
+        "description": "QA Tester (L4)"
+      },
+      {
+        "level": "Lead",
+        "description": "ership*"
+      }
+    ],
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_ids": [
+      "src_d90b516ce1da"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.491256+00:00"
+  },
+  {
+    "source_id": "src_e7637d180d27",
+    "role": "Titles for Designers",
+    "levels": [
+      {
+        "level": "L2",
+        "description": ""
+      },
+      {
+        "level": "Senior",
+        "description": "Designer (L3)"
+      },
+      {
+        "level": "Lead",
+        "description": "Designer (L4)"
+      },
+      {
+        "level": "Principal",
+        "description": "Designer (L5)"
+      },
+      {
+        "level": "Lead",
+        "description": "ership*"
+      },
+      {
+        "level": "L1",
+        "description": "L3 Designers. You help define performance standards. People outside the team seek your guidance. You're a leader on the team, technically and culturally."
+      }
+    ],
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_ids": [
+      "src_e7637d180d27"
+    ],
+    "candidate_only": true,
+    "review_required": true,
+    "runtime_approved": false,
+    "generated_at": "2026-06-13T01:19:51.491361+00:00"
+  }
+]

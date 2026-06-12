@@ -1,0 +1,8 @@
+=== Smoke: n8n Webhook Pending Path ===
+1. n8n health check
+   ok
+2. Post to webhook /webhook/hr-onboarding/new-hire (pending path)
+   HTTP 200
+   ok=true, approval_status=PENDING, ticket_created=false
+   demo_status=COMPLETED_NO_TICKET
+=== N8N WEBHOOK PENDING SMOKE PASSED ===

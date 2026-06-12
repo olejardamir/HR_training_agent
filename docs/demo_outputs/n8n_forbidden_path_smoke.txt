@@ -1,0 +1,13 @@
+=== Smoke: n8n Forbidden Path ===
+
+1. n8n health check
+   ok
+
+2. Trigger n8n webhook with forbidden system (Payroll Admin)
+   HTTP code: 200
+   forbidden=True, approval_status=FORBIDDEN, ticket_created=False, correlation_id=n8n_forbid_1781307447 
+
+3. Verify audit trail via correlation_id
+   selection_blocked=1, approval_requested=0, ticket_created=0
+
+=== N8N FORBIDDEN PATH SMOKE PASSED ===

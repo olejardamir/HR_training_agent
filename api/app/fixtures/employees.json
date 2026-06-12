@@ -46,5 +46,17 @@
     "start_date": "2026-07-25",
     "employment_status": "new_hire",
     "profile_status": "active"
+  },
+  {
+    "employee_id": "emp_inactive",
+    "name": "Inactive Employee",
+    "email": "inactive@example.test",
+    "role": "Engineer",
+    "level": "L3",
+    "department": "Engineering",
+    "manager_id": "mgr_102",
+    "start_date": "2025-01-15",
+    "employment_status": "inactive",
+    "profile_status": "inactive"
   }
 ]

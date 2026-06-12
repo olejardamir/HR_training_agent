@@ -1,0 +1,132 @@
+[
+  {
+    "description": "Candidate General Onboarding & Company Basics module extracted from internet-collected source material.",
+    "module_id": "T1",
+    "name": "General Onboarding & Company Basics",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_09610df40185",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_6b02b499456a",
+      "src_72b55285f6ff",
+      "src_79d367a0c008",
+      "src_7cb5866f767a",
+      "src_7e07631ff1ab",
+      "src_9f74c55137dd",
+      "src_c289345f25e7"
+    ],
+    "supporting_sources": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_09610df40185",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_6b02b499456a",
+      "src_72b55285f6ff",
+      "src_79d367a0c008",
+      "src_7cb5866f767a",
+      "src_7e07631ff1ab",
+      "src_9f74c55137dd",
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "description": "Candidate Security, Privacy & Compliance Training module extracted from internet-collected source material.",
+    "module_id": "T2",
+    "name": "Security, Privacy & Compliance Training",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_0985445747e4",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_6b02b499456a",
+      "src_79d367a0c008",
+      "src_9f74c55137dd",
+      "src_bc71d90aeef0",
+      "src_c289345f25e7",
+      "src_d476a7c48f15",
+      "src_d90b516ce1da"
+    ],
+    "supporting_sources": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_0985445747e4",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_6b02b499456a",
+      "src_79d367a0c008",
+      "src_9f74c55137dd",
+      "src_bc71d90aeef0",
+      "src_c289345f25e7",
+      "src_d476a7c48f15",
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "description": "Candidate Role-Specific Onboarding module extracted from internet-collected source material.",
+    "module_id": "T3",
+    "name": "Role-Specific Onboarding",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_0985445747e4",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_5c5042e7ae18",
+      "src_7cb5866f767a",
+      "src_7e07631ff1ab",
+      "src_9f74c55137dd",
+      "src_bc71d90aeef0",
+      "src_d476a7c48f15",
+      "src_d90b516ce1da",
+      "src_e7637d180d27"
+    ],
+    "supporting_sources": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_0985445747e4",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_5c5042e7ae18",
+      "src_7cb5866f767a",
+      "src_7e07631ff1ab",
+      "src_9f74c55137dd",
+      "src_bc71d90aeef0",
+      "src_d476a7c48f15",
+      "src_d90b516ce1da",
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "description": "Candidate Systems & Access Training module extracted from internet-collected source material.",
+    "module_id": "T4",
+    "name": "Systems & Access Training",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_6b02b499456a",
+      "src_79d367a0c008",
+      "src_9f74c55137dd",
+      "src_c289345f25e7"
+    ],
+    "supporting_sources": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_6b02b499456a",
+      "src_79d367a0c008",
+      "src_9f74c55137dd",
+      "src_c289345f25e7"
+    ]
+  }
+]

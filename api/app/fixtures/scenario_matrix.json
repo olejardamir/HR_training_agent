@@ -10,5 +10,7 @@
   {"scenario_id": "SCN-DUPLICATE-009", "employee_id": "emp_001", "description": "Repeated approved ticket request; no duplicate ticket."},
   {"scenario_id": "SCN-LLM-DOWN-010", "employee_id": "emp_001", "description": "Ollama unavailable; deterministic fallback used."},
   {"scenario_id": "SCN-SLACK-FAIL-011", "employee_id": "emp_001", "description": "Slack mock failure; workflow state not corrupted."},
-  {"scenario_id": "SCN-AUDIT-012", "employee_id": "emp_001", "description": "Audit chain retrieval by correlation ID."}
+  {"scenario_id": "SCN-AUDIT-012", "employee_id": "emp_001", "description": "Audit chain retrieval by correlation ID."},
+  {"scenario_id": "SCN-INACTIVE-013", "employee_id": "emp_inactive", "description": "Inactive/terminated employee; blocked from recommendation and access flow."},
+  {"scenario_id": "SCN-ITSM-FAIL-014", "employee_id": "emp_001", "description": "ITSM mock failure after valid approval; 503 FAILED recoverable, no ticket row."}
 ]

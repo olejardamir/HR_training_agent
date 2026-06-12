@@ -1,0 +1,662 @@
+[
+  {
+    "role": "Account Executive",
+    "level": "L2",
+    "required_systems": [
+      "HR Platform",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Gong",
+      "Sales Slack Channels",
+      "Salesforce"
+    ],
+    "optional_systems": [
+      "Outreach"
+    ],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0985445747e4",
+      "src_5c5042e7ae18",
+      "src_7cb5866f767a",
+      "src_bc71d90aeef0",
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "role": "Software Engineer",
+    "level": "L2",
+    "required_systems": [
+      "GitHub",
+      "Jira",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "AWS Console",
+      "Datadog"
+    ],
+    "optional_systems": [
+      "PagerDuty"
+    ],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_0985445747e4",
+      "src_3a2a06cb8b7c",
+      "src_5542b3f65212",
+      "src_5c5042e7ae18",
+      "src_79d367a0c008",
+      "src_7cb5866f767a",
+      "src_7e07631ff1ab",
+      "src_bc71d90aeef0",
+      "src_c289345f25e7",
+      "src_d90b516ce1da",
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "role": "HR Coordinator",
+    "level": "L1",
+    "required_systems": [
+      "HR Platform",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Workday Read Only"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0985445747e4",
+      "src_5c5042e7ae18",
+      "src_7cb5866f767a",
+      "src_bc71d90aeef0",
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "role": "Manager",
+    "level": "L3",
+    "required_systems": [
+      "HR Platform",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Salesforce Reports",
+      "Workday"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_09610df40185",
+      "src_0985445747e4",
+      "src_4bb6ac8681cc",
+      "src_5c5042e7ae18",
+      "src_628d9b404413",
+      "src_72b55285f6ff",
+      "src_7cb5866f767a",
+      "src_7e07631ff1ab",
+      "src_9f74c55137dd",
+      "src_bc71d90aeef0",
+      "src_d476a7c48f15",
+      "src_d90b516ce1da",
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "role": "Programmers",
+    "level": "L1",
+    "required_systems": [
+      "GitHub",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Datadog",
+      "Grafana",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "role": "Programmers",
+    "level": "L2",
+    "required_systems": [
+      "GitHub",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Datadog",
+      "Grafana",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "role": "Programmers",
+    "level": "L3",
+    "required_systems": [
+      "GitHub",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Datadog",
+      "Grafana",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "role": "Programmers",
+    "level": "L4",
+    "required_systems": [
+      "GitHub",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Datadog",
+      "Grafana",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "role": "Programmers",
+    "level": "L5",
+    "required_systems": [
+      "GitHub",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Datadog",
+      "Grafana",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "role": "Customer Support",
+    "level": "L1",
+    "required_systems": [
+      "Email",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Dash",
+      "Queenbee"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "role": "Customer Support",
+    "level": "L2",
+    "required_systems": [
+      "Email",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Dash",
+      "Queenbee"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "role": "Customer Support",
+    "level": "L3",
+    "required_systems": [
+      "Email",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Dash",
+      "Queenbee"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "role": "Customer Support",
+    "level": "L4",
+    "required_systems": [
+      "Email",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Dash",
+      "Queenbee"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "role": "Customer Support",
+    "level": "L5",
+    "required_systems": [
+      "Email",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Dash",
+      "Queenbee"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "role": "Ops",
+    "level": "L1",
+    "required_systems": [
+      "AWS Console",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Grafana",
+      "Kandji",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "role": "Ops",
+    "level": "L2",
+    "required_systems": [
+      "AWS Console",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Grafana",
+      "Kandji",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "role": "Ops",
+    "level": "L3",
+    "required_systems": [
+      "AWS Console",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Grafana",
+      "Kandji",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "role": "Ops",
+    "level": "L4",
+    "required_systems": [
+      "AWS Console",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Grafana",
+      "Kandji",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "role": "Ops",
+    "level": "L5",
+    "required_systems": [
+      "AWS Console",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Grafana",
+      "Kandji",
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "role": "QA",
+    "level": "L1",
+    "required_systems": [
+      "GitHub",
+      "Jira",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "role": "QA",
+    "level": "L3",
+    "required_systems": [
+      "GitHub",
+      "Jira",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "role": "QA",
+    "level": "L4",
+    "required_systems": [
+      "GitHub",
+      "Jira",
+      "Slack"
+    ],
+    "recommended_systems": [
+      "Sentry"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "role": "Designers",
+    "level": "L1",
+    "required_systems": [
+      "Slack"
+    ],
+    "recommended_systems": [
+      "GitHub"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "role": "Designers",
+    "level": "L2",
+    "required_systems": [
+      "Slack"
+    ],
+    "recommended_systems": [
+      "GitHub"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "role": "Designers",
+    "level": "L3",
+    "required_systems": [
+      "Slack"
+    ],
+    "recommended_systems": [
+      "GitHub"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "role": "Designers",
+    "level": "L4",
+    "required_systems": [
+      "Slack"
+    ],
+    "recommended_systems": [
+      "GitHub"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "role": "Designers",
+    "level": "L5",
+    "required_systems": [
+      "Slack"
+    ],
+    "recommended_systems": [
+      "GitHub"
+    ],
+    "optional_systems": [],
+    "forbidden_systems": [
+      "Finance Admin",
+      "Payroll Admin",
+      "Production Database Admin",
+      "Security Admin"
+    ],
+    "policy_version": "v1",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  }
+]

@@ -31,12 +31,10 @@ curl -s -X POST "$BASE/mock/itsm/tickets" \
   | python3 -c "
 import sys,json
 d=json.load(sys.stdin)
-if 'detail' in d:
-    d = d['detail']
-assert d.get('status')=='BLOCKED', f'expected BLOCKED, got {d}'
-assert d.get('pre_approval_blocked')==True, f'expected pre_approval_blocked=True'
-assert d.get('ticket_created')==False, f'expected ticket_created=False'
-assert d.get('reason_code')=='MANAGER_APPROVAL_REQUIRED', f'expected MANAGER_APPROVAL_REQUIRED, got {d}'
+assert d['status']=='BLOCKED', f'expected BLOCKED, got {d}'
+assert d['pre_approval_blocked']==True, f'expected pre_approval_blocked=True'
+assert d['ticket_created']==False, f'expected ticket_created=False'
+assert d['reason_code']=='MANAGER_APPROVAL_REQUIRED', f'expected MANAGER_APPROVAL_REQUIRED, got {d}'
 "
 echo "   Got 409 with pre_approval_blocked=true, ticket_created=false"
 

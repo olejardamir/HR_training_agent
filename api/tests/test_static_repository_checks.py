@@ -19,12 +19,21 @@ REQUIRED_FILES = [
     "api/app/seed.py",
     "docs/solution_design_1_2_pages.md",
     "docs/demo_walkthrough.md",
-    "docs/standards_alignment.md",
-    "docs/deliverable_mapping.md",
     "docs/traceability_matrix.md",
     "docs/mock_boundary.md",
     "docs/archive_boundary.md",
-    "docs/evidence_manifest_example.md",
+    "docs/final_verification_report.md",
+    "docs/expected_outputs.md",
+    "docs/backend_only_demo.md",
+    "docs/dependency_license_attribution.md",
+    "docs/environment_matrix.md",
+    "docs/source_of_truth.md",
+    "docs/claim_to_evidence_audit.md",
+    "docs/generated_artifacts_policy.md",
+    "docs/edge_case_coverage_audit.md",
+    "docs/archive/standards_alignment.md",
+    "docs/archive/deliverable_mapping.md",
+    "docs/archive/evidence_manifest_example.md",
 ]
 
 ROUTER_FILES = [
@@ -66,14 +75,27 @@ FIXTURE_FILES = [
 ]
 
 SCRIPT_FILES = [
+    "scripts/collect_evidence.sh",
+    "scripts/generate_evidence_manifest.py",
+    "scripts/import_n8n_workflow.sh",
     "scripts/smoke_happy_path.sh",
     "scripts/smoke_pending_path.sh",
     "scripts/smoke_reject_path.sh",
     "scripts/smoke_forbidden_path.sh",
     "scripts/smoke_llm_fallback.sh",
-    "scripts/validate_workflow_contract.py",
+    "scripts/smoke_n8n_happy_path.sh",
+    "scripts/smoke_n8n_reject_path.sh",
+    "scripts/smoke_n8n_pending_path.sh",
+    "scripts/smoke_n8n_expire_path.sh",
+    "scripts/smoke_n8n_wrong_manager_path.sh",
+    "scripts/smoke_n8n_forbidden_path.sh",
+    "scripts/validate_evidence_manifest_freshness.py",
     "scripts/validate_no_collapsed_files.py",
     "scripts/validate_no_secrets.py",
+    "scripts/validate_openapi_contract.py",
+    "scripts/validate_workflow_contract.py",
+    "scripts/verify_all.sh",
+    "scripts/wait_for_stack.sh",
 ]
 
 

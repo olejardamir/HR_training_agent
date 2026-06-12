@@ -1,0 +1,98 @@
+[
+  {
+    "candidate_only": null,
+    "input_item_sha256": "b184f2b789dfaa1c46f57ba0e1f20500151be1dde4483ac5d32811405a188806",
+    "item_index": 0,
+    "review_required": null,
+    "runtime_approved_input": null,
+    "source_file": "fixtures/department_standards.json",
+    "source_ids": [
+      "src_4bb6ac8681cc"
+    ]
+  },
+  {
+    "candidate_only": null,
+    "input_item_sha256": "069ae1cb53e7cfb3be3568af4b2f107efb27bd6ca577aea465088973fe2142ca",
+    "item_index": 1,
+    "review_required": null,
+    "runtime_approved_input": null,
+    "source_file": "fixtures/department_standards.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_0985445747e4",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_5c5042e7ae18",
+      "src_79d367a0c008",
+      "src_7e07631ff1ab",
+      "src_c289345f25e7",
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "candidate_only": null,
+    "input_item_sha256": "4e10aa8867cbde4152fde2b610ff07c6a175b2e1acf0695aa5dbd12dcc8a67c3",
+    "item_index": 2,
+    "review_required": null,
+    "runtime_approved_input": null,
+    "source_file": "fixtures/department_standards.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": null,
+    "input_item_sha256": "8e025f3868024e22f91a90a47a036bca15f6d02722e96fd3c5d4098405ec1460",
+    "item_index": 3,
+    "review_required": null,
+    "runtime_approved_input": null,
+    "source_file": "fixtures/department_standards.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_09610df40185",
+      "src_39cd9ae52a58",
+      "src_3a2a06cb8b7c",
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "candidate_only": null,
+    "input_item_sha256": "c8f5c41c724b94dec17e836171873acbb14c9781e1c1f7795a5040983f0413cd",
+    "item_index": 4,
+    "review_required": null,
+    "runtime_approved_input": null,
+    "source_file": "fixtures/department_standards.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": null,
+    "input_item_sha256": "85514b0c253348c2a3036999bb22bae1348b608f171d8d563bda32f5237c4b1b",
+    "item_index": 5,
+    "review_required": null,
+    "runtime_approved_input": null,
+    "source_file": "fixtures/department_standards.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "candidate_only": null,
+    "input_item_sha256": "25554e0ec4854347bff2d4cb0b3bb67569045797c21a29c28aff086a29c26793",
+    "item_index": 6,
+    "review_required": null,
+    "runtime_approved_input": null,
+    "source_file": "fixtures/department_standards.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_5c5042e7ae18"
+    ]
+  }
+]

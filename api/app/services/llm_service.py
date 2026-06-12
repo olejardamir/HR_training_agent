@@ -50,7 +50,7 @@ FALLBACK_TEMPLATES = {
 
 async def generate_message(message_type: str, context: dict,
                            fallback_enabled: bool = True) -> tuple:
-    if settings.llm_provider == "ollama" and not fallback_enabled:
+    if settings.llm_provider == "ollama":
         try:
             async with httpx.AsyncClient(timeout=settings.llm_timeout_seconds) as client:
                 resp = await client.post(
@@ -65,7 +65,8 @@ async def generate_message(message_type: str, context: dict,
                     data = resp.json()
                     return data.get("response", ""), "ollama"
         except Exception:
-            pass
+            if not fallback_enabled:
+                raise
 
     template_fn = FALLBACK_TEMPLATES.get(message_type)
     if template_fn:

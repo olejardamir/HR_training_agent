@@ -1,0 +1,8 @@
+=== Smoke: n8n Webhook Wrong Manager Path ===
+1. n8n health check
+   ok
+2. Post to webhook /webhook/hr-onboarding/new-hire (wrong_manager path)
+   HTTP 200
+   ok=true, approval_status=PENDING (wrong manager blocked), ticket_created=false
+   demo_status=COMPLETED_NO_TICKET
+=== N8N WEBHOOK WRONG MANAGER SMOKE PASSED ===

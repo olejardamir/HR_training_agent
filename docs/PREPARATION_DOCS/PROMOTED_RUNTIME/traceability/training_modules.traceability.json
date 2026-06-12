@@ -1,0 +1,89 @@
+[
+  {
+    "candidate_only": true,
+    "input_item_sha256": "531887bddab270f9a6e7e8d1a7f81ec8fa647990e2281c2539ac4d7e421a2f97",
+    "item_index": 0,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "training_modules.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_09610df40185",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_6b02b499456a",
+      "src_72b55285f6ff",
+      "src_79d367a0c008",
+      "src_7cb5866f767a",
+      "src_7e07631ff1ab",
+      "src_9f74c55137dd",
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "33af7f494c680b6e6485623f7ab5a5b18bdef649d537bbb89fd33254ac15f4d9",
+    "item_index": 1,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "training_modules.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_0985445747e4",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_6b02b499456a",
+      "src_79d367a0c008",
+      "src_9f74c55137dd",
+      "src_bc71d90aeef0",
+      "src_c289345f25e7",
+      "src_d476a7c48f15",
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "5a46ee585e7781fcdefef99d1741bb9a6e3a466faac927b30df32380c2664510",
+    "item_index": 2,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "training_modules.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_0985445747e4",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_5c5042e7ae18",
+      "src_7cb5866f767a",
+      "src_7e07631ff1ab",
+      "src_9f74c55137dd",
+      "src_bc71d90aeef0",
+      "src_d476a7c48f15",
+      "src_d90b516ce1da",
+      "src_e7637d180d27"
+    ]
+  },
+  {
+    "candidate_only": true,
+    "input_item_sha256": "854f392ad3ad8356d319ee71c2d3cb3e55ea460bdec9dda87b9e580f4024d591",
+    "item_index": 3,
+    "review_required": true,
+    "runtime_approved_input": false,
+    "source_file": "training_modules.json",
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_09610df40185",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_6b02b499456a",
+      "src_79d367a0c008",
+      "src_9f74c55137dd",
+      "src_c289345f25e7"
+    ]
+  }
+]

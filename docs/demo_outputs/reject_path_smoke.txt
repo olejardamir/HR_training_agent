@@ -1,0 +1,11 @@
+=== Smoke: Reject Path (rejected -> no ticket) ===
+1. Start onboarding
+2. Select access
+3. Create approval
+4. Manager rejects
+5. Try ticket after rejection (should be 409 with pre_approval_blocked=true)
+   Got 409 with pre_approval_blocked=true, ticket_created=false
+6. Verify audit contains ticket_blocked
+   Audit ticket_blocked found
+
+=== REJECT PATH PASSED ===

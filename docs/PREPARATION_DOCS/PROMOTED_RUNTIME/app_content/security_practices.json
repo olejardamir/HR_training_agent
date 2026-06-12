@@ -1,0 +1,121 @@
+[
+  {
+    "content_preview": "# Policy Manual\n\nLast Updated: 2018-01-08\n\n## Our Mission\nWe serve those who serve the people in America's legislatures.\n\n## Vision\nTo serve as a reliable product development partner for legislators who want to make systems of governance more open, more accessible, and more effective. Our products are iteratively built to address meaningful, well-known problems in new, innovative ways and are focused intently on serving user needs over stakeholder interests.\n\n## Values\nIn our work, we will striv",
+    "filename": "src_09610df40185__opengov_hr_manual.md",
+    "security_practices": [
+      "password_policy"
+    ],
+    "source_id": "src_09610df40185",
+    "source_ids": [
+      "src_09610df40185"
+    ]
+  },
+  {
+    "content_preview": "# Titles for Programmers\n\n## Programming Management\n\nOn Web, SIP, and Mobile programming teams, Lead Programmers (L4) and Principal Programmers (L5) act as tech leads to Junior - Senior Programmers (L1-3). All Principals report directly to our CTO. Tech leads are responsible for:\n- Reviewing a report's substantial PRs before they're shipped.\n- Having a kick-off conversation with a report on every substantial project.\n- Reviewing a report's on-call work and handoff after every shift.\n- Providing ",
+    "filename": "src_0985445747e4__titles-for-programmers.md",
+    "security_practices": [
+      "incident_reporting"
+    ],
+    "source_id": "src_0985445747e4",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "content_preview": "# New employee orientation and checklist\n\n## Introduction\n\nAs part of the new employee onboarding process, we created this checklist to assist you through the days, weeks, and months as a new employee with Company. After your join Company, you can start using our internal checklist tool, [checklistomania](https://checklistomania.apps.cloud.gov/).\n\nThis document serves as a list of tasks for you to complete with corresponding timelines. Some of the items listed below are transactional (for example: compl",
+    "filename": "src_3a2a06cb8b7c__18f_new_hire_checklist.md",
+    "security_practices": [
+      "password_policy",
+      "multi_factor_authentication",
+      "vpn"
+    ],
+    "source_id": "src_3a2a06cb8b7c",
+    "source_ids": [
+      "src_3a2a06cb8b7c"
+    ]
+  },
+  {
+    "content_preview": "GitLab Onboarding | The GitLab Handbook View page source Edit this page Manage maintainers Maintainers @rallen3 On This Page GitLab Onboarding Onboarding at GitLab and Onboarding Issue Templates Onboarding is incredibly important at GitLab. We don&rsquo;t expect you to hit the ground running from day one. We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training. Please feel free to participate in your team&rsquo;",
+    "filename": "src_4bb6ac8681cc__gitlab_general_onboarding.html",
+    "security_practices": [
+      "password_policy",
+      "multi_factor_authentication"
+    ],
+    "source_id": "src_4bb6ac8681cc",
+    "source_ids": [
+      "src_4bb6ac8681cc"
+    ]
+  },
+  {
+    "content_preview": "# Our Internal Systems\n\nBesides the customer-facing applications, like the different versions of Workplace, we have a number of internal systems that help us support, report, and operate the company. They are as follows:\n\n## Queenbee\n\nQueenbee is our invoice, accounting, and identity system. Here you can look up any customer account, see whether they are comped, refund an invoice, or even login as a customer.\n\nThat’s an immense amount of power and we take its use very seriously. We only ever logi",
+    "filename": "src_5542b3f65212__our-internal-systems.md",
+    "security_practices": [
+      "device_management",
+      "incident_reporting"
+    ],
+    "source_id": "src_5542b3f65212",
+    "source_ids": [
+      "src_5542b3f65212"
+    ]
+  },
+  {
+    "content_preview": "GitLab IT Onboarding 101 | The GitLab Handbook View page source Edit this page Manage maintainers Maintainers @smanzuik @dzhu-gl On This Page GitLab IT Onboarding 101 Welcome To GitLab Congratulations on joining GitLab! This page is dedicated to the IT onboarding experience, here at GitLab we use many applications and the latest hardware to enable you to complete your work to the best of your ability! While it may seen a little bit overwhelming at the start the Team member enablement team is her",
+    "filename": "src_6b02b499456a__gitlab_it_onboarding101.html",
+    "security_practices": [
+      "password_policy",
+      "multi_factor_authentication",
+      "device_management"
+    ],
+    "source_id": "src_6b02b499456a",
+    "source_ids": [
+      "src_6b02b499456a"
+    ]
+  },
+  {
+    "content_preview": "# Managing work devices\n\nEveryone receives a new Mac [when they join 37signals](https://github.com/Workplace/handbook/blob/f094e5f8b778515d363d84c9ae139cc006b66f3b/getting-started.md#your-first-few-days). We centrally manage and secure these devices with [Kandji](https://kandji.io/) which reduces our exposure to security incidents. Kandji applies a standard configuration to every device (e.g. enable disk encryption, firewall, password rules), it installs essential apps (e.g. EncryptMe), and it wi",
+    "filename": "src_79d367a0c008__managing-work-devices.md",
+    "security_practices": [
+      "password_policy",
+      "device_management",
+      "vpn",
+      "incident_reporting"
+    ],
+    "source_id": "src_79d367a0c008",
+    "source_ids": [
+      "src_79d367a0c008"
+    ]
+  },
+  {
+    "content_preview": "# Titles for Ops\n\n| Category | Junior SRE (L1) | SRE (L2) | Senior SRE (L3) | Lead SRE (L4) | Principal SRE (L5) |\n| ----- | ----- | ----- | ----- | ----- | ----- |\n| **Skill** | | | | | |\n| *Mastery* | Competent in 1-2 areas (e.g. networking, configuration management, containers, orchestration) and with common processes and procedures. | Proficient in one or more areas of expertise (e.g. networking, configuration management, containers, orchestration), and experienced with common processes and ",
+    "filename": "src_bc71d90aeef0__titles-for-ops.md",
+    "security_practices": [
+      "incident_reporting"
+    ],
+    "source_id": "src_bc71d90aeef0",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "content_preview": "# Employee & Contractor Onboarding\n\nWelcome to the **Ever** company!\nWe all are so excited to starting working with you! :rocket:\n\nPlease check information from this document, it will ensure more efficient and smooth communication and allow you to get started faster.\nWe try to summarize it all as a checklists of actional items, so you did not miss anything :)\n\n## Work and Communication Management Software / Tools\n\n- [ ] If you a full-time employee or full-time contractor, you should get an invit",
+    "filename": "src_c289345f25e7__ever_onboarding.md",
+    "security_practices": [
+      "multi_factor_authentication"
+    ],
+    "source_id": "src_c289345f25e7",
+    "source_ids": [
+      "src_c289345f25e7"
+    ]
+  },
+  {
+    "content_preview": "# Titles for QA\n\n| Category | Senior QA Tester (L3) | Lead QA Tester (L4) |\n| ----- | ----- | ----- |\n| **Skill** | | |\n| *Mastery* | Demonstrates broad depth of knowledge of our products. Produces well-considered, high-quality QA reports beyond the happy path. Skilled in our entire testing toolset. | Intimate knowledge of our entire product suite. Acts as a subject matter expert on our QA approach, product features and shortcomings. Skilled in other testing disciplines such as accessibility, se",
+    "filename": "src_d90b516ce1da__titles-for-QA.md",
+    "security_practices": [
+      "incident_reporting"
+    ],
+    "source_id": "src_d90b516ce1da",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  }
+]

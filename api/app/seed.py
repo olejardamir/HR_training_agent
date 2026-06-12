@@ -5,7 +5,8 @@ from .models import (
     Base, Employee, Manager, TrainingStatusTable, SalesforceProfile,
     RoleAccessPolicy, PeerAccessPattern, DepartmentStandard,
     OnboardingSession, SelectedAccessRequest, ManagerApproval,
-    ITSMTicket, SlackMessage, AuditEvent, EmploymentStatus
+    ITSMTicket, SlackMessage, AuditEvent, EmploymentStatus,
+    TrainingContent, OnboardingContent,
 )
 
 
@@ -85,6 +86,44 @@ def reset_and_seed():
                 department=ds["department"],
                 standard_systems=ds["standard_systems"],
             ))
+
+        try:
+            with open("app/fixtures/training_content.json") as f:
+                training_contents = json.load(f)
+            for tc in training_contents:
+                db.add(TrainingContent(
+                    content_id=tc["content_id"],
+                    module_ids=tc.get("module_ids", []),
+                    title=tc.get("title", ""),
+                    body=tc.get("body", ""),
+                    format=tc.get("format", "markdown"),
+                    source_ids=tc.get("source_ids", []),
+                    candidate_only=tc.get("candidate_only", True),
+                    review_required=tc.get("review_required", True),
+                    runtime_approved=tc.get("runtime_approved", False),
+                    generated_at=tc.get("generated_at", ""),
+                ))
+        except FileNotFoundError:
+            print("  [info] training_content.json not found, skipping.")
+
+        try:
+            with open("app/fixtures/onboarding_content.json") as f:
+                onboarding_contents = json.load(f)
+            for oc in onboarding_contents:
+                db.add(OnboardingContent(
+                    content_id=oc["content_id"],
+                    phases=oc.get("phases", []),
+                    title=oc.get("title", ""),
+                    body=oc.get("body", ""),
+                    format=oc.get("format", "markdown"),
+                    source_ids=oc.get("source_ids", []),
+                    candidate_only=oc.get("candidate_only", True),
+                    review_required=oc.get("review_required", True),
+                    runtime_approved=oc.get("runtime_approved", False),
+                    generated_at=oc.get("generated_at", ""),
+                ))
+        except FileNotFoundError:
+            print("  [info] onboarding_content.json not found, skipping.")
 
         db.commit()
         print("Database seeded successfully.")

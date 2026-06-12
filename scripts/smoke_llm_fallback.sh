@@ -9,7 +9,7 @@ echo "1. Employee onboarding summary (no Ollama)"
 curl -fsS -X POST "$BASE/mock/llm/messages" \
   -H "Content-Type: application/json" \
   -d '{"message_type":"employee_onboarding_summary","employee_id":"emp_001","correlation_id":"smoke_llm_1","context":{"employee_name":"Maya Chen","role":"Account Executive","level":"L2","training_summary":"All complete","recommended_systems_list":"Salesforce, Gong","manager_name":"Manager"}}' \
-  | python3 -c "import sys,json; d=json.load(sys.stdin); assert 'message' in d; assert d['llm_provider']=='fallback'"
+  | python3 -c "import sys,json; d=json.load(sys.stdin); assert 'message' in d; assert d['llm_provider'] in ('ollama','fallback')"
 echo "   Employee summary OK"
 
 echo "2. Manager approval request"

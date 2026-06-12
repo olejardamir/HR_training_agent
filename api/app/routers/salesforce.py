@@ -1,4 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends
+from starlette.responses import JSONResponse
 from sqlalchemy.orm import Session
 from ..database import get_db
 from ..schemas import SalesforceProfile, SalesforceProfileOut, SalesforceProfilePatchRequest
@@ -34,9 +35,12 @@ def patch_salesforce_profile(employee_id: str,
                              db: Session = Depends(get_db)):
     result = update_profile(db, employee_id,
                             request.salesforce_profile_complete,
-                            request.salesforce_role)
+                            request.role_profile)
     if isinstance(result, dict) and result.get("error") == "PROFILE_NOT_FOUND":
-        raise HTTPException(status_code=404, detail="Salesforce profile not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR", "error_code": "PROFILE_NOT_FOUND",
+            "message": "Salesforce profile not found",
+        })
 
     log_event(db, request.correlation_id, employee_id,
               "system", "salesforce-mock",

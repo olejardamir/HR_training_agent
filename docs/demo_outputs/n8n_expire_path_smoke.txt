@@ -1,0 +1,8 @@
+=== Smoke: n8n Webhook Expire Path ===
+1. n8n health check
+   ok
+2. Post to webhook /webhook/hr-onboarding/new-hire (expire path)
+   HTTP 200
+   ok=true, approval_status=EXPIRED, ticket_created=false
+   demo_status=COMPLETED_NO_TICKET
+=== N8N WEBHOOK EXPIRE SMOKE PASSED ===

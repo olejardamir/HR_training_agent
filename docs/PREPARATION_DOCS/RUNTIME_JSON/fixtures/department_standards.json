@@ -1,0 +1,91 @@
+[
+  {
+    "department": "Sales",
+    "standard_systems": [
+      "Sales Slack Channels"
+    ],
+    "source_ids": [
+      "src_4bb6ac8681cc"
+    ]
+  },
+  {
+    "department": "Engineering",
+    "standard_systems": [
+      "AWS Console",
+      "GitHub"
+    ],
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_0985445747e4",
+      "src_3a2a06cb8b7c",
+      "src_4bb6ac8681cc",
+      "src_5542b3f65212",
+      "src_5c5042e7ae18",
+      "src_79d367a0c008",
+      "src_7e07631ff1ab",
+      "src_c289345f25e7",
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "department": "Operations",
+    "standard_systems": [
+      "AWS Console",
+      "Slack"
+    ],
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "department": "HR",
+    "standard_systems": [
+      "HR Platform",
+      "Slack"
+    ],
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_08ea2735d9d8",
+      "src_09610df40185",
+      "src_39cd9ae52a58",
+      "src_3a2a06cb8b7c",
+      "src_7e07631ff1ab"
+    ]
+  },
+  {
+    "department": "Design",
+    "standard_systems": [
+      "GitHub",
+      "Slack"
+    ],
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "department": "Support",
+    "standard_systems": [
+      "Email",
+      "Slack"
+    ],
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_5c5042e7ae18"
+    ]
+  },
+  {
+    "department": "QA",
+    "standard_systems": [
+      "GitHub",
+      "Jira",
+      "Slack"
+    ],
+    "source_ids": [
+      "src_0554e04f527e",
+      "src_5c5042e7ae18"
+    ]
+  }
+]

@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
+from starlette.responses import JSONResponse
 from sqlalchemy.orm import Session
 from ..database import get_db
 from ..models import Employee, Manager
@@ -14,7 +15,7 @@ router = APIRouter()
 def get_employee_profile(employee_id: str, db: Session = Depends(get_db)):
     emp = get_employee(db, employee_id)
     if not emp:
-        raise HTTPException(status_code=404, detail={
+        return JSONResponse(status_code=404, content={
             "ok": False, "error_code": "EMPLOYEE_NOT_FOUND",
             "message": f"Employee {employee_id} not found",
         })
@@ -40,7 +41,10 @@ def patch_employee_profile(employee_id: str, request: EmployeeProfilePatchReques
                            db: Session = Depends(get_db)):
     emp = get_employee(db, employee_id)
     if not emp:
-        raise HTTPException(status_code=404, detail="Employee not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR", "error_code": "EMPLOYEE_NOT_FOUND",
+            "message": "Employee not found",
+        })
 
     ignored_fields = []
     for field in ("role", "level", "manager_id", "employment_status", "department"):
@@ -81,7 +85,10 @@ def patch_employee_profile(employee_id: str, request: EmployeeProfilePatchReques
 def get_manager(manager_id: str, db: Session = Depends(get_db)):
     mgr = db.query(Manager).filter(Manager.manager_id == manager_id).first()
     if not mgr:
-        raise HTTPException(status_code=404, detail="Manager not found")
+        return JSONResponse(status_code=404, content={
+            "ok": False, "status": "ERROR", "error_code": "MANAGER_NOT_FOUND",
+            "message": "Manager not found",
+        })
     return ManagerProfile(
         manager_id=mgr.manager_id,
         name=mgr.name,

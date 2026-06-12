@@ -1,0 +1,11 @@
+{
+    "ok": true,
+    "status": "ready",
+    "database": "ready",
+    "seed_data": "loaded",
+    "llm": "fallback_available",
+    "version": "0.1.0",
+    "error_code": null,
+    "message": null,
+    "recoverable": null
+}

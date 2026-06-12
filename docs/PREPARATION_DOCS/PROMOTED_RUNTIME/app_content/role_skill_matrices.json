@@ -1,0 +1,241 @@
+[
+  {
+    "levels": [],
+    "role": "Unknown",
+    "skill_categories": [],
+    "source_id": "src_0554e04f527e",
+    "source_ids": [
+      "src_0554e04f527e"
+    ]
+  },
+  {
+    "levels": [
+      {
+        "description": "Programmers (L4) and Principal Programmers (L5) act as tech leads to Junior - Senior Programmers (L1-3). All Principals report directly to our CTO. Tech leads are responsible for:",
+        "level": "Lead"
+      },
+      {
+        "description": "Programmer (L1)",
+        "level": "Junior"
+      },
+      {
+        "description": "",
+        "level": "L2"
+      },
+      {
+        "description": "Programmer (L3)",
+        "level": "Senior"
+      },
+      {
+        "description": "Programmer (L4)",
+        "level": "Lead"
+      },
+      {
+        "description": "Programmer (L5)",
+        "level": "Principal"
+      },
+      {
+        "description": "ership*",
+        "level": "Lead"
+      },
+      {
+        "description": "L3 Programmers. Helps define performance standards. People outside the team seek their guidance. A leader on the team, technically and culturally.",
+        "level": "L1"
+      },
+      {
+        "description": "2 programmers that deepens their knowledge across broad areas.",
+        "level": "L1"
+      }
+    ],
+    "role": "Titles for Programmers",
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_id": "src_0985445747e4",
+    "source_ids": [
+      "src_0985445747e4"
+    ]
+  },
+  {
+    "levels": [
+      {
+        "description": "Customer Support Rep (L1)",
+        "level": "Junior"
+      },
+      {
+        "description": "",
+        "level": "L2"
+      },
+      {
+        "description": "Customer Support Rep (L3)",
+        "level": "Senior"
+      },
+      {
+        "description": "Customer Support Rep (L4)",
+        "level": "Lead"
+      },
+      {
+        "description": "Customer Support Rep (L5)",
+        "level": "Principal"
+      },
+      {
+        "description": "ership*",
+        "level": "Lead"
+      },
+      {
+        "description": "L2 Representatives. Works well with anyone. Navigates difficult situations directly and with ease.",
+        "level": "L1"
+      },
+      {
+        "description": "ership",
+        "level": "Lead"
+      },
+      {
+        "description": "Customer Support Manager (M2)",
+        "level": "Senior"
+      },
+      {
+        "description": "ership. Work happens autonomously with no need for status checks. Work is almost always free of mistakes.",
+        "level": "Lead"
+      }
+    ],
+    "role": "Titles for Customer Support",
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_id": "src_7cb5866f767a",
+    "source_ids": [
+      "src_7cb5866f767a"
+    ]
+  },
+  {
+    "levels": [
+      {
+        "description": "SRE (L1)",
+        "level": "Junior"
+      },
+      {
+        "description": "",
+        "level": "L2"
+      },
+      {
+        "description": "SRE (L3)",
+        "level": "Senior"
+      },
+      {
+        "description": "SRE (L4)",
+        "level": "Lead"
+      },
+      {
+        "description": "SRE (L5)",
+        "level": "Principal"
+      },
+      {
+        "description": "s the team and mentors others on common processes and procedures.",
+        "level": "Lead"
+      },
+      {
+        "description": "s high-risk maintenance with limited to no customer impact.",
+        "level": "Lead"
+      },
+      {
+        "description": "s high-risk maintenance with limited to no customer impact. When a site is down, something is broken, or work is crazy, ready to save the day and lead us to a successful resolution.",
+        "level": "Lead"
+      },
+      {
+        "description": "s problem resolution via emergency procedures.",
+        "level": "Lead"
+      },
+      {
+        "description": "er on the team, technically and culturally. Manages critical, complex projects independently and capable of effectively delegating large subsections of work to your teammates. Spends considerable time helping others improve.",
+        "level": "Lead"
+      },
+      {
+        "description": "ership*",
+        "level": "Lead"
+      },
+      {
+        "description": "L3 SREs. Helps define performance standards. People outside the team seek their guidance. A leader on the team, technically and culturally.",
+        "level": "L1"
+      }
+    ],
+    "role": "Titles for Ops",
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_id": "src_bc71d90aeef0",
+    "source_ids": [
+      "src_bc71d90aeef0"
+    ]
+  },
+  {
+    "levels": [
+      {
+        "description": "QA Tester (L3)",
+        "level": "Senior"
+      },
+      {
+        "description": "QA Tester (L4)",
+        "level": "Lead"
+      },
+      {
+        "description": "ership*",
+        "level": "Lead"
+      }
+    ],
+    "role": "Titles for QA",
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_id": "src_d90b516ce1da",
+    "source_ids": [
+      "src_d90b516ce1da"
+    ]
+  },
+  {
+    "levels": [
+      {
+        "description": "",
+        "level": "L2"
+      },
+      {
+        "description": "Designer (L3)",
+        "level": "Senior"
+      },
+      {
+        "description": "Designer (L4)",
+        "level": "Lead"
+      },
+      {
+        "description": "Designer (L5)",
+        "level": "Principal"
+      },
+      {
+        "description": "ership*",
+        "level": "Lead"
+      },
+      {
+        "description": "L3 Designers. You help define performance standards. People outside the team seek your guidance. You're a leader on the team, technically and culturally.",
+        "level": "L1"
+      }
+    ],
+    "role": "Titles for Designers",
+    "skill_categories": [
+      "Coachability",
+      "Engagement",
+      "Skill"
+    ],
+    "source_id": "src_e7637d180d27",
+    "source_ids": [
+      "src_e7637d180d27"
+    ]
+  }
+]

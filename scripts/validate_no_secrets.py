@@ -1,10 +1,11 @@
+#!/usr/bin/env python3
 import os
 import re
 import sys
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-EXCLUDE_DIRS = {".git", "__pycache__", ".pytest_cache", "postgres_data", "node_modules", "1_PREPARATION_STEP", "screenshots", "private"}
+EXCLUDE_DIRS = {".git", "__pycache__", ".pytest_cache", "postgres_data", "node_modules", "1_PREPARATION_STEP", "screenshots", "private", "PREPARATION_DOCS"}
 EXCLUDE_FILES = {"validate_no_secrets.py", ".env.example", ".env"}
 
 SECRET_PATTERNS = [
