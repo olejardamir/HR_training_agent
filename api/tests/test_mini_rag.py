@@ -65,7 +65,7 @@ def test_rag_index_builds_from_runtime_approved_content():
 
 
 def test_retriever_returns_t2_content_for_t2_question():
-    result = retrieve("What do I need to do for T2?", top_k=3, minimum_score=0.05)
+    result = retrieve("What do I need to do for T2?", top_k=3, minimum_score=0.10)
     assert len(result["matches"]) > 0
     for m in result["matches"]:
         assert "chunk_id" in m
@@ -74,7 +74,7 @@ def test_retriever_returns_t2_content_for_t2_question():
 
 
 def test_retriever_returns_profile_content_for_profile_question():
-    result = retrieve("How do I update my profile?", top_k=3, minimum_score=0.05)
+    result = retrieve("How do I update my profile?", top_k=3, minimum_score=0.10)
     assert len(result["matches"]) > 0
 
 
