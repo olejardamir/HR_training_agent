@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from .config import settings
 from .database import engine
 from .models import Base
-from .routers import health, onboarding, hr, training, access, approvals, itsm, slack, llm, audit, salesforce, content
+from .routers import health, onboarding, hr, training, access, approvals, itsm, slack, llm, audit, salesforce, content, agent_chat
 
 
 @asynccontextmanager
@@ -26,6 +26,7 @@ app.include_router(llm.router)
 app.include_router(audit.router)
 app.include_router(salesforce.router)
 app.include_router(content.router)
+app.include_router(agent_chat.router)
 
 
 @app.post("/demo/reset")

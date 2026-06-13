@@ -53,3 +53,7 @@ node_modules/
 private/
 docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook
 tools/
+
+# RAG generated index
+api/app/rag_index/*
+!api/app/rag_index/.gitkeep

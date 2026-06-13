@@ -38,6 +38,13 @@ requirement -> endpoint -> service -> test -> demo evidence
 | Empty employee_id rejected | `POST /onboarding/start/{employee_id}` | `routers/onboarding.py:start_onboarding` | `test_approval_gate.py:test_empty_employee_id_rejected` | 400 INVALID_EMPLOYEE_ID |
 | Duplicate approval idempotent | `POST /mock/approvals` | `services/approval_service.py:create_approval` | `test_approval_gate.py:test_duplicate_approval_returns_existing` | Returns existing approval |
 | n8n workflow contract | `n8n/hr_onboarding_workflow.json` | `scripts/validate_workflow_contract.py` | `test_n8n_contract_drift.py:test_workflow_file_exists`, `test_n8n_contract_drift.py:test_workflow_contract_passes`, `test_n8n_contract_drift.py:test_workflow_contract_negative_passes` | Validates workflow structure against contract |
+| Content seed (training) | `api/app/fixtures/training_content.json` | `seed.py` / Content routers | `test_mini_rag.py:test_content_fixtures_are_seeded` | 114 runtime-approved training items |
+| Content seed (onboarding) | `api/app/fixtures/onboarding_content.json` | `seed.py` / Content routers | `test_mini_rag.py:test_content_fixtures_are_seeded` | 85 runtime-approved onboarding items |
+| Content retrieval | `GET /mock/content/training?module_id=T2` | `routers/content.py` | `test_mini_rag.py:test_training_content_endpoint_filters_t2` | T2-filtered content returned |
+| RAG index build | `app/rag/index_builder.py` | sentence-transformers/TF-IDF | `test_mini_rag.py:test_rag_index_builds_from_runtime_approved_content` | 212 chunks indexed |
+| RAG retrieval | `app/rag/retriever.py` | cosine similarity + metadata filter | `test_mini_rag.py:test_retriever_returns_t2_content_for_t2_question` | T2 question returns T2 chunks |
+| Agent chat | `POST /agent/chat` | `routers/agent_chat.py` + `services/agent_response.py` | `test_mini_rag.py:test_agent_chat_returns_answer_with_used_content_ids` | Chat returns answer with sources |
+| Agent audit | `POST /agent/chat` | `services/audit_service.py` | `test_mini_rag.py:test_agent_chat_logs_audit_event` | agent_chat audit events logged |
 
 ## Service Mapping
 
@@ -58,3 +65,7 @@ requirement -> endpoint -> service -> test -> demo evidence
 | Training service | `app/services/training_service.py` | models |
 | Seed/reset | `app/seed.py` | models, fixtures |
 | Workflow validator | `scripts/validate_workflow_contract.py` | n8n workflow JSON, FastAPI app |
+| RAG index builder | `app/rag/index_builder.py` | fixtures, sentence-transformers/TF-IDF |
+| RAG retriever | `app/rag/retriever.py` | content chunks, vectors |
+| Agent chat | `app/routers/agent_chat.py` | retriever, agent_response, audit_service |
+| Agent response | `app/services/agent_response.py` | llm_service, deterministic templates |

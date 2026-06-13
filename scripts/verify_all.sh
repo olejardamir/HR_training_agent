@@ -37,6 +37,11 @@ check "No secrets" python3 scripts/validate_no_secrets.py
 check "Evidence freshness" python3 scripts/validate_evidence_manifest_freshness.py
 
 echo ""
+echo "--- Mini-RAG ---"
+check "build mini-rag index" bash scripts/build_rag_index.sh
+check "mini-rag agent chat" curl -fsS -X POST http://localhost:8000/agent/chat -H "Content-Type: application/json" -d '{"employee_id":"emp_001","message":"What do I need to do for T2?"}' > /dev/null
+
+echo ""
 echo "--- Direct FastAPI Smokes ---"
 check "Happy path" bash scripts/smoke_happy_path.sh
 check "Pending path" bash scripts/smoke_pending_path.sh

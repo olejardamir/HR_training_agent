@@ -170,6 +170,45 @@ The workflow also accepts `auto_approve_manager`:
 
 ---
 
+## Mini-RAG Chat Demo
+
+1. **Build the index**
+   ```bash
+   bash scripts/build_rag_index.sh
+   ```
+
+2. **Ask about training**
+   ```bash
+   curl -s -X POST http://localhost:8000/agent/chat \
+     -H "Content-Type: application/json" \
+     -d '{"employee_id":"emp_001","message":"What do I need to do for T2?"}' | jq
+   ```
+   Expected: answer with T2 guidance, `used_content_ids`, and employee state.
+
+3. **Ask about onboarding**
+   ```bash
+   curl -s -X POST http://localhost:8000/agent/chat \
+     -H "Content-Type: application/json" \
+     -d '{"employee_id":"emp_001","message":"How do I update my profile?"}' | jq
+   ```
+
+4. **Ask about Salesforce access**
+   ```bash
+   curl -s -X POST http://localhost:8000/agent/chat \
+     -H "Content-Type: application/json" \
+     -d '{"employee_id":"emp_001","message":"Can I request Salesforce access?"}' | jq
+   ```
+   Expected: the answer explains Salesforce setup steps but does **not** decide access.
+
+5. **Unknown employee returns 404**
+   ```bash
+   curl -s -X POST http://localhost:8000/agent/chat \
+     -H "Content-Type: application/json" \
+     -d '{"employee_id":"UNKNOWN","message":"Test"}' | jq
+   ```
+
+---
+
 ## What the Evaluator Should See
 
 - [ ] No real SaaS credentials required.
@@ -181,6 +220,8 @@ The workflow also accepts `auto_approve_manager`:
 - [ ] Pending/rejected/expired/wrong-manager paths do not create tickets.
 - [ ] Audit trail shows correlation ID across all steps.
 - [ ] LLM/fallback generates human-readable messages but never authorizes access.
+- [ ] Mini-RAG chat returns answers with approved content references.
+- [ ] Mini-RAG does not decide access/approval/ticket state.
 
 ---
 

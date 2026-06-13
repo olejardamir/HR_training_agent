@@ -243,6 +243,26 @@ scripts/validate_evidence_manifest_freshness.py     # Manifest commit matches HE
 
 ---
 
+## Mini-RAG Onboarding Knowledge
+
+The chatbot uses a small local retrieval layer over approved onboarding/training content from `docs/PREPARATION_DOCS/PROMOTED_RUNTIME/app_content/`. It uses sentence-transformers (with TF-IDF fallback) for embedding and cosine similarity retrieval.
+
+The mini-RAG retrieves explanatory guidance only. It does not decide access rights, approvals, ticket creation, training completion, or Salesforce setup state. Those decisions remain controlled by deterministic mock SaaS data and workflow rules.
+
+Build the index:
+```bash
+bash scripts/build_rag_index.sh
+```
+
+Test chat:
+```bash
+curl -s -X POST http://localhost:8000/agent/chat \
+  -H "Content-Type: application/json" \
+  -d '{"employee_id":"emp_001","message":"What do I need to do for T2?"}' | jq
+```
+
+---
+
 ## If n8n import fails on your machine
 
 1. The **backend-only smoke path** (`bash scripts/smoke_happy_path.sh` etc.) still proves the governance logic — see `docs/backend_only_demo.md`.

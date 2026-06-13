@@ -42,11 +42,15 @@ The LLM is used **only** for messages; deterministic policy and state machines c
 ## Architecture
 
 ```
-[New hire webhook] → n8n → FastAPI mocks (HR, Training, Slack, Approval, ITSM, Audit)
-                           ↓
-                     PostgreSQL (state, approvals, tickets, audit)
-                           ↑
-                     Ollama / fallback (messages only)
+[New hire webhook] → n8n → FastAPI mocks (HR, Training, Slack, Approval, ITSM, Audit, Content)
+                            ↓
+                      PostgreSQL (state, approvals, tickets, audit, content)
+                            ↑
+                      Ollama / fallback (messages only)
+
+                      Mini-RAG layer:
+                      PROMOTED_RUNTIME docs → fixture JSON → seed DB
+                      → chunk index → TF-IDF/cosine retriever → POST /agent/chat
 ```
 
 All external SaaS interactions are mocked; the prototype requires no real credentials.
@@ -64,6 +68,7 @@ All external SaaS interactions are mocked; the prototype requires no real creden
 | Idempotency | Each ticket request uses `idempotency_key`; duplicate requests return existing ticket |
 | Audit trail | Every major action logged with `correlation_id` |
 | LLM boundary | LLM generates text only; never decides approval or access |
+| Mini-RAG boundary | Retrieves explanatory guidance only; never decides access, approval, or ticket state |
 
 ---
 
