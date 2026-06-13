@@ -40,6 +40,7 @@ echo ""
 echo "--- Mini-RAG ---"
 check "build mini-rag index" bash scripts/build_rag_index.sh
 check "mini-rag agent chat" curl -fsS -X POST http://localhost:8000/agent/chat -H "Content-Type: application/json" -d '{"employee_id":"emp_001","message":"What do I need to do for T2?"}' > /dev/null
+check "mini-rag smoke" bash scripts/smoke_agent_chat_rag.sh
 
 echo ""
 echo "--- Direct FastAPI Smokes ---"

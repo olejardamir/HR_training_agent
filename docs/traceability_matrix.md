@@ -47,6 +47,17 @@ requirement -> endpoint -> service -> test -> demo evidence
 | RAG retrieval | `app/rag/retriever.py` | cosine similarity + metadata filter | `test_mini_rag.py:test_retriever_returns_t2_content_for_t2_question` | T2 question returns T2 chunks |
 | Agent chat | `POST /agent/chat` | `routers/agent_chat.py` + `services/agent_response.py` | `test_mini_rag.py:test_agent_chat_returns_answer_with_used_content_ids` | Chat returns answer with sources |
 | Agent audit | `POST /agent/chat` | `services/audit_service.py` | `test_mini_rag.py:test_agent_chat_logs_audit_event` | agent_chat audit events logged |
+| RAG evaluation (index build) | `POST /agent/chat` | `app/rag/index_builder.py` | `test_agent_chat_rag_evaluation.py:test_index_build_produces_required_files` | Index files valid |
+| RAG evaluation (retrieval) | `POST /agent/chat` | `app/rag/retriever.py` | `test_agent_chat_rag_evaluation.py:test_retrieval_finds_t2_content` | T2 content retrieved |
+| RAG evaluation (grounding) | `POST /agent/chat` | `routers/agent_chat.py` | `test_agent_chat_rag_evaluation.py:test_faithfulness_grounding_smoke` | used_content_ids non-empty |
+| RAG evaluation (read-only) | `POST /agent/chat` | `routers/agent_chat.py` | `test_agent_chat_rag_evaluation.py:test_access_guidance_does_not_mutate_workflow` | No workflow mutation |
+| Prompt injection | `POST /agent/chat` | `services/agent_guardrails.py` | `test_agent_chat_prompt_injection.py:test_ignore_instructions_attack` | Injection refused |
+| Prompt injection (ticket) | `POST /agent/chat` | `services/agent_guardrails.py` | `test_agent_chat_prompt_injection.py:test_unauthorized_ticket_creation_attempt` | Ticket creation blocked |
+| Prompt injection (data leak) | `POST /agent/chat` | `routers/agent_chat.py` | `test_agent_chat_prompt_injection.py:test_data_leakage_attempt` | No employee data leak |
+| Observability audit | `POST /agent/chat` | `services/audit_service.py` | `test_agent_chat_observability.py:test_audit_metadata_includes_retrieval_context` | Audit has latency, match_count, method |
+| Latency/cost sanity | `POST /agent/chat` | `app/rag/retriever.py` | `test_agent_chat_latency_cost_sanity.py:test_chat_does_not_build_index` | Index not rebuilt per request |
+| Latency/cost (top_k) | `app/rag/retriever.py` | `retrieve()` default | `test_agent_chat_latency_cost_sanity.py:test_default_top_k_is_small` | top_k <= 3 |
+| Latency/cost (length) | `POST /agent/chat` | `routers/agent_chat.py` | `test_agent_chat_latency_cost_sanity.py:test_response_length_is_bounded` | answer < 2000 chars |
 
 ## Service Mapping
 

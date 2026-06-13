@@ -228,7 +228,10 @@ The chatbot is read-only (audit logging only) and retrieves approved onboarding/
 - [ ] Mini-RAG refuses when no approved guidance matches (fallback message).
 - [ ] Mini-RAG can still answer simple state queries from deterministic state.
 - [ ] Mini-RAG returns traceability fields: `source_ids`, `retrieval_scores`, `retrieval_method`, `fallback_used`, `llm_used`.
-- [ ] Mini-RAG audit log includes full retrieval context.
+- [ ] Mini-RAG audit log includes full retrieval context (latency, match count, method, fallback flag).
+- [ ] Mini-RAG rejects off-topic questions (non-HR).
+- [ ] Mini-RAG resists prompt-injection attempts (no workflow mutation).
+- [ ] Mini-RAG index is reproducible from committed fixtures: `bash scripts/build_rag_index.sh`.
 
 ---
 

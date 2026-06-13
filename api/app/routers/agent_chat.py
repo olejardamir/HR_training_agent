@@ -1,4 +1,5 @@
 import os
+import time
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
@@ -69,6 +70,8 @@ def agent_chat(req: ChatRequest, db: Session = Depends(get_db)):
         "profile_status": employee.profile_status,
     }
 
+    started = time.perf_counter()
+
     retrieval = retriever.retrieve(req.message)
     raw_matches = retrieval.get("matches", [])
 
@@ -86,7 +89,11 @@ def agent_chat(req: ChatRequest, db: Session = Depends(get_db)):
     else:
         answer = build_answer(req.message, state, approved_matches)
 
+    latency_ms = round((time.perf_counter() - started) * 1000, 2)
+
     suggested_actions = _suggest_actions(state)
+
+    match_count = len(raw_matches)
 
     log_event(db, "agent_chat", None, req.employee_id, "employee",
               "agent_chat", "agent", None, "SUCCESS", None, {
@@ -98,6 +105,8 @@ def agent_chat(req: ChatRequest, db: Session = Depends(get_db)):
                   "retrieval_method": trace["retrieval_method"],
                   "fallback_used": trace["fallback_used"],
                   "llm_used": trace["llm_used"],
+                  "latency_ms": latency_ms,
+                  "match_count": match_count,
               })
     db.commit()
 

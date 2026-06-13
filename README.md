@@ -249,7 +249,9 @@ The chatbot uses a small local retrieval layer over approved onboarding/training
 
 The chatbot is read-only (audit logging only) and retrieves approved onboarding/training guidance only. It does not decide access, approval, ticket creation, training completion, Salesforce setup, or profile updates. Those remain controlled by deterministic workflow/database logic. If approved guidance is missing, the chatbot refuses to invent guidance, while still allowing simple status answers from deterministic employee/workflow state.
 
-Build the index:
+The mini-RAG is evaluated with retrieval, grounding, prompt-injection, read-only, and observability tests. It retrieves approved onboarding/training guidance only, logs trace metadata (including latency, match count, retrieval method), refuses unsupported guidance, and does not mutate workflow state through `/agent/chat`.
+
+Build the index (reproducible from committed fixtures):
 ```bash
 bash scripts/build_rag_index.sh
 ```
