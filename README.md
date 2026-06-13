@@ -274,6 +274,20 @@ curl -s -X POST http://localhost:8000/agent/chat \
 
 ---
 
+## Emulate HR Agent Conversations
+
+Run the backend, build the RAG index, then execute:
+
+```bash
+bash scripts/emulate_hr_agent_conversations.sh
+```
+
+The script runs several deep HR/employee chatbot review conversations against `POST /agent/chat` and saves JSON + Markdown transcripts under `demo_outputs/hr_agent_conversation_logs/`.
+
+The emulator does not require server-side chat memory. Each scripted message is self-contained enough to be answered from employee_id, deterministic state, and approved RAG content.
+
+---
+
 ## License & Attribution
 
 This prototype is built for a candidate exercise. All external standards are
