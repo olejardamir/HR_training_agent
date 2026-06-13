@@ -125,7 +125,7 @@ def _matches_metadata(chunk, meta):
     return False
 
 
-def retrieve(query, top_k=3, minimum_score=0.30):
+def retrieve(query, top_k=3, minimum_score=0.10):
     _lazy_load()
     if not _chunks:
         return {"matches": []}
