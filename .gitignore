@@ -54,6 +54,9 @@ private/
 docs/PREPARATION_DOCS/RAW_DATA/basecamp_handbook
 tools/
 
+# Demo outputs (generated conversation logs)
+demo_outputs/
+
 # RAG generated index
 api/app/rag_index/*
 !api/app/rag_index/.gitkeep
