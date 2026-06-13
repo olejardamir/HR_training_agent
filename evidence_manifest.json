@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-13T02:12:30Z",
-  "verified_commit": "44bcd48b37411e2421de4bb499b7d80c6af6fa0b",
+  "generated_at": "2026-06-13T04:00:00Z",
+  "verified_commit": "fd05c6e65b430e8b0813618c09d621e761d880d7",
   "checks": {
     "docker_compose_config": "pass",
     "api_health": "pass",
@@ -21,12 +21,17 @@
     "n8n_pending_path_smoke": "pass",
     "n8n_expire_path_smoke": "pass",
     "n8n_wrong_manager_path_smoke": "pass",
-    "n8n_forbidden_path_smoke": "pass"
+    "n8n_forbidden_path_smoke": "pass",
+    "mini_rag_index_build": "pass",
+    "mini_rag_agent_chat": "pass"
   },
   "artifacts": {
     "workflow": "n8n/hr_onboarding_workflow.json",
     "solution_design": "docs/solution_design_1_2_pages.md",
     "demo_walkthrough": "docs/demo_walkthrough.md",
-    "traceability": "docs/traceability_matrix.md"
+    "traceability": "docs/traceability_matrix.md",
+    "mini_rag_fixtures": "api/app/fixtures/training_content.json, api/app/fixtures/onboarding_content.json",
+    "mini_rag_index": "api/app/rag_index/",
+    "mini_rag_chat": "api/app/routers/agent_chat.py"
   }
 }
