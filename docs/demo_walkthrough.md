@@ -172,6 +172,8 @@ The workflow also accepts `auto_approve_manager`:
 
 ## Mini-RAG Chat Demo
 
+The chatbot is read-only (audit logging only) and retrieves approved onboarding/training guidance only. It does not decide access, approval, ticket creation, training completion, Salesforce setup, or profile updates. If approved guidance is missing, the chatbot refuses to invent guidance, while still allowing simple status answers from deterministic employee/workflow state.
+
 1. **Build the index**
    ```bash
    bash scripts/build_rag_index.sh
@@ -222,6 +224,11 @@ The workflow also accepts `auto_approve_manager`:
 - [ ] LLM/fallback generates human-readable messages but never authorizes access.
 - [ ] Mini-RAG chat returns answers with approved content references.
 - [ ] Mini-RAG does not decide access/approval/ticket state.
+- [ ] Mini-RAG read-only: no forbidden tables changed after chat.
+- [ ] Mini-RAG refuses when no approved guidance matches (fallback message).
+- [ ] Mini-RAG can still answer simple state queries from deterministic state.
+- [ ] Mini-RAG returns traceability fields: `source_ids`, `retrieval_scores`, `retrieval_method`, `fallback_used`, `llm_used`.
+- [ ] Mini-RAG audit log includes full retrieval context.
 
 ---
 

@@ -57,6 +57,7 @@ def _build_with_llm(message, state, matches):
         "Do not invent training completion status.\n"
         "Do not claim a ticket was submitted unless ticket state says so.\n"
         "Do not claim access is allowed unless role/level policy says so.\n"
+        "Do not claim approval happened unless approval state says so.\n"
         "If the approved content is insufficient, say so briefly.\n"
         "Give a concise answer and one next action when possible.\n\n"
         f"Employee question: {message}\n\n"

@@ -4,7 +4,7 @@
 requirement -> endpoint -> service -> test -> demo evidence
 ```
 
-> **Boundary:** The chatbot uses mini-RAG only for approved onboarding/training guidance. Business decisions still come from deterministic HR/access/training/approval/ticket logic.
+> **Boundary:** The chatbot is read-only (audit logging only) and retrieves approved onboarding/training guidance only. It does not decide access, approval, ticket creation, training completion, Salesforce setup, or profile updates. Those remain controlled by deterministic workflow/database logic. If approved guidance is missing, the chatbot refuses to invent guidance, while still allowing simple status answers from deterministic employee/workflow state.
 
 | Requirement | Endpoint | Service/Logic | Test | Evidence |
 |---|---|---|---|---|

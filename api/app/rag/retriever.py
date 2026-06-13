@@ -163,7 +163,9 @@ def retrieve(query, top_k=3, minimum_score=0.10):
                 "score": round(score, 4),
                 "text": chunk["text"],
                 "source_ids": chunk.get("source_ids", []),
+                "runtime_approved": chunk.get("runtime_approved", False),
             }
             for score, chunk in scored
-        ]
+        ],
+        "retrieval_method": _method or "unknown",
     }
