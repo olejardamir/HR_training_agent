@@ -4,6 +4,8 @@
 requirement -> endpoint -> service -> test -> demo evidence
 ```
 
+> **Boundary:** The chatbot uses mini-RAG only for approved onboarding/training guidance. Business decisions still come from deterministic HR/access/training/approval/ticket logic.
+
 | Requirement | Endpoint | Service/Logic | Test | Evidence |
 |---|---|---|---|---|
 | HR role/level lookup | `GET /mock/hr/employees/{employee_id}` | `routers/hr.py:get_employee_profile` | `test_access_recommender.py:test_access_recommendations_emp001_returns_recommendations` | HR profile returns role, level, department, manager |
